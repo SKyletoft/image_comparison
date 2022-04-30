@@ -1,0 +1,16338 @@
+# callgrind format
+version: 1
+creator: callgrind-3.18.1
+pid: 9887
+cmd:  target/release/image_comparison
+part: 1
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 0 - 11706691988
+desc: Trigger: Program termination
+
+positions: line
+events: Ir
+summary: 68611965974
+
+
+ob=(6) /nix/store/q29bwjibv9gi9n86203s38n0577w09sx-glibc-2.33-117/lib/libdl-2.33.so
+fl=(6) ???
+fn=(1940) check_free
+0 4
+
+fn=(382) init
+0 6
+cob=(2) ???
+cfi=(2) ???
+cfn=(716) 0x00000000049b60e0
+calls=1 0 
+0 19
+0 7
+
+fn=(1938) fini
+0 2
+cfn=(1940)
+calls=1 0 
+0 4
+
+fn=(376) 0x00000000000011d0
+0 11
+
+fn=(738) dlsym_doit
+0 12
+cob=(3) /nix/store/q29bwjibv9gi9n86203s38n0577w09sx-glibc-2.33-117/lib/libc-2.33.so
+cfi=(3) ???
+cfn=(742) _dl_sym
+calls=2 0 
+0 1758
+0 2
+0 6
+
+fn=(1952) 0x0000000000001120
+0 5
+
+fn=(704) dlsym
+0 28
+cob=(5) /nix/store/q29bwjibv9gi9n86203s38n0577w09sx-glibc-2.33-117/lib/libpthread-2.33.so
+cfi=(5) ???
+cfn=(638) pthread_mutex_lock
+calls=2 0 
+0 70
+0 6
+cfn=(706) _dlerror_run
+calls=2 0 
+0 2452
+0 8
+cob=(5)
+cfi=(5)
+cfn=(640) pthread_mutex_unlock
+calls=2 0 
+0 68
+0 14
+
+fn=(1942) 0x0000000000001190
+0 8
+cob=(2)
+cfi=(2)
+cfn=(1948) 0x00000000049b6100
+calls=1 0 
+0 93
+0 1
+cfn=(1952)
+calls=1 0 
+0 5
+0 3
+
+fn=(706)
+0 20
+cob=(2)
+cfi=(2)
+cfn=(708) 0x00000000049b60f0
+calls=2 0 
+0 100
+0 26
+cob=(1) /nix/store/q29bwjibv9gi9n86203s38n0577w09sx-glibc-2.33-117/lib/ld-2.33.so
+cfi=(1) ???
+cfn=(732) _rtld_catch_error
+calls=2 0 
+0 1950
+0 32
+cob=(2)
+cfi=(2)
+cfn=(722) 0x00000000049b60e8
+calls=2 0 
+0 28
+0 9
+cob=(3)
+cfi=(3)
+cfn=(628) calloc
+calls=1 0 
+0 243
+0 1
+0 8
+cob=(2)
+cfi=(2)
+cfn=(728) 0x00000000049b60f8
+calls=1 0 
+0 34
+0 1
+
+ob=(3)
+fl=(3)
+fn=(218) strcmp
+0 32
+
+fn=(230) strcpy
+0 32
+
+fn=(234) wcsnlen
+0 18
+
+fn=(244) strlen
+0 72
+
+fn=(246) memrchr
+0 18
+
+fn=(248) strcasecmp_l
+0 6
+
+fn=(344) __libc_pthread_init
+0 8
+cfn=(346) __register_atfork
+calls=1 0 
+0 43
+0 217
+
+fn=(480) pthread_attr_init@@GLIBC_2.2.5
+0 136
+cfn=(470) getpagesize
+calls=17 0 
+0 85
+0 85
+
+fn=(534) getline
+0 186
+cfn=(536) getdelim
+calls=62 0 
+0 11890
+
+fn=(550) fstatat
+0 14
+
+fn=(554) _IO_switch_to_get_mode
+0 192
+
+fn=(580) _IO_str_init_static_internal
+0 806
+cfn=(584) __rawmemchr_avx2
+calls=62 0 
+0 2607
+0 62
+0 372
+cfn=(552) _IO_setb
+calls=62 0 
+0 1116
+0 992
+
+fn=(584)
+0 2607
+
+fn=(588) _IO_sputbackc
+0 4464
+
+fn=(590) __strtoul_internal
+0 372
+cfn=(592) ____strtoul_l_internal
+calls=124 0 
+0 30494
+
+fn=(592)
+0 30494
+
+fn=(604) _IO_file_close_it@@GLIBC_2.2.5
+0 15
+cfn=(606) _IO_unsave_markers
+calls=1 0 
+0 5
+0 12
+cfn=(608) _IO_file_close
+calls=1 0 
+0 7
+0 9
+cfn=(552)
+calls=1 0 
+0 116
+0 8
+cfn=(600) _IO_un_link
+calls=1 0 
+0 3
+0 10
+
+fn=(622) pthread_attr_setaffinity_np@@GLIBC_2.32
+0 117
+cfn=(624) __pthread_attr_extension
+calls=9 0 
+0 2765
+0 81
+cfn=(566) realloc
+calls=9 0 
+0 2323
+0 9
+0 81
+cfn=(574) __memcpy_avx_unaligned_erms
+calls=9 0 
+0 99
+0 9
+0 63
+
+fn=(228) strncasecmp
+0 6
+
+fn=(242) index
+0 32
+
+fn=(340) getrlimit
+0 30
+
+fn=(368) __strrchr_avx2
+0 27
+
+fn=(484) __fopen_internal
+0 10
+cob=(2)
+cfi=(2)
+cfn=(486) 0x00000000049e2318
+calls=1 0 
+0 1720
+0 12
+cfn=(510) _IO_no_init
+calls=1 0 
+0 60
+0 4
+cfn=(514) _IO_new_file_init_internal
+calls=1 0 
+0 126
+0 5
+cfn=(522) _IO_file_fopen@@GLIBC_2.2.5
+calls=1 0 
+0 180
+0 11
+
+fn=(494) malloc_init_state
+0 5815
+
+fn=(514)
+0 8
+cfn=(516) _IO_link_in
+calls=1 0 
+0 113
+0 5
+
+fn=(528) __GI_strstr
+0 14
+cfn=(532) __strchr_avx2
+calls=1 0 
+0 21
+0 1
+0 13
+
+fn=(540) _IO_file_underflow@@GLIBC_2.2.5
+0 214
+cfn=(554)
+calls=8 0 
+0 192
+0 128
+cfn=(556) _IO_file_read
+calls=8 0 
+0 80
+0 133
+cfn=(542) _IO_doallocbuf
+calls=1 0 
+0 310
+0 4
+
+fn=(602) __GI__IO_un_link.part.1
+0 15
+cob=(5)
+cfi=(5)
+cfn=(518) _pthread_cleanup_push_defer
+calls=1 0 
+0 16
+0 37
+cob=(5)
+cfi=(5)
+cfn=(520) _pthread_cleanup_pop_restore
+calls=1 0 
+0 8
+0 15
+
+fn=(614) _IO_default_finish
+0 15
+
+fn=(632) pthread_attr_destroy
+0 87
+cob=(2)
+cfi=(2)
+cfn=(594) 0x00000000049e2328
+calls=9 0 
+0 807
+0 18
+cob=(2)
+cfi=(2)
+cfn=(594)
+calls=9 0 
+0 807
+0 43
+
+fn=(698) dirfd
+0 26
+
+fn=(846) unlink_chunk.isra.2
+0 2838853
+
+fn=(1104) systrim.isra.1.constprop.10
+0 39
+cfn=(504) __default_morecore
+calls=1 0 
+0 25
+0 21
+cfn=(504)
+calls=1 0 
+0 44
+0 6
+cfn=(504)
+calls=1 0 
+0 25
+0 11
+
+fn=(1362) new_heap
+0 162
+cfn=(472) mmap
+calls=3 0 
+0 99
+0 53
+cfn=(472)
+calls=5 0 
+0 175
+0 60
+cfn=(1364) munmap
+calls=4 0 
+0 20
+0 4
+cfn=(1364)
+calls=1 0 
+0 5
+0 32
+cfn=(474) mprotect
+calls=8 0 
+0 40
+0 91
+cfn=(1364)
+calls=1 0 
+0 5
+0 1
+
+fn=(1466) sched_yield
+0 43180
+
+fn=(1826) __call_tls_dtors
+0 15
+cob=(9) /home/u3836/git/image_comparison/target/release/image_comparison
+cfi=(78) /build/rustc-1.58.1-src/library/std/src/thread/local.rs
+cfn=(1828) std::thread::local::fast::destroy_value
+calls=1 639 
+0 260
+0 7
+cob=(9)
+cfi=(10) ???
+cfn=(1838) _ZN3std10sys_common11thread_info11THREAD_INFO7__getit7destroy17h0fff334167b11e45E.llvm.6339443555521102046
+calls=1 0 
+0 259
+0 8
+cob=(2)
+cfi=(2)
+cfn=(594)
+calls=2 0 
+0 232
+0 10
+
+fn=(216) strncmp
+0 16
+
+fn=(238) wcscpy
+0 6
+
+fn=(362) _init_first
+0 18
+cfn=(364) __init_misc
+calls=1 0 
+0 52
+
+fn=(452) poll
+0 8
+
+fn=(454) signal
+0 9
+cfn=(456) __bsd_signal.part.1
+calls=1 0 
+0 103
+
+fn=(458) sigaction
+0 7
+cfn=(460) __libc_sigaction
+calls=1 0 
+0 69
+
+fn=(472)
+0 3144
+
+fn=(476) pthread_self
+0 18
+
+fn=(504)
+0 20
+cfn=(506) sbrk
+calls=10 0 
+0 303
+0 50
+
+fn=(510)
+0 630
+cfn=(512) _IO_old_init
+calls=63 0 
+0 1577
+0 767
+
+fn=(538) __underflow
+0 241
+cfn=(540)
+calls=8 0 
+0 1061
+0 30
+
+fn=(568) realloc_hook_ini
+0 18
+cfn=(567) realloc'2
+calls=1 0 
+0 381
+
+fn=(612) _IO_file_finish@@GLIBC_2.2.5
+0 12
+cfn=(614)
+calls=1 0 
+0 15
+
+fn=(620) __memset_avx2_unaligned_erms
+0 906384
+cfn=(936) __memset_avx2_erms
+calls=99960 0 
+0 2345829488
+0 16881
+
+fn=(648) __cxa_thread_atexit_impl
+0 234
+cfn=(628)
+calls=18 0 
+0 4942
+0 18
+0 180
+cob=(5)
+cfi=(5)
+cfn=(638)
+calls=18 0 
+0 630
+0 90
+cob=(5)
+cfi=(5)
+cfn=(640)
+calls=18 0 
+0 612
+0 198
+cob=(1)
+cfi=(1)
+cfn=(652) _dl_find_dso_for_object
+calls=18 0 
+0 2070
+0 18
+0 90
+
+fn=(746) statx
+0 305
+
+fn=(1670) munmap_chunk
+0 1953
+cfn=(1364)
+calls=63 0 
+0 315
+0 126
+
+fn=(252) wcslen
+0 18
+
+fn=(424) __cxa_atexit
+0 2
+cfn=(426) __internal_atexit
+calls=1 0 
+0 67
+
+fn=(428) __new_exitfn
+0 29
+
+fn=(446) __sigsetjmp
+0 198
+cfn=(448) __sigjmp_save
+calls=11 0 
+0 88
+
+fn=(466) sigaltstack
+0 95
+
+fn=(482) fopen@@GLIBC_2.2.5
+0 2
+cfn=(484)
+calls=1 0 
+0 2128
+
+fn=(506)
+0 146
+cfn=(508) brk
+calls=1 0 
+0 8
+0 68
+cfn=(508)
+calls=6 0 
+0 52
+0 29
+
+fn=(522)
+0 54
+cfn=(524) _IO_file_open
+calls=1 0 
+0 53
+0 6
+cfn=(528)
+calls=1 0 
+0 49
+0 18
+
+fn=(524)
+0 25
+cfn=(516)
+calls=1 0 
+0 4
+0 6
+cfn=(526) __open_nocancel
+calls=1 0 
+0 16
+0 2
+
+fn=(526)
+0 32
+
+fn=(558) __read_nocancel
+0 40
+
+fn=(598) fclose@@GLIBC_2.2.5
+0 18
+cfn=(612)
+calls=1 0 
+0 27
+0 13
+cob=(2)
+cfi=(2)
+cfn=(594)
+calls=1 0 
+0 87
+0 6
+cfn=(600)
+calls=1 0 
+0 94
+0 9
+cfn=(604)
+calls=1 0 
+0 185
+0 10
+
+fn=(688) __strlen_avx2
+0 403
+
+fn=(1246) sched_getaffinity@@GLIBC_2.3.4
+0 20
+cfn=(620)
+calls=1 0 
+0 17
+0 1
+0 3
+
+fn=(1258) posix_memalign
+0 198
+cfn=(1260) _mid_memalign
+calls=11 0 
+0 5595
+0 88
+
+fn=(1264) _int_memalign
+0 209
+cfn=(500) _int_malloc
+calls=11 0 
+0 3006
+0 273
+cfn=(576) _int_free
+calls=1 0 
+0 58
+0 96
+cfn=(576)
+calls=8 0 
+0 464
+0 318
+cfn=(576)
+calls=10 0 
+0 580
+0 103
+
+fn=(222) wcschr
+0 36
+
+fn=(224) strnlen
+0 36
+
+fn=(370) check_stdfiles_vtables
+0 11
+
+fn=(422) (below main)
+0 17
+cfn=(424)
+calls=1 0 
+0 69
+0 11
+cob=(9)
+cfi=(10)
+cfn=(430) __libc_csu_init
+calls=1 0 
+0 58
+0 8
+cfn=(444) _setjmp
+calls=1 0 
+0 28
+0 14
+cob=(9)
+cfi=(10)
+cfn=(450) main
+calls=1 0 
+0 58950027605
+0 2
+cfn=(1822) exit
+calls=1 0 
+0 3355
+
+fn=(470)
+0 275
+
+fn=(492) ptmalloc_init.part.0
+0 10
+cfn=(494)
+calls=1 0 
+0 647
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28) __tunable_get_val
+calls=1 0 
+0 20
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 20
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 20
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 24
+0 1
+0 8
+
+fn=(516)
+0 69
+cob=(5)
+cfi=(5)
+cfn=(518)
+calls=1 0 
+0 16
+0 19
+cob=(5)
+cfi=(5)
+cfn=(520)
+calls=1 0 
+0 8
+0 5
+
+fn=(532)
+0 21
+
+fn=(542)
+0 19
+cfn=(544) _IO_file_doallocate
+calls=1 0 
+0 285
+0 6
+
+fn=(552)
+0 1158
+cob=(2)
+cfi=(2)
+cfn=(594)
+calls=1 0 
+0 87
+0 5
+
+fn=(576)
+0 20943799
+cfn=(846)
+calls=79989 0 
+0 1735702
+0 9583171
+cfn=(846)
+calls=13194 0 
+0 407631
+0 599203
+cfn=(1710) malloc_consolidate
+calls=22 0 
+0 3854
+0 60796
+cfn=(1104)
+calls=2 0 
+0 171
+0 2442512
+
+fn=(600)
+0 5
+cfn=(602)
+calls=1 0 
+0 91
+0 1
+
+fn=(616) pthread_getaffinity_np@@GLIBC_2.32
+0 153
+cfn=(620)
+calls=9 0 
+0 153
+0 9
+0 27
+
+fn=(672) opendir
+0 6
+cfn=(526)
+calls=1 0 
+0 16
+0 3
+cfn=(674) opendir_tail
+calls=1 0 
+0 270
+
+fn=(734) _dl_catch_error
+0 22
+cfn=(736) _dl_catch_exception
+calls=2 0 
+0 1902
+0 22
+
+fn=(744) do_sym
+0 90
+cob=(1)
+cfi=(1)
+cfn=(652)
+calls=2 0 
+0 274
+0 2
+0 36
+cob=(1)
+cfi=(1)
+cfn=(188) _dl_lookup_symbol_x
+calls=2 0 
+0 1342
+0 8
+
+fn=(1334) _IO_enable_locks
+0 20
+
+fn=(1340) clone
+0 200
+cob=(5)
+cfi=(5)
+cfn=(1342) start_thread
+calls=8 0 
+0 9661416366
+
+fn=(1358) get_free_list
+0 88
+
+fn=(1824) __run_exit_handlers
+0 63
+cob=(1)
+cfi=(1)
+cfn=(1842) _dl_fini
+calls=1 0 
+0 2177
+0 31
+cfn=(1960) _IO_cleanup
+calls=1 0 
+0 262
+0 5
+cfn=(1964) _Exit
+calls=1 0 
+0 5
+0 11
+cfn=(1826)
+calls=1 0 
+0 791
+0 5
+
+fn=(194) __x86_cacheinfo
+0 35
+
+fn=(204) rindex
+0 18
+
+fn=(206) rawmemchr
+0 18
+
+fn=(208) wmemchr
+0 36
+
+fn=(210) wcscmp
+0 18
+
+fn=(212) mempcpy
+0 42
+
+fn=(254) strspn
+0 6
+
+fn=(260) wmemcmp
+0 19
+
+fn=(316) __ctype_init
+0 144
+
+fn=(364)
+0 12
+cfn=(368)
+calls=1 0 
+0 27
+0 1
+0 12
+
+fn=(478) pthread_getattr_np@@GLIBC_2.32
+0 99
+cfn=(480)
+calls=9 0 
+0 162
+0 320
+cfn=(616)
+calls=9 0 
+0 342
+0 54
+cfn=(566)
+calls=9 0 
+0 11390
+0 9
+0 45
+cob=(2)
+cfi=(2)
+cfn=(594)
+calls=9 0 
+0 807
+0 211
+cfn=(622)
+calls=9 0 
+0 5547
+0 93
+cfn=(482)
+calls=1 0 
+0 2130
+0 6
+cfn=(340)
+calls=1 0 
+0 15
+0 4
+cfn=(598)
+calls=1 0 
+0 449
+0 274
+cfn=(534)
+calls=62 0 
+0 12076
+0 496
+cfn=(578) __isoc99_sscanf
+calls=62 0 
+0 116207
+0 806
+cob=(2)
+cfi=(2)
+cfn=(594)
+calls=1 0 
+0 87
+0 21
+
+fn=(490) malloc_hook_ini
+0 8
+cfn=(492)
+calls=1 0 
+0 1001
+0 3
+cfn=(489) malloc'2
+calls=1 0 
+0 695
+
+fn=(498) tcache_init.part.6
+0 53
+cfn=(500)
+calls=1 0 
+0 368
+0 885
+cfn=(1358)
+calls=8 0 
+0 88
+0 48
+cfn=(1360) arena_get2.part.4
+calls=8 0 
+0 6739
+0 32
+cfn=(500)
+calls=8 0 
+0 1192
+0 80
+
+fn=(566)
+0 15093
+cfn=(570) _int_realloc
+calls=42 0 
+0 7944
+0 5451
+cfn=(568)
+calls=1 0 
+0 399
+0 162
+cfn=(488) malloc
+calls=18 0 
+0 13245
+0 2320
+cfn=(570)
+calls=290 0 
+0 60329
+0 6670
+
+fn=(567)
+0 48
+cfn=(570)
+calls=1 0 
+0 307
+0 26
+
+fn=(574)
+0 3055295783
+
+fn=(608)
+0 2
+cfn=(610) __close_nocancel
+calls=1 0 
+0 5
+
+fn=(610)
+0 10
+
+fn=(674)
+0 9
+cfn=(548) fstat
+calls=1 0 
+0 13
+0 11
+cfn=(676) __alloc_dir
+calls=1 0 
+0 233
+0 4
+
+fn=(684) readdir_r
+0 1125
+cfn=(686) __getdents
+calls=2 0 
+0 16
+0 12
+
+fn=(780) closedir
+0 5
+cob=(2)
+cfi=(2)
+cfn=(594)
+calls=1 0 
+0 128
+0 3
+cfn=(610)
+calls=1 0 
+0 5
+
+fn=(936)
+0 2345829488
+
+fn=(1134) getenv
+0 84
+cfn=(688)
+calls=3 0 
+0 39
+0 3
+0 2964
+cfn=(1140) __strncmp_avx2
+calls=3 0 
+0 78
+0 3
+0 6
+
+fn=(1140)
+0 78
+
+fn=(1360)
+0 272
+cfn=(1362)
+calls=8 0 
+0 747
+0 64
+cfn=(494)
+calls=8 0 
+0 5168
+0 488
+
+fn=(1364)
+0 350
+
+fn=(1836) pthread_cond_destroy@@GLIBC_2.3.2
+0 26
+
+fn=(196) memmove
+0 63
+
+fn=(202) strcat
+0 16
+
+fn=(258) stpcpy
+0 16
+
+fn=(444)
+0 18
+cfn=(446)
+calls=9 0 
+0 234
+
+fn=(448)
+0 88
+
+fn=(460)
+0 69
+
+fn=(468) sysconf
+0 870
+cfn=(470)
+calls=30 0 
+0 150
+0 60
+
+fn=(488)
+0 4813407
+cfn=(500)
+calls=90 0 
+0 19049
+0 1602940
+cfn=(498)
+calls=8 0 
+0 9003
+0 1466725
+cfn=(490)
+calls=1 0 
+0 1707
+0 1454320
+cfn=(500)
+calls=145432 0 
+0 22580858
+0 3925884
+
+fn=(489)
+0 24
+cfn=(500)
+calls=1 0 
+0 158
+0 21
+cfn=(498)
+calls=1 0 
+0 482
+0 10
+
+fn=(544)
+0 19
+cfn=(546) _IO_file_stat
+calls=1 0 
+0 15
+0 12
+cob=(2)
+cfi=(2)
+cfn=(486)
+calls=1 0 
+0 207
+0 8
+cfn=(552)
+calls=1 0 
+0 18
+0 6
+
+fn=(546)
+0 2
+cfn=(548)
+calls=1 0 
+0 13
+
+fn=(548)
+0 12
+cfn=(550)
+calls=2 0 
+0 14
+
+fn=(556)
+0 40
+cfn=(558)
+calls=8 0 
+0 40
+
+fn=(578)
+0 1240
+cfn=(510)
+calls=62 0 
+0 2914
+0 434
+cfn=(580)
+calls=62 0 
+0 5955
+0 682
+cfn=(586) __vfscanf_internal
+calls=62 0 
+0 104672
+0 310
+
+fn=(596) free
+0 8147196
+cfn=(576)
+calls=290328 0 
+0 31768236
+0 56926
+cfn=(576)
+calls=28463 0 
+0 3994982
+0 1594518
+cfn=(1670)
+calls=63 0 
+0 2394
+0 324
+
+fn=(606)
+0 5
+
+fn=(662) mkdir
+0 9
+
+fn=(1286) pthread_condattr_init
+0 75
+
+fn=(1710)
+0 9952
+cfn=(846)
+calls=9 0 
+0 177
+0 288
+cfn=(846)
+calls=3 0 
+0 54
+0 9
+
+fn=(1854) __unregister_atfork
+0 180
+
+fn=(1960)
+0 9
+cfn=(1962) _IO_flush_all_lockp
+calls=1 0 
+0 141
+0 11
+cob=(5)
+cfi=(5)
+cfn=(518)
+calls=1 0 
+0 16
+0 61
+cob=(5)
+cfi=(5)
+cfn=(520)
+calls=1 0 
+0 8
+0 16
+
+fn=(200) strcasecmp
+0 6
+
+fn=(214) bcmp
+0 57
+
+fn=(236) wmemset
+0 36
+
+fn=(256) stpncpy
+0 16
+
+fn=(314) __libc_early_init
+0 3
+cfn=(316)
+calls=1 0 
+0 16
+0 5
+
+fn=(346)
+0 43
+
+fn=(500)
+0 17049526
+cfn=(1710)
+calls=34 0 
+0 6626
+0 21035291
+cfn=(846)
+calls=20571 0 
+0 636440
+0 707087
+cfn=(502) sysmalloc
+calls=68 0 
+0 7476
+0 2826170
+cfn=(846)
+calls=22 0 
+0 682
+0 9175
+cfn=(846)
+calls=1835 0 
+0 56885
+0 15862
+
+fn=(502)
+0 3735
+cfn=(504)
+calls=5 0 
+0 229
+0 133
+cfn=(504)
+calls=1 0 
+0 25
+0 106
+cfn=(576)
+calls=3 0 
+0 321
+0 21
+cfn=(472)
+calls=2 0 
+0 70
+0 31
+cfn=(504)
+calls=1 0 
+0 25
+0 449
+cfn=(472)
+calls=63 0 
+0 2205
+0 126
+
+fn=(508)
+0 60
+
+fn=(570)
+0 16676
+cfn=(500)
+calls=143 0 
+0 31436
+0 2431
+cfn=(574)
+calls=143 0 
+0 2357
+0 143
+0 572
+cfn=(576)
+calls=143 0 
+0 9794
+0 663
+cfn=(576)
+calls=29 0 
+0 2404
+0 461
+cfn=(846)
+calls=68 0 
+0 1282
+0 361
+
+fn=(628)
+0 2412000
+cfn=(500)
+calls=1152 0 
+0 255030
+0 297036
+cfn=(500)
+calls=99012 0 
+0 19460123
+0 6844284
+cfn=(620)
+calls=100001 0 
+0 1761478935
+0 100001
+0 992098
+
+fn=(676)
+0 15
+cob=(2)
+cfi=(2)
+cfn=(486)
+calls=1 0 
+0 203
+0 15
+
+fn=(686)
+0 16
+
+fn=(736)
+0 38
+cfn=(446)
+calls=2 0 
+0 52
+0 12
+cob=(6)
+cfi=(6)
+cfn=(738)
+calls=2 0 
+0 1778
+0 22
+
+fn=(804) __memcmp_avx2_movbe
+0 2807
+
+fn=(1260)
+0 190
+cfn=(1264)
+calls=9 0 
+0 4373
+0 183
+cfn=(1262) memalign_hook_ini
+calls=1 0 
+0 423
+0 11
+cfn=(1264)
+calls=1 0 
+0 368
+0 47
+
+fn=(1261) _mid_memalign'2
+0 19
+cfn=(1264)
+calls=1 0 
+0 366
+0 21
+
+fn=(1262)
+0 17
+cfn=(1261)
+calls=1 0 
+0 406
+
+fn=(1290) pthread_cond_init@@GLIBC_2.3.2
+0 350
+
+fn=(1292) pthread_condattr_destroy
+0 50
+
+fn=(1822)
+0 5
+cfn=(1824)
+calls=1 0 
+0 3350
+
+fn=(198) strncpy
+0 16
+
+fn=(220) memset
+0 92
+
+fn=(226) strcspn
+0 6
+
+fn=(232) memcpy@@GLIBC_2.14
+0 84
+
+fn=(240) strpbrk
+0 6
+
+fn=(250) memchr
+0 36
+
+fn=(262) strchrnul
+0 18
+
+fn=(264) strncasecmp_l
+0 6
+
+fn=(426)
+0 18
+cfn=(428)
+calls=1 0 
+0 29
+0 20
+
+fn=(456)
+0 20
+cfn=(458)
+calls=1 0 
+0 76
+0 7
+
+fn=(474)
+0 125
+
+fn=(512)
+0 1577
+
+fn=(536)
+0 1613
+cob=(2)
+cfi=(2)
+cfn=(486)
+calls=1 0 
+0 210
+0 926
+cfn=(566)
+calls=1 0 
+0 419
+0 1
+0 12
+cfn=(574)
+calls=1 0 
+0 29
+0 1
+0 272
+cfn=(574)
+calls=68 0 
+0 1533
+0 68
+0 221
+cfn=(538)
+calls=7 0 
+0 889
+0 77
+cfn=(562) __memchr_avx2
+calls=7 0 
+0 248
+0 7
+0 310
+cfn=(562)
+calls=62 0 
+0 2921
+0 62
+0 1622
+cfn=(538)
+calls=1 0 
+0 443
+0 6
+
+fn=(562)
+0 4990
+
+fn=(586)
+0 8060
+cob=(5)
+cfi=(5)
+cfn=(520)
+calls=62 0 
+0 496
+0 1674
+cob=(5)
+cfi=(5)
+cfn=(518)
+calls=62 0 
+0 992
+0 8928
+cfn=(588)
+calls=124 0 
+0 2232
+0 37972
+cfn=(588)
+calls=124 0 
+0 2232
+0 11096
+cfn=(590)
+calls=124 0 
+0 30866
+0 124
+
+fn=(624)
+0 63
+cfn=(628)
+calls=9 0 
+0 2639
+0 9
+0 54
+
+fn=(742)
+0 6
+cfn=(744)
+calls=2 0 
+0 1752
+
+fn=(1852) __cxa_finalize
+0 258
+cfn=(1854)
+calls=6 0 
+0 180
+0 114
+
+fn=(1962)
+0 18
+cob=(5)
+cfi=(5)
+cfn=(518)
+calls=1 0 
+0 16
+0 83
+cob=(5)
+cfi=(5)
+cfn=(520)
+calls=1 0 
+0 8
+0 16
+
+fn=(1964)
+0 5
+
+ob=(1)
+fl=(1)
+fn=(36) sbrk
+0 14
+
+fn=(68) _dl_hwcaps_subdirs_active
+0 46
+
+fn=(80) _dl_hwcaps_split
+0 5
+
+fn=(84) copy_hwcaps.isra.1
+0 48
+cfn=(86) mempcpy
+calls=2 0 
+0 24
+0 22
+cfn=(72) _dl_hwcaps_split_masked
+calls=2 0 
+0 128
+0 4
+cfn=(72)
+calls=2 0 
+0 152
+0 20
+
+fn=(268) _dl_add_to_slotinfo
+0 54
+
+fn=(320) _dl_unload_cache
+0 6
+
+fn=(326) call_init
+0 249
+cob=(2)
+cfi=(2)
+cfn=(408) 0x0000000004836000
+calls=1 0 
+0 6
+cob=(2)
+cfi=(2)
+cfn=(394) 0x000000000483d000
+calls=1 0 
+0 6
+cob=(2)
+cfi=(2)
+cfn=(384) 0x0000000004883000
+calls=1 0 
+0 6
+cob=(2)
+cfi=(2)
+cfn=(372) 0x00000000049b6000
+calls=1 0 
+0 6
+cob=(2)
+cfi=(2)
+cfn=(328) 0x000000000485b000
+calls=1 0 
+0 536
+0 107
+cob=(7) /nix/store/q29bwjibv9gi9n86203s38n0577w09sx-glibc-2.33-117/lib/libgcc_s.so.1
+cfi=(7) ???
+cfn=(402) 0x0000000000003990
+calls=1 0 
+0 11
+cob=(6)
+cfi=(6)
+cfn=(382)
+calls=1 0 
+0 3
+cob=(3)
+cfi=(3)
+cfn=(370)
+calls=1 0 
+0 11
+cob=(5)
+cfi=(5)
+cfn=(360) elision_init
+calls=1 0 
+0 135
+0 24
+cob=(8) /nix/store/02d3virjq9syfz8pfgihw03drdw6l1aw-valgrind-3.18.1/libexec/valgrind/vgpreload_core-amd64-linux.so
+cfi=(8) ???
+cfn=(412) 0x0000000000001100
+calls=1 0 
+0 11
+cob=(7)
+cfi=(7)
+cfn=(398) __cpu_indicator_init@GCC_4.8.0
+calls=1 0 
+0 166
+cob=(4) /nix/store/q29bwjibv9gi9n86203s38n0577w09sx-glibc-2.33-117/lib/libm-2.33.so
+cfi=(4) ???
+cfn=(388) 0x000000000000f280
+calls=1 0 
+0 11
+cob=(6)
+cfi=(6)
+cfn=(376)
+calls=1 0 
+0 11
+cob=(3)
+cfi=(3)
+cfn=(362)
+calls=1 0 
+0 70
+cob=(5)
+cfi=(5)
+cfn=(354) 0x0000000000007630
+calls=1 0 
+0 11
+0 86
+
+fn=(6) _dl_setup_hash
+0 184
+
+fn=(10) __GI___tunables_init
+0 69230
+
+fn=(58) strcmp
+0 39222
+
+fn=(112) strcspn
+0 409
+
+fn=(124) _dl_catch_exception
+0 252
+cfn=(126) __sigsetjmp
+calls=14 0 
+0 266
+0 84
+cfn=(154) openaux
+calls=13 0 
+0 27775
+cfn=(128) map_doit
+calls=1 0 
+0 2677
+0 140
+
+fn=(162) __pread64_nocancel
+0 30
+
+fn=(184) _dl_allocate_tls_storage
+0 7
+cfn=(46) rtld_malloc
+calls=1 0 
+0 78
+0 335
+cfn=(44) rtld_calloc
+calls=1 0 
+0 26
+0 10
+
+fn=(56) _dl_process_pt_gnu_property
+0 95
+
+fn=(136) __open_nocancel
+0 647
+
+fn=(144) fstatat
+0 303
+
+fn=(304) __rtld_malloc_init_real
+0 91
+cfn=(306) lookup_malloc_symbol
+calls=1 0 
+0 776
+0 5
+cfn=(306)
+calls=1 0 
+0 713
+0 5
+cfn=(306)
+calls=1 0 
+0 729
+0 5
+cfn=(306)
+calls=1 0 
+0 772
+0 11
+
+fn=(654) _dl_addr_inside_object
+0 1664
+
+fn=(12) brk
+0 7
+
+fn=(22) handle_intel.constprop.5
+0 396
+cfn=(24) intel_check_word.isra.0
+calls=12 0 
+0 3900
+0 108
+cfn=(24)
+calls=12 0 
+0 1129
+0 31
+cfn=(24)
+calls=1 0 
+0 23
+0 9
+cfn=(24)
+calls=1 0 
+0 256
+0 104
+
+fn=(130) _dl_map_object
+0 1197
+cfn=(132) _dl_name_match_p
+calls=67 0 
+0 5875
+0 681
+cfn=(58)
+calls=36 0 
+0 1190
+0 288
+cfn=(76) index
+calls=6 0 
+0 138
+0 17
+cfn=(96) expand_dynamic_string_token
+calls=1 0 
+0 276
+0 11
+cfn=(134) open_verify.constprop.10
+calls=1 0 
+0 230
+0 21
+cfn=(140) _dl_map_object_from_fd
+calls=1 0 
+0 1788
+0 70
+cfn=(140)
+calls=5 0 
+0 10375
+0 28
+cfn=(34) strlen
+calls=5 0 
+0 80
+0 140
+cfn=(156) open_path
+calls=5 0 
+0 7742
+0 70
+
+fn=(154)
+0 182
+cfn=(130)
+calls=13 0 
+0 27554
+0 39
+
+fn=(168) _dl_sort_maps
+0 60
+cfn=(102) memset
+calls=2 0 
+0 26
+0 1404
+cfn=(102)
+calls=12 0 
+0 172
+0 145
+
+fn=(170) _dl_receive_error
+0 9
+cfn=(172) version_check_doit
+calls=1 0 
+0 17495
+0 6
+
+fn=(178) init_tls
+0 13
+cfn=(44)
+calls=1 0 
+0 26
+0 74
+cfn=(180) _dl_tls_static_surplus_init
+calls=1 0 
+0 82
+0 1
+cfn=(182) _dl_determine_tlsoffset
+calls=1 0 
+0 104
+0 1
+cfn=(184)
+calls=1 0 
+0 456
+0 26
+
+fn=(182)
+0 104
+
+fn=(186) _dl_relocate_object
+0 25826
+cfn=(188)
+calls=372 0 
+0 266980
+0 10143
+cfn=(308) __x86_cpu_features
+calls=1 0 
+0 5
+cob=(4)
+cfi=(4)
+cfn=(300) sin
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(298) __atan2_finite@GLIBC_2.15
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(296) exp2f@@GLIBC_2.27
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(294) __asin_finite@GLIBC_2.15
+calls=1 0 
+0 7
+cob=(4)
+cfi=(4)
+cfn=(292) sinf
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(290) __acos_finite@GLIBC_2.15
+calls=1 0 
+0 7
+cob=(4)
+cfi=(4)
+cfn=(288) __log_finite@GLIBC_2.15
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(286) log2f@@GLIBC_2.27
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(284) __pow_finite@GLIBC_2.15
+calls=1 0 
+0 7
+cob=(4)
+cfi=(4)
+cfn=(282) powf@@GLIBC_2.27
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(280) sincosf
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(278) logf@@GLIBC_2.27
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(276) cos
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(274) expf@@GLIBC_2.27
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(272) __exp_finite@GLIBC_2.15
+calls=1 0 
+0 8
+cob=(4)
+cfi=(4)
+cfn=(270) cosf
+calls=1 0 
+0 8
+cob=(3)
+cfi=(3)
+cfn=(264)
+calls=1 0 
+0 6
+cob=(3)
+cfi=(3)
+cfn=(262)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(260)
+calls=1 0 
+0 19
+cob=(3)
+cfi=(3)
+cfn=(258)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(256)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(254)
+calls=1 0 
+0 6
+cob=(3)
+cfi=(3)
+cfn=(252)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(250)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(248)
+calls=1 0 
+0 6
+cob=(3)
+cfi=(3)
+cfn=(246)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(244)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(242)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(240)
+calls=1 0 
+0 6
+cob=(3)
+cfi=(3)
+cfn=(238)
+calls=1 0 
+0 6
+cob=(3)
+cfi=(3)
+cfn=(236)
+calls=2 0 
+0 36
+cob=(3)
+cfi=(3)
+cfn=(234)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(232)
+calls=1 0 
+0 21
+cob=(3)
+cfi=(3)
+cfn=(230)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(228)
+calls=1 0 
+0 6
+cob=(3)
+cfi=(3)
+cfn=(226)
+calls=1 0 
+0 6
+cob=(3)
+cfi=(3)
+cfn=(224)
+calls=2 0 
+0 36
+cob=(3)
+cfi=(3)
+cfn=(222)
+calls=2 0 
+0 36
+cob=(3)
+cfi=(3)
+cfn=(220)
+calls=1 0 
+0 23
+cob=(3)
+cfi=(3)
+cfn=(218)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(216)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(214)
+calls=1 0 
+0 19
+cob=(3)
+cfi=(3)
+cfn=(212)
+calls=1 0 
+0 21
+cob=(3)
+cfi=(3)
+cfn=(210)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(208)
+calls=2 0 
+0 36
+cob=(3)
+cfi=(3)
+cfn=(206)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(204)
+calls=1 0 
+0 18
+cob=(3)
+cfi=(3)
+cfn=(202)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(200)
+calls=1 0 
+0 6
+cob=(3)
+cfi=(3)
+cfn=(198)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(196)
+calls=2 0 
+0 42
+cob=(3)
+cfi=(3)
+cfn=(194)
+calls=1 0 
+0 35
+0 54459
+cfn=(188)
+calls=6 0 
+0 4081
+0 2308
+cob=(3)
+cfi=(3)
+cfn=(196)
+calls=1 0 
+0 21
+cob=(4)
+cfi=(4)
+cfn=(282)
+calls=1 0 
+0 8
+cob=(3)
+cfi=(3)
+cfn=(214)
+calls=2 0 
+0 38
+cob=(3)
+cfi=(3)
+cfn=(250)
+calls=1 0 
+0 18
+cob=(4)
+cfi=(4)
+cfn=(296)
+calls=1 0 
+0 8
+cob=(3)
+cfi=(3)
+cfn=(232)
+calls=3 0 
+0 63
+cob=(3)
+cfi=(3)
+cfn=(218)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(220)
+calls=3 0 
+0 69
+cob=(3)
+cfi=(3)
+cfn=(242)
+calls=1 0 
+0 16
+cob=(3)
+cfi=(3)
+cfn=(244)
+calls=3 0 
+0 54
+cob=(3)
+cfi=(3)
+cfn=(212)
+calls=1 0 
+0 21
+cob=(3)
+cfi=(3)
+cfn=(230)
+calls=1 0 
+0 16
+0 2846
+cfn=(266) _dl_protect_relro
+calls=8 0 
+0 208
+0 160
+
+fn=(14) _dl_x86_init_cpu_features
+0 4
+cfn=(16) init_cpu_features.constprop.1
+calls=1 0 
+0 7104
+
+fn=(16)
+0 59
+cfn=(28)
+calls=1 0 
+0 24
+0 8
+cfn=(28)
+calls=1 0 
+0 24
+0 7
+cfn=(28)
+calls=1 0 
+0 24
+0 8
+cfn=(28)
+calls=1 0 
+0 24
+0 7
+cfn=(28)
+calls=1 0 
+0 24
+0 10
+cfn=(30) __GI___tunable_set_val
+calls=1 0 
+0 45
+0 9
+cfn=(30)
+calls=1 0 
+0 45
+0 8
+cfn=(30)
+calls=1 0 
+0 45
+0 9
+cfn=(30)
+calls=1 0 
+0 45
+0 8
+cfn=(30)
+calls=1 0 
+0 45
+0 12
+cfn=(28)
+calls=1 0 
+0 22
+0 43
+cfn=(22)
+calls=1 0 
+0 443
+0 4
+cfn=(22)
+calls=1 0 
+0 481
+0 3
+cfn=(22)
+calls=1 0 
+0 506
+0 3
+cfn=(22)
+calls=1 0 
+0 462
+0 3
+cfn=(22)
+calls=1 0 
+0 454
+0 4
+cfn=(22)
+calls=1 0 
+0 434
+0 3
+cfn=(22)
+calls=1 0 
+0 435
+0 3
+cfn=(22)
+calls=1 0 
+0 472
+0 3
+cfn=(22)
+calls=1 0 
+0 473
+0 5
+cfn=(22)
+calls=1 0 
+0 497
+0 3
+cfn=(22)
+calls=1 0 
+0 498
+0 3
+cfn=(22)
+calls=1 0 
+0 801
+0 7
+cfn=(26) get_common_cache_info
+calls=1 0 
+0 218
+0 17
+cfn=(18) get_common_indices.constprop.2
+calls=1 0 
+0 58
+0 29
+cfn=(20) update_usable.constprop.3
+calls=1 0 
+0 180
+0 47
+
+fn=(38) dl_main
+0 56
+cfn=(40) _dl_next_ld_env_entry
+calls=1 0 
+0 752
+0 4
+cfn=(40)
+calls=2 0 
+0 268
+0 181
+cfn=(42) _dl_new_object
+calls=1 0 
+0 279
+0 13
+cfn=(50) _dl_add_to_namespace_list
+calls=1 0 
+0 33
+0 229
+cfn=(56)
+calls=1 0 
+0 19
+0 262
+cfn=(58)
+calls=1 0 
+0 24
+0 374
+cfn=(6)
+calls=1 0 
+0 23
+0 6
+cfn=(60) _dl_discover_osversion
+calls=1 0 
+0 93
+0 18
+cfn=(64) _dl_init_paths
+calls=1 0 
+0 8951
+0 3
+cfn=(104) _dl_debug_initialize
+calls=1 0 
+0 17
+0 53
+cfn=(106) _dl_count_modids
+calls=1 0 
+0 4
+0 12
+cfn=(108) _dl_debug_state
+calls=1 0 
+0 1
+0 14
+cfn=(150) access
+calls=1 0 
+0 8
+0 17
+cfn=(152) _dl_map_object_deps
+calls=1 0 
+0 33084
+0 135
+cfn=(170)
+calls=1 0 
+0 17510
+0 221
+cfn=(302) _dl_allocate_tls_init
+calls=1 0 
+0 235
+0 12
+cfn=(310) _dl_call_libc_early_init
+calls=1 0 
+0 265
+0 1
+cfn=(318) _dl_sysdep_start_cleanup
+calls=1 0 
+0 1
+0 6
+cfn=(104)
+calls=1 0 
+0 8
+0 2
+cfn=(108)
+calls=1 0 
+0 1
+0 1
+cfn=(320)
+calls=1 0 
+0 6
+0 213
+cfn=(186)
+calls=7 0 
+0 363570
+0 26
+cfn=(268)
+calls=2 0 
+0 54
+0 11
+cfn=(304)
+calls=1 0 
+0 3107
+0 10
+cfn=(186)
+calls=1 0 
+0 4581
+0 22
+cfn=(178)
+calls=1 0 
+0 783
+0 29
+cfn=(110) handle_preload_list
+calls=1 0 
+0 3281
+0 26
+
+fn=(60)
+0 15
+cfn=(62) uname
+calls=1 0 
+0 5
+0 73
+
+fn=(82) bcmp
+0 177
+
+fn=(94) strsep
+0 2968
+
+fn=(96)
+0 45
+cfn=(98) _dl_dst_count
+calls=5 0 
+0 381
+0 45
+cfn=(90) strdup
+calls=5 0 
+0 549
+
+fn=(108)
+0 2
+
+fn=(310)
+0 12
+cfn=(312) _dl_lookup_direct
+calls=1 0 
+0 218
+0 11
+cob=(3)
+cfi=(3)
+cfn=(314)
+calls=1 0 
+0 24
+
+fn=(732)
+0 2
+cob=(3)
+cfi=(3)
+cfn=(734)
+calls=2 0 
+0 1946
+0 2
+
+fn=(28)
+0 606
+
+fn=(40)
+0 1020
+
+fn=(100) rtld_free
+0 49
+cfn=(102)
+calls=1 0 
+0 16
+0 3
+
+fn=(172)
+0 6
+cfn=(174) _dl_check_all_versions
+calls=1 0 
+0 17485
+0 4
+
+fn=(174)
+0 60
+cfn=(176) _dl_check_map_versions
+calls=8 0 
+0 17362
+0 63
+
+fn=(1842)
+0 23
+cob=(5)
+cfi=(5)
+cfn=(638)
+calls=1 0 
+0 35
+0 127
+cfn=(168)
+calls=1 0 
+0 949
+0 2
+cob=(5)
+cfi=(5)
+cfn=(640)
+calls=1 0 
+0 34
+0 147
+cob=(6)
+cfi=(6)
+cfn=(1942)
+calls=1 0 
+0 110
+0 6
+cob=(6)
+cfi=(6)
+cfn=(1938)
+calls=1 0 
+0 6
+cob=(4)
+cfi=(4)
+cfn=(1920) 0x000000000000f240
+calls=1 0 
+0 110
+cob=(5)
+cfi=(5)
+cfn=(1902) 0x00000000000075f0
+calls=1 0 
+0 110
+cob=(7)
+cfi=(7)
+cfn=(1884) 0x0000000000003950
+calls=1 0 
+0 110
+cob=(8)
+cfi=(8)
+cfn=(1866) 0x00000000000010c0
+calls=1 0 
+0 110
+cob=(9)
+cfi=(10)
+cfn=(1844) 0x000000000001be10
+calls=1 0 
+0 110
+0 57
+cob=(2)
+cfi=(2)
+cfn=(1958) 0x00000000049b6da8
+calls=1 0 
+0 3
+cob=(2)
+cfi=(2)
+cfn=(1936) 0x00000000049197d4
+calls=1 0 
+0 3
+cob=(2)
+cfi=(2)
+cfn=(1918) 0x0000000004868d4c
+calls=1 0 
+0 3
+cob=(2)
+cfi=(2)
+cfn=(1900) 0x000000000484dba0
+calls=1 0 
+0 3
+cob=(2)
+cfi=(2)
+cfn=(1882) 0x000000000483626c
+calls=1 0 
+0 3
+cob=(2)
+cfi=(2)
+cfn=(1864) 0x0000000000256ea4
+calls=1 0 
+0 3
+0 113
+
+fn=(18)
+0 58
+
+fn=(34)
+0 1202
+
+fn=(86)
+0 1749
+
+fn=(140)
+0 102
+cfn=(104)
+calls=6 0 
+0 48
+0 150
+cfn=(42)
+calls=6 0 
+0 2294
+0 1138
+cfn=(146) mmap
+calls=6 0 
+0 210
+0 402
+cfn=(102)
+calls=6 0 
+0 963
+0 396
+cfn=(146)
+calls=18 0 
+0 594
+0 1183
+cfn=(142) fstat
+calls=6 0 
+0 78
+0 373
+cfn=(160) mprotect
+calls=1 0 
+0 5
+0 1672
+cfn=(162)
+calls=1 0 
+0 6
+0 797
+cfn=(56)
+calls=4 0 
+0 76
+0 684
+cfn=(148) __GI___close_nocancel
+calls=6 0 
+0 30
+0 72
+cfn=(6)
+calls=6 0 
+0 138
+0 137
+cfn=(164) _dl_next_tls_modid
+calls=1 0 
+0 6
+0 4
+cfn=(50)
+calls=1 0 
+0 59
+0 15
+cfn=(50)
+calls=5 0 
+0 235
+0 38
+cfn=(146)
+calls=2 0 
+0 66
+0 192
+
+fn=(74) _dl_hwcaps_split.part.1
+0 204
+cfn=(76)
+calls=9 0 
+0 207
+0 78
+cfn=(34)
+calls=3 0 
+0 48
+0 18
+
+fn=(126)
+0 266
+
+fn=(176)
+0 829
+cfn=(132)
+calls=85 0 
+0 6888
+0 4653
+cfn=(58)
+calls=34 0 
+0 1330
+0 992
+cfn=(44)
+calls=7 0 
+0 182
+0 2488
+
+fn=(180)
+0 10
+cfn=(28)
+calls=1 0 
+0 24
+0 5
+cfn=(28)
+calls=1 0 
+0 24
+0 19
+
+fn=(192) check_match
+0 10542
+cfn=(58)
+calls=268 0 
+0 13333
+0 9869
+cfn=(58)
+calls=351 0 
+0 14658
+0 763
+cfn=(58)
+calls=1 0 
+0 85
+0 13
+cfn=(58)
+calls=1 0 
+0 24
+0 10
+
+fn=(26)
+0 218
+
+fn=(30)
+0 35
+cfn=(32) do_tunable_update_val.isra.0
+calls=5 0 
+0 190
+
+fn=(50)
+0 56
+cfn=(52) rtld_lock_default_lock_recursive
+calls=7 0 
+0 14
+0 229
+cfn=(54) rtld_lock_default_unlock_recursive
+calls=6 0 
+0 12
+0 12
+cfn=(54)
+calls=1 0 
+0 2
+0 2
+
+fn=(64)
+0 13
+cfn=(66) _dl_important_hwcaps
+calls=1 0 
+0 1972
+0 3
+cfn=(46)
+calls=1 0 
+0 18
+0 13
+cfn=(46)
+calls=1 0 
+0 18
+0 80
+cfn=(88) decompose_rpath.isra.8
+calls=1 0 
+0 6821
+0 13
+
+fn=(76)
+0 1036
+
+fn=(266)
+0 136
+cfn=(160)
+calls=8 0 
+0 40
+0 32
+
+fn=(312)
+0 46
+cfn=(192)
+calls=1 0 
+0 157
+0 15
+
+fn=(0) 0x0000000000001050
+0 2
+cfn=(2) _dl_start
+calls=1 0 
+0 516782
+0 14
+cfn=(324) _dl_init
+calls=1 0 
+0 1573
+0 3
+cob=(9)
+cfi=(9) /build/glibc-2.33/csu/../sysdeps/x86_64/start.S
+cfn=(420) (below main)
+calls=1 63 
+0 58950031178
+
+fn=(4) __rtld_malloc_init_stubs
+0 9
+
+fn=(24)
+0 5308
+
+fn=(42)
+0 137
+cfn=(34)
+calls=6 0 
+0 148
+0 54
+cfn=(44)
+calls=6 0 
+0 276
+0 4
+cfn=(44)
+calls=1 0 
+0 32
+0 98
+cfn=(48) memcpy
+calls=7 0 
+0 89
+0 465
+cfn=(34)
+calls=6 0 
+0 368
+0 54
+cfn=(46)
+calls=6 0 
+0 108
+0 42
+cfn=(86)
+calls=6 0 
+0 168
+0 530
+
+fn=(98)
+0 144
+cfn=(76)
+calls=18 0 
+0 691
+0 162
+
+fn=(152)
+0 190
+cfn=(46)
+calls=6 0 
+0 108
+0 54
+cfn=(48)
+calls=6 0 
+0 60
+0 36
+cfn=(48)
+calls=6 0 
+0 60
+0 244
+cfn=(124)
+calls=13 0 
+0 28464
+0 13
+0 1321
+cfn=(98)
+calls=13 0 
+0 616
+0 576
+cfn=(46)
+calls=1 0 
+0 18
+0 150
+cfn=(168)
+calls=1 0 
+0 858
+0 147
+cfn=(166) __libc_scratch_buffer_set_array_size
+calls=6 0 
+0 102
+0 26
+cfn=(48)
+calls=1 0 
+0 26
+0 15
+
+fn=(62)
+0 5
+
+fn=(72)
+0 112
+cfn=(74)
+calls=12 0 
+0 555
+0 102
+cfn=(78) _dl_hwcaps_contains
+calls=6 0 
+0 24
+0 39
+
+fn=(128)
+0 11
+cfn=(130)
+calls=1 0 
+0 2663
+0 3
+
+fn=(150)
+0 8
+
+fn=(164)
+0 6
+
+fn=(318)
+0 1
+
+fn=(66)
+0 21
+cfn=(28)
+calls=1 0 
+0 20
+0 8
+cfn=(68)
+calls=1 0 
+0 46
+0 10
+cfn=(70) update_hwcaps_counts
+calls=1 0 
+0 26
+0 5
+cfn=(70)
+calls=1 0 
+0 310
+0 4
+cfn=(46)
+calls=1 0 
+0 18
+0 12
+cfn=(80)
+calls=1 0 
+0 5
+0 35
+cfn=(72)
+calls=2 0 
+0 128
+0 2
+cfn=(72)
+calls=1 0 
+0 144
+0 29
+cfn=(82)
+calls=1 0 
+0 40
+0 79
+cfn=(34)
+calls=1 0 
+0 16
+0 57
+cfn=(46)
+calls=1 0 
+0 18
+0 17
+cfn=(84)
+calls=1 0 
+0 32
+0 6
+cfn=(84)
+calls=1 0 
+0 366
+0 40
+cfn=(86)
+calls=1 0 
+0 16
+0 5
+cfn=(86)
+calls=1 0 
+0 16
+0 25
+cfn=(86)
+calls=1 0 
+0 14
+0 10
+cfn=(86)
+calls=2 0 
+0 28
+0 364
+
+fn=(92) fillin_rpath
+0 20
+cfn=(94)
+calls=1 0 
+0 670
+0 12
+cfn=(94)
+calls=4 0 
+0 2298
+0 35
+cfn=(96)
+calls=4 0 
+0 744
+0 20
+cfn=(34)
+calls=4 0 
+0 136
+0 70
+cfn=(82)
+calls=2 0 
+0 137
+0 22
+cfn=(100)
+calls=1 0 
+0 28
+0 6
+cfn=(100)
+calls=3 0 
+0 12
+0 43
+cfn=(34)
+calls=3 0 
+0 48
+0 18
+cfn=(46)
+calls=3 0 
+0 54
+0 30
+cfn=(86)
+calls=3 0 
+0 60
+0 195
+cfn=(48)
+calls=3 0 
+0 39
+0 54
+
+fn=(44)
+0 128
+cfn=(46)
+calls=16 0 
+0 414
+
+fn=(46)
+0 727
+cfn=(146)
+calls=3 0 
+0 105
+0 236
+
+fn=(70)
+0 38
+cfn=(72)
+calls=4 0 
+0 280
+0 18
+
+fn=(2)
+0 280
+cfn=(4)
+calls=1 0 
+0 9
+0 6
+cfn=(6)
+calls=1 0 
+0 23
+0 12
+cfn=(8) _dl_sysdep_start
+calls=1 0 
+0 516116
+0 336
+
+fn=(8)
+0 796
+cfn=(10)
+calls=1 0 
+0 69230
+0 2
+cfn=(12)
+calls=1 0 
+0 7
+0 1
+cfn=(14)
+calls=1 0 
+0 7108
+0 4
+cfn=(34)
+calls=1 0 
+0 16
+0 3
+cfn=(36)
+calls=1 0 
+0 14
+0 11
+cfn=(38)
+calls=1 0 
+0 438915
+0 9
+
+fn=(48)
+0 595
+
+fn=(88)
+0 19
+cfn=(90)
+calls=1 0 
+0 192
+0 1811
+cfn=(46)
+calls=1 0 
+0 18
+0 10
+cfn=(92)
+calls=1 0 
+0 4751
+0 2
+cfn=(100)
+calls=1 0 
+0 4
+0 14
+
+fn=(106)
+0 4
+
+fn=(110)
+0 17
+cfn=(112)
+calls=1 0 
+0 409
+0 9
+cfn=(114) dso_name_valid_for_suid
+calls=1 0 
+0 14
+0 6
+cfn=(116) do_preload
+calls=1 0 
+0 2782
+0 16
+cfn=(48)
+calls=1 0 
+0 26
+0 2
+
+fn=(188)
+0 64058
+cfn=(190) do_lookup_x
+calls=384 0 
+0 197953
+0 13202
+
+fn=(54)
+0 14
+
+fn=(78)
+0 24
+
+fn=(104)
+0 73
+
+fn=(116)
+0 17
+cfn=(120) _dl_catch_error
+calls=1 0 
+0 2753
+0 1
+0 11
+
+fn=(120)
+0 11
+cfn=(124)
+calls=1 0 
+0 2730
+0 1
+0 11
+
+fn=(160)
+0 45
+
+fn=(166)
+0 102
+
+fn=(306)
+0 72
+cfn=(188)
+calls=4 0 
+0 2810
+0 108
+
+fn=(324)
+0 31
+cfn=(326)
+calls=1 0 
+0 35
+0 49
+cfn=(326)
+calls=7 0 
+0 682
+0 25
+cfn=(326)
+calls=1 0 
+0 749
+0 2
+
+fn=(336) _dl_get_tls_static_info
+0 5
+
+fn=(652)
+0 460
+cfn=(654)
+calls=20 0 
+0 1664
+0 220
+
+fn=(20)
+0 180
+
+fn=(32)
+0 190
+
+fn=(52)
+0 14
+
+fn=(138) __read_nocancel
+0 30
+
+fn=(148)
+0 30
+
+fn=(158) stat
+0 145
+cfn=(144)
+calls=29 0 
+0 261
+
+fn=(190)
+0 144725
+cfn=(192)
+calls=378 0 
+0 49140
+0 4088
+
+fn=(90)
+0 30
+cfn=(34)
+calls=6 0 
+0 342
+0 18
+cfn=(46)
+calls=6 0 
+0 108
+0 42
+cfn=(48)
+calls=6 0 
+0 165
+0 36
+
+fn=(114)
+0 14
+
+fn=(134)
+0 665
+cfn=(136)
+calls=35 0 
+0 647
+0 171
+cfn=(138)
+calls=6 0 
+0 30
+0 120
+cfn=(100)
+calls=6 0 
+0 24
+0 1055
+cfn=(162)
+calls=3 0 
+0 18
+0 314
+cfn=(162)
+calls=1 0 
+0 6
+0 36
+
+fn=(142)
+0 36
+cfn=(144)
+calls=6 0 
+0 42
+
+fn=(156)
+0 340
+cfn=(86)
+calls=15 0 
+0 300
+0 775
+cfn=(86)
+calls=34 0 
+0 427
+0 136
+cfn=(86)
+calls=34 0 
+0 408
+0 408
+cfn=(134)
+calls=34 0 
+0 2856
+0 233
+cfn=(46)
+calls=5 0 
+0 90
+0 40
+cfn=(48)
+calls=5 0 
+0 130
+0 1019
+cfn=(158)
+calls=29 0 
+0 406
+0 174
+
+fn=(302)
+0 891
+cfn=(86)
+calls=18 0 
+0 288
+0 90
+cfn=(102)
+calls=18 0 
+0 657
+0 189
+
+fn=(308)
+0 5
+
+fn=(1330) _dl_allocate_tls
+0 88
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=8 0 
+0 2356
+0 80
+cfn=(302)
+calls=8 0 
+0 1880
+
+fn=(102)
+0 1834
+
+fn=(132)
+0 1064
+cfn=(58)
+calls=152 0 
+0 3898
+0 1869
+cfn=(58)
+calls=170 0 
+0 4680
+0 1252
+
+fn=(146)
+0 975
+
+ob=(4)
+fl=(4)
+fn=(276)
+0 8
+
+fn=(1920)
+0 8
+cob=(2)
+cfi=(2)
+cfn=(1926) 0x00000000048831c0
+calls=1 0 
+0 93
+0 1
+cfn=(1930) 0x000000000000f1d0
+calls=1 0 
+0 5
+0 3
+
+fn=(280)
+0 8
+
+fn=(288)
+0 8
+
+fn=(296)
+0 16
+
+fn=(270)
+0 8
+
+fn=(294)
+0 7
+
+fn=(274)
+0 8
+
+fn=(282)
+0 16
+
+fn=(272)
+0 8
+
+fn=(278)
+0 8
+
+fn=(286)
+0 8
+
+fn=(292)
+0 8
+
+fn=(284)
+0 7
+
+fn=(290)
+0 7
+
+fn=(300)
+0 8
+
+fn=(388)
+0 11
+
+fn=(1930)
+0 5
+
+fn=(298)
+0 8
+
+ob=(2)
+fl=(2)
+fn=(372)
+0 6
+
+fn=(384)
+0 6
+
+fn=(1850) 0x000000000011c040
+0 1
+cob=(3)
+cfi=(3)
+cfn=(1852)
+calls=1 0 
+0 92
+
+fn=(1900)
+0 3
+
+fn=(728)
+0 1
+cob=(5)
+cfi=(5)
+cfn=(730) pthread_setspecific
+calls=1 0 
+0 33
+
+fn=(1936)
+0 3
+
+fn=(432) 0x000000000011c000
+0 6
+
+fn=(722)
+0 2
+cob=(5)
+cfi=(5)
+cfn=(724) pthread_getspecific
+calls=2 0 
+0 26
+
+fn=(1864)
+0 3
+
+fn=(1890) 0x000000000483d2d0
+0 1
+cob=(3)
+cfi=(3)
+cfn=(1852)
+calls=1 0 
+0 92
+
+fn=(408)
+0 6
+
+fn=(716)
+0 1
+cob=(5)
+cfi=(5)
+cfn=(718) pthread_key_create
+calls=1 0 
+0 18
+
+fn=(1926)
+0 1
+cob=(3)
+cfi=(3)
+cfn=(1852)
+calls=1 0 
+0 92
+
+fn=(1958)
+0 3
+
+fn=(394)
+0 6
+
+fn=(708)
+0 2
+cob=(5)
+cfi=(5)
+cfn=(710) pthread_once
+calls=2 0 
+0 98
+
+fn=(1882)
+0 3
+
+fn=(1918)
+0 3
+
+fn=(1948)
+0 1
+cob=(3)
+cfi=(3)
+cfn=(1852)
+calls=1 0 
+0 92
+
+fn=(1872) 0x0000000004836030
+0 1
+cob=(3)
+cfi=(3)
+cfn=(1852)
+calls=1 0 
+0 92
+
+fn=(328)
+0 2
+cob=(5)
+cfi=(5)
+cfn=(330) __pthread_initialize_minimal
+calls=1 0 
+0 532
+0 2
+
+fn=(486)
+0 4
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=4 0 
+0 2336
+
+fn=(594)
+0 33
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=33 0 
+0 3009
+
+fn=(1908) 0x000000000485b520
+0 1
+cob=(3)
+cfi=(3)
+cfn=(1852)
+calls=1 0 
+0 92
+
+ob=(5)
+fl=(5)
+fn=(640)
+0 3528
+cfn=(642) __pthread_mutex_unlock_usercnt
+calls=1764 0 
+0 38738
+
+fn=(718)
+0 18
+
+fn=(1288) pthread_condattr_setclock
+0 250
+
+fn=(1320) pthread_create@@GLIBC_2.2.5
+0 161
+cob=(3)
+cfi=(3)
+cfn=(470)
+calls=8 0 
+0 40
+0 8
+0 1120
+cfn=(1336) create_thread
+calls=8 0 
+0 560
+0 257
+cob=(3)
+cfi=(3)
+cfn=(1334)
+calls=1 0 
+0 20
+0 1
+0 137
+cob=(3)
+cfi=(3)
+cfn=(472)
+calls=8 0 
+0 280
+0 8
+0 152
+cob=(3)
+cfi=(3)
+cfn=(474)
+calls=8 0 
+0 40
+0 8
+0 128
+cob=(1)
+cfi=(1)
+cfn=(1330)
+calls=8 0 
+0 4404
+0 8
+0 192
+
+fn=(1468) pthread_detach
+0 80
+
+fn=(1642) __condvar_dec_grefs
+0 1722
+
+fn=(1912) 0x0000000000007580
+0 5
+
+fn=(520)
+0 528
+
+fn=(638)
+0 51859
+cfn=(1716) __lll_lock_wait
+calls=123 0 
+0 2561
+0 270
+
+fn=(1132) pthread_rwlock_rdlock
+0 69
+
+fn=(1316) __pthread_get_minstack
+0 40
+
+fn=(1522) __pthread_enable_asynccancel
+0 290479
+
+fn=(1638) pthread_cond_signal@@GLIBC_2.3.2
+0 28416
+
+fn=(360)
+0 7
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 20
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 20
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 20
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 20
+0 1
+0 4
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 20
+0 1
+0 7
+
+fn=(462) sigaction
+0 28
+cfn=(332) __libc_sigaction
+calls=4 0 
+0 182
+
+fn=(518)
+0 1056
+
+fn=(720) _pthread_cleanup_pop
+0 1235
+
+fn=(1280) pthread_mutexattr_destroy
+0 50
+
+fn=(1318) pthread_attr_setstacksize
+0 48
+
+fn=(1388) pthread_cond_broadcast@@GLIBC_2.3.2
+0 3208
+
+fn=(1794) write
+0 110561
+cfn=(1522)
+calls=10051 0 
+0 170867
+0 110561
+cfn=(1640) __pthread_disable_asynccancel
+calls=10051 0 
+0 150765
+0 60306
+
+fn=(332)
+0 272
+
+fn=(354)
+0 11
+
+fn=(664) __errno_location
+0 6
+
+fn=(1142) pthread_rwlock_unlock
+0 108
+
+fn=(1342)
+0 72
+cob=(3)
+cfi=(3)
+cfn=(316)
+calls=8 0 
+0 128
+0 8
+0 56
+cob=(3)
+cfi=(3)
+cfn=(444)
+calls=8 0 
+0 224
+0 8
+0 216
+cob=(9)
+cfi=(10)
+cfn=(1348) std::sys::unix::thread::Thread::new::thread_start
+calls=8 0 
+0 9661415654
+
+fn=(1902)
+0 8
+cob=(2)
+cfi=(2)
+cfn=(1908)
+calls=1 0 
+0 93
+0 1
+cfn=(1912)
+calls=1 0 
+0 5
+0 3
+
+fn=(348) __pthread_tunables_init
+0 5
+cob=(1)
+cfi=(1)
+cfn=(28)
+calls=1 0 
+0 20
+0 1
+0 2
+
+fn=(730)
+0 33
+
+fn=(842) open
+0 906
+cfn=(1522)
+calls=35 0 
+0 595
+0 420
+cfn=(1640)
+calls=35 0 
+0 525
+0 70
+
+fn=(890) read
+0 75858
+cfn=(1522)
+calls=6711 0 
+0 114087
+0 73821
+cfn=(1640)
+calls=6711 0 
+0 100665
+0 40266
+
+fn=(1276) pthread_mutexattr_settype
+0 300
+
+fn=(1832) pthread_mutex_destroy
+0 10
+
+fn=(330)
+0 33
+cfn=(332)
+calls=1 0 
+0 45
+0 7
+cfn=(332)
+calls=1 0 
+0 45
+0 11
+cob=(1)
+cfi=(1)
+cfn=(336)
+calls=1 0 
+0 5
+0 1
+0 14
+cob=(3)
+cfi=(3)
+cfn=(340)
+calls=1 0 
+0 15
+0 1
+0 51
+cob=(3)
+cfi=(3)
+cfn=(344)
+calls=1 0 
+0 268
+0 1
+0 2
+cfn=(348)
+calls=1 0 
+0 28
+0 5
+
+fn=(712) __pthread_once_slow
+0 36
+cfn=(714) _pthread_cleanup_push
+calls=1 0 
+0 6
+0 1
+cob=(6)
+cfi=(6)
+cfn=(382)
+calls=1 0 
+0 29
+0 3
+cfn=(720)
+calls=1 0 
+0 5
+0 9
+
+fn=(724)
+0 26
+
+fn=(1274) pthread_mutexattr_init
+0 75
+
+fn=(642)
+0 43310
+
+fn=(710)
+0 9
+cfn=(712)
+calls=1 0 
+0 89
+
+fn=(1278) pthread_mutex_init
+0 1000
+
+fn=(1516) pthread_cond_wait@@GLIBC_2.3.2
+0 6350
+cfn=(642)
+calls=254 0 
+0 4572
+0 8754
+cfn=(1644) __condvar_confirm_wakeup
+calls=246 0 
+0 1722
+0 492
+cfn=(1646) __pthread_mutex_cond_lock
+calls=246 0 
+0 7446
+0 6778
+cfn=(714)
+calls=254 0 
+0 1524
+0 1524
+cfn=(1518) __futex_abstimed_wait_cancelable64
+calls=254 0 
+0 20254
+0 984
+cfn=(720)
+calls=246 0 
+0 1230
+0 2706
+cfn=(1642)
+calls=246 0 
+0 1722
+0 738
+
+fn=(1640)
+0 256185
+
+fn=(630) pthread_attr_getstack
+0 63
+
+fn=(714)
+0 1530
+
+fn=(1216) lseek
+0 5
+
+fn=(1366) pthread_attr_getguardsize
+0 32
+
+fn=(1520) __futex_abstimed_wait_common64
+0 8294
+cfn=(1522)
+calls=254 0 
+0 4318
+0 2952
+cfn=(1640)
+calls=246 0 
+0 3690
+0 492
+
+fn=(1646)
+0 6366
+cfn=(1716)
+calls=54 0 
+0 1026
+0 54
+
+fn=(1198) close
+0 276
+cfn=(1522)
+calls=36 0 
+0 612
+0 324
+cfn=(1640)
+calls=36 0 
+0 540
+0 144
+
+fn=(1336)
+0 256
+cob=(3)
+cfi=(3)
+cfn=(1340)
+calls=8 0 
+0 144
+0 8
+0 152
+
+fn=(1518)
+0 508
+cfn=(1520)
+calls=254 0 
+0 19746
+
+fn=(1644)
+0 1722
+
+fn=(1716)
+0 3587
+
+ob=(7)
+fl=(7)
+fn=(400) get_available_features
+0 106
+
+fn=(402)
+0 11
+
+fn=(1894) 0x00000000000038e0
+0 5
+
+fn=(398)
+0 44
+cfn=(400)
+calls=1 0 
+0 106
+0 16
+
+fn=(1884)
+0 8
+cob=(2)
+cfi=(2)
+cfn=(1890)
+calls=1 0 
+0 93
+0 1
+cfn=(1894)
+calls=1 0 
+0 5
+0 3
+
+ob=(8)
+fl=(8)
+fn=(412)
+0 11
+
+fn=(1876) 0x0000000000001050
+0 5
+
+fn=(1866)
+0 8
+cob=(2)
+cfi=(2)
+cfn=(1872)
+calls=1 0 
+0 93
+0 1
+cfn=(1876)
+calls=1 0 
+0 5
+0 3
+
+ob=(9)
+fl=(26) /build/rustc-1.58.1-src/library/core/src/slice/sort.rs
+fn=(796) core::slice::sort::shift_tail
+76 72
++22 24
+-98 24
+98 24
+fi=(58) /build/rustc-1.58.1-src/library/core/src/ptr/const_ptr.rs
+235 24
+fi=(31) /build/rustc-1.58.1-src/library/std/src/sys/unix/os_str.rs
+135 24
+fi=(28) /build/rustc-1.58.1-src/library/std/src/path.rs
+1835 120
+fi=(31)
+135 48
+fi=(28)
+1835 156
+cfi=(10)
+cfn=(800) std::path::compare_components
+calls=12 0 
+* 7780
+fi=(29) /build/rustc-1.58.1-src/library/core/src/cmp.rs
+1035 12
+fe=(26)
+98 12
+-98 20
+fi=(13) /build/rustc-1.58.1-src/library/core/src/ptr/mod.rs
+702 50
+fe=(26)
+103 10
+fi=(30) /build/rustc-1.58.1-src/library/core/src/intrinsics.rs
+2079 40
+fi=(29)
+1327 10
+fi=(27) /build/rustc-1.58.1-src/library/core/src/iter/range.rs
+665 10
+fi=(28)
+1835 40
+fi=(31)
+135 20
+fi=(28)
+1835 20
+fi=(31)
+135 54
+fi=(28)
+1835 350
+fi=(31)
+135 74
+fi=(28)
+1835 481
+cfi=(10)
+cfn=(800)
+calls=37 0 
+* 23993
+fi=(29)
+1035 37
+fe=(26)
+107 37
+0 28
+fi=(30)
+2079 140
+fi=(29)
+1327 28
+fi=(27)
+665 28
+0 1
+fi=(30)
+2079 4
+fe=(26)
+118 7
+fi=(30)
+2079 36
+fe=(26)
+118 77
+
+fn=(792) core::slice::sort::recurse
+717 10
++16 2
+0 2
+fi=(29)
+1327 1
+fi=(27)
+621 1
+0 1
+621 3
+fe=(26)
+175 3
+cfn=(796)
+calls=1 -99 
+* 691
+* 33
+cfn=(796)
+calls=11 -99 
+* 33224
+fi=(29)
+1327 60
+fe=(26)
+800 8
+
+fl=(107) /build/rustc-1.58.1-src/library/core/src/iter/adapters/filter.rs
+fn=(1398) core::iter::adapters::filter::filter_try_fold::{{closure}}
+44 591144
+fi=(80) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/registry.rs
+772 147786
+fe=(107)
+44 73893
+-44 83070
+fi=(80)
+774 388296
+fi=(96) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-deque-0.8.1/src/deque.rs
+629 323580
+fi=(25) /build/rustc-1.58.1-src/library/core/src/sync/atomic.rs
+2363 64716
+fi=(19) /build/rustc-1.58.1-src/library/core/src/option.rs
+629 64716
+fi=(78)
+-39 64716
+0 194124
+592 8
+cfn=(1404) std::thread::local::fast::Key<T>::try_initialize
+calls=8 +13 
+* 7608
+398 16
+fi=(110) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/collector.rs
+87 129432
+fi=(111) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/default.rs
+-87 64716
+fi=(96)
+636 64716
++4 64716
+cfi=(111)
+cfn=(1424) crossbeam_epoch::default::pin
+calls=64716 23 
+* 2095388
+* 64716
++3 64716
+fi=(25)
+2363 64716
+fi=(128) /build/rustc-1.58.1-src/library/core/src/num/int_macros.rs
+1161 64716
+fi=(96)
+646 129432
++5 949
+fi=(25)
+2363 949
+fi=(140) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/atomic.rs
+127 1898
+fi=(96)
+-71 3796
+fi=(46) /build/rustc-1.58.1-src/library/core/src/ptr/mut_ptr.rs
+242 949
+fi=(13)
+1056 1898
+fi=(96)
+656 949
+fi=(25)
+2363 949
+0 949
+fi=(140)
+1549 949
+fi=(96)
+656 949
++1 949
+fi=(128)
+1120 949
+fi=(25)
+2438 1898
+fi=(96)
+656 949
+fi=(129) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/guard.rs
+406 1898
+fi=(112) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/internal.rs
+519 949
++1 949
+fi=(13)
+892 949
+fi=(112)
+522 1898
+fi=(25)
+2349 949
+fi=(112)
+525 1898
+0 63767
+fi=(129)
+406 127534
+fi=(112)
+519 63767
++1 63767
+fi=(13)
+892 63767
+fi=(112)
+522 127534
+fi=(25)
+2349 63767
+fi=(112)
+525 127534
+fi=(80)
+775 127534
+0 63767
+fi=(17) /build/rustc-1.58.1-src/library/core/src/iter/traits/iterator.rs
+2409 127534
+fe=(107)
+44 637670
+fi=(17)
+2409 1898
+fe=(107)
+44 101260
+
+fl=(121) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/job.rs
+fn=(1528) <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute
+111 3726
+fi=(13)
+702 2484
+fi=(141) /build/rustc-1.58.1-src/library/core/src/mem/mod.rs
+840 621
+fi=(19)
+-96 1242
+0 621
+fi=(116) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.5.1/src/iter/plumbing/mod.rs
+428 1242
++2 1242
++1 3105
+-4 1863
+cfn=(1474) rayon::iter::plumbing::bridge_producer_consumer::helper
+calls=621 -28 
+* 8213573549
+0 621
+fi=(13)
+188 1242
+fe=(121)
+-69 1863
+fi=(118) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/latch.rs
++73 621
+0 621
+192 1242
++14 1242
+fi=(25)
+2380 621
+fi=(118)
+128 621
++81 621
+0 7
+fi=(80)
+544 7
+fi=(98) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/sleep/mod.rs
+245 7
+cfn=(1626) rayon_core::sleep::Sleep::wake_specific_thread
+calls=7 354 
+* 1363
+fi=(118)
+-53 621
++24 621
+fe=(121)
+-91 4347
+-14 120
+fi=(13)
+702 48
+fi=(141)
+840 24
+fi=(19)
+-96 48
+0 24
+fe=(121)
+119 192
+fi=(19)
+629 24
+fi=(78)
+-39 24
+fi=(79) /build/rustc-1.58.1-src/library/core/src/cell.rs
+442 24
+fi=(58)
+-20 24
+fi=(117) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/registry.rs
++42 24
++1 336
+cfi=(122) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/join/mod.rs
+cfn=(1536) rayon_core::join::join_context::{{closure}}
+calls=24 132 
+* 1440503070
+0 24
+fi=(13)
+188 48
+fe=(121)
+-69 72
++4 24
+fi=(105) /build/rustc-1.58.1-src/library/std/src/sys_common/mutex.rs
+-47 24
+fi=(106) /build/rustc-1.58.1-src/library/std/src/sys/unix/mutex.rs
+-13 24
+cob=(5)
+cfi=(5)
+cfn=(638)
+calls=24 -63 
+* 696
+fi=(25)
+2364 24
+fi=(103) /build/rustc-1.58.1-src/library/std/src/panicking.rs
+297 72
+0 24
+fi=(25)
+2364 24
+385 24
+fi=(15) /build/rustc-1.58.1-src/library/core/src/result.rs
+1293 24
+fi=(118)
+258 24
++1 48
+cob=(5)
+cfi=(5)
+cfn=(1388)
+calls=24 0 
+* 3048
+fi=(104) /build/rustc-1.58.1-src/library/std/src/sync/poison.rs
+34 48
+-34 24
+fi=(25)
+2364 24
+fi=(103)
+297 48
+fi=(105)
+92 24
+fi=(106)
+-24 24
+cob=(5)
+cfi=(5)
+cfn=(640)
+calls=24 -68 
+* 577
+fe=(121)
++57 144
+
+fn=(1529) <rayon_core::job::StackJob<L,F,R> as rayon_core::job::Job>::execute'2
+111 1968
+fi=(13)
+702 1312
+fi=(141)
+840 328
+fi=(19)
+-96 656
+0 328
+fi=(116)
+428 656
++2 656
++1 1640
+-4 984
+cfn=(1474)
+calls=28 -28 
+* 214693152
+cfn=(1475) rayon::iter::plumbing::bridge_producer_consumer::helper'2
+calls=300 -28 
+* 1904593378
+0 328
+fi=(13)
+188 656
+fe=(121)
+-69 984
+fi=(118)
++73 328
+0 328
+192 656
++14 656
+fi=(25)
+2380 328
+fi=(118)
+128 328
++81 328
+0 2
+fi=(80)
+544 2
+fi=(98)
+245 2
+cfn=(1626)
+calls=2 354 
+* 467
+fi=(118)
+-53 328
++24 328
+fe=(121)
+-91 2296
+
+fl=(9)
+fn=(420)
+63 1
++16 1
++6 1
++3 1
++2 1
++3 1
++4 1
++4 1
++1 1
++2 1
++16 1
+cob=(3)
+cfi=(3)
+cfn=(422)
+calls=1 0 
+* 58950031167
+
+fl=(22) /build/rustc-1.58.1-src/library/alloc/src/raw_vec.rs
+fn=(764) alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle
+279 9
+fi=(50) /build/rustc-1.58.1-src/library/core/src/num/uint_macros.rs
+1497 3
+fi=(19)
+925 3
+0 3
+fe=(22)
+387 6
+fi=(29)
+1208 3
+0 15
+fi=(71) /build/rustc-1.58.1-src/library/core/src/alloc/layout.rs
+408 3
+fi=(50)
+1679 3
+fi=(71)
+408 6
+fe=(22)
+238 12
+0 6
+393 12
+cfn=(768) alloc::raw_vec::finish_grow
+calls=3 +46 
+* 1268
+fi=(15)
+1899 6
++1 6
+fe=(22)
+357 3
++4 3
+-4 3
++5 3
+-77 12
+-6 1440
+fi=(50)
+1497 480
+fi=(19)
+925 480
+0 480
+fe=(22)
+387 960
+fi=(29)
+1208 480
+0 2400
+fe=(22)
+238 960
+0 600
+393 900
+cfn=(768)
+calls=300 +46 
+* 101204
+0 180
+393 540
+cfn=(768)
+calls=180 +46 
+* 34901
+fi=(15)
+1899 960
++1 480
+fe=(22)
+361 480
+-76 1440
+-6 84
+fi=(50)
+1497 28
+fi=(19)
+925 28
+0 28
+fe=(22)
+387 56
+fi=(29)
+1208 28
+0 140
+fe=(22)
+238 56
+0 28
+393 56
+cfn=(768)
+calls=28 +46 
+* 2675
+fi=(15)
+1899 56
++1 28
+fe=(22)
+361 28
+-76 84
+-6 3
+fi=(50)
+1497 1
+fi=(19)
+925 1
+0 1
+fe=(22)
+387 2
+fi=(29)
+1208 1
+0 5
+fi=(71)
+408 1
+fi=(50)
+1679 1
+fi=(71)
+408 2
+fe=(22)
+238 4
+0 1
+393 4
+cfn=(768)
+calls=1 +46 
+* 468
+fi=(15)
+1899 2
++1 2
+fe=(22)
+361 1
+-4 1
++5 1
+-77 4
+-6 3
+fi=(50)
+1497 1
+fi=(19)
+925 1
+0 1
+fe=(22)
+387 2
+fi=(29)
+1208 1
+0 5
+fi=(71)
+408 1
+fi=(50)
+1679 1
+fi=(71)
+408 2
+fe=(22)
+238 4
+0 1
+393 4
+cfn=(768)
+calls=1 +46 
+* 83
+fi=(15)
+1899 2
++1 2
+fe=(22)
+361 1
+-4 1
++5 1
+-77 4
+
+fn=(768)
+439 27
+fi=(15)
+851 6
+0 6
+fe=(22)
+452 6
+0 3
+fi=(18) /build/rustc-1.58.1-src/library/alloc/src/alloc.rs
+190 6
+-66 21
+cob=(3)
+cfi=(3)
+cfn=(566)
+calls=3 0 
+* 1145
+fe=(22)
+0 3
+fi=(15)
+851 6
++1 9
+fe=(22)
+0 6
+464 24
+-25 224
++13 56
+0 112
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=28 0 
+0 1863
+0 28
+fi=(15)
+851 56
++1 84
+0 56
+fe=(22)
+464 196
+-25 4338
+fi=(15)
+851 964
+0 964
+fe=(22)
+452 964
+0 300
+fi=(18)
+190 600
+-66 2100
+cob=(3)
+cfi=(3)
+cfn=(566)
+calls=300 0 
+* 88904
+fe=(22)
+0 300
+fi=(15)
+851 600
+fi=(18)
+165 364
+-78 728
+fe=(22)
+-87 364
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=182 0 
+0 28354
+0 182
+fi=(15)
+851 364
++1 1446
+fe=(22)
+0 964
+464 3856
+
+fl=(55) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/huffman.rs
+fn=(958) jpeg_decoder::huffman::HuffmanTable::new
+191 1344
+fi=(23) /build/rustc-1.58.1-src/library/alloc/src/vec/mod.rs
+425 288
+fi=(138) /build/rustc-1.58.1-src/library/core/src/iter/adapters/enumerate.rs
+112 480
+fi=(56) /build/rustc-1.58.1-src/library/core/src/iter/adapters/take.rs
+-19 2400
+-93 1080
+fi=(46)
+242 1080
+fi=(13)
+892 3240
+cob=(3)
+cfi=(3)
+cfn=(620)
+calls=1080 0 
+* 18768
+fi=(17)
+1994 1080
+fe=(55)
+262 3240
+fi=(38) /build/rustc-1.58.1-src/library/core/src/slice/iter/macros.rs
+146 2160
+fe=(55)
+262 1368
+fi=(38)
+146 912
+0 1536
+fi=(46)
+242 1536
+fi=(138)
+106 13824
+fe=(55)
+261 1536
+fi=(22)
++26 1536
+fi=(50)
+1222 1536
+fi=(22)
+352 1536
+-65 1536
++1 1344
+cfn=(764)
+calls=336 -9 
+* 94605
+fi=(57) /build/rustc-1.58.1-src/library/alloc/src/vec/spec_extend.rs
+38 336
+-38 336
+fe=(55)
+266 96
+fi=(71)
+408 96
+fi=(50)
+1679 192
+fi=(71)
+408 192
+fi=(50)
+1679 96
+fi=(22)
+176 96
+0 288
+fi=(18)
+165 96
+-7 192
+fi=(22)
+357 192
+0 96
+fi=(43) /build/rustc-1.58.1-src/library/core/src/slice/index.rs
+184 192
+0 288
+fe=(55)
+267 96
+fi=(58)
+-32 96
+0 480
+fe=(55)
+271 288
+0 8352
+280 8352
+fi=(38)
+146 16704
+fe=(55)
+0 8256
+281 8256
+-11 8256
++1 32640
++1 984
+-1 2952
++1 72
+-1 1200
+0 1968
+271 1968
++5 25056
++8 192
+0 96
+202 576
+fi=(18)
+-44 288
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=96 0 
+* 29176
+* 96
+fi=(22)
++30 192
+0 384
+fe=(55)
+202 288
+fi=(43)
+-18 192
+fe=(55)
++21 192
+fi=(43)
+-21 192
+fe=(55)
+0 96
+203 192
++2 96
+0 288
+202 480
+fi=(43)
+-18 192
+fe=(55)
++21 192
+fi=(43)
+-21 192
+fe=(55)
+0 96
+203 192
++2 96
+0 480
+202 288
+fi=(43)
+-18 192
+fe=(55)
++21 192
+fi=(43)
+-21 192
+fe=(55)
+0 96
+203 192
++2 96
+0 384
+202 288
+fi=(43)
+-18 192
+0 192
+fe=(55)
+205 192
+fi=(43)
+-21 192
+fe=(55)
+0 96
+203 192
++2 96
+0 480
+202 288
+fi=(43)
+-18 192
+fe=(55)
++21 192
+fi=(43)
+-21 192
+fe=(55)
+0 96
+203 192
++2 96
+0 480
+202 288
+0 24
+202 72
+fi=(43)
+-18 144
+0 144
+fe=(55)
+205 144
+fi=(43)
+-21 144
+fe=(55)
+0 72
+203 144
++2 72
+0 360
+202 216
+fi=(43)
+-18 96
+fe=(55)
++21 96
+fi=(43)
+-21 96
+fe=(55)
+0 48
+203 96
++2 48
+0 240
+202 144
+0 480
+202 288
+0 72
+202 216
+fi=(43)
+-18 96
+0 96
+fe=(55)
+205 96
+fi=(43)
+-21 96
+fe=(55)
+0 48
+203 96
++2 48
+0 240
+202 144
+fi=(43)
+-18 192
+0 192
+fe=(55)
+205 192
+fi=(43)
+-21 192
+fe=(55)
+0 96
+203 192
++2 96
+0 480
+202 288
+fi=(43)
+-18 192
+fe=(55)
++21 192
+fi=(43)
+-21 192
+fe=(55)
+0 96
+203 192
++2 96
+0 480
+202 288
+fi=(43)
+-18 192
+0 192
+fe=(55)
+205 192
+fi=(43)
+-21 192
+fe=(55)
+0 96
+203 192
++2 96
+0 480
+202 288
+fi=(43)
+-18 144
+fe=(55)
++21 144
+fi=(43)
+-21 144
+fe=(55)
+0 72
+203 144
++2 72
+0 360
+202 216
+0 120
+202 72
+0 48
+202 144
+fi=(43)
+-18 48
+fe=(55)
++21 48
+fi=(43)
+-21 48
+fe=(55)
+0 24
+203 48
++2 24
+0 120
+202 72
+0 240
+202 144
+fi=(43)
+-18 96
+fe=(55)
++21 96
+fi=(43)
+-21 96
+fe=(55)
+0 48
+203 96
++2 48
+0 1200
+fi=(58)
+235 48
+0 240
+fi=(38)
+146 96
+fe=(55)
+0 1056
+fi=(58)
+235 48
+0 240
+fi=(38)
+146 16800
+fe=(55)
+0 8352
+fi=(17)
+2379 8352
+fi=(46)
+242 8352
+fi=(138)
+86 8352
+fi=(17)
+2379 8352
+1995 8352
+fi=(43)
+184 2784
+fe=(55)
++32 2784
+0 2784
+214 4176
+fi=(43)
+332 4176
+231 2784
+fe=(55)
+-14 1392
+fi=(43)
++33 2784
+0 5568
+fi=(38)
+146 11616
+fe=(55)
++72 1248
+fi=(61) /build/rustc-1.58.1-src/library/core/src/ptr/non_null.rs
+-24 624
+fi=(38)
+-48 1248
+fe=(55)
++72 1584
+fi=(61)
+-24 792
+fi=(38)
+-48 2832
+0 768
+146 1536
+0 1536
+fe=(55)
+218 12288
+fi=(38)
+-72 2304
+fe=(55)
++72 33408
+fi=(38)
+-72 7032
+fe=(55)
++78 192
++3 96
+0 26880
+fi=(32) /build/rustc-1.58.1-src/library/core/src/slice/iter.rs
+99 240
+fe=(55)
+-99 24576
+fi=(38)
+146 12288
+fi=(138)
+-98 12288
+fi=(38)
++98 24576
+fe=(55)
++20 12288
++65 24576
++2 12288
+0 10104
+233 30312
++4 9120
+-3 45600
+-66 72960
++69 36480
+0 96
+fi=(18)
+87 384
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=96 -87 
+* 4534
+* 96
+fi=(22)
+188 192
+0 96
+fe=(55)
+241 144
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=48 0 
+* 5952
+* 48
+0 48
+fi=(18)
+87 96
+fi=(22)
+-87 96
+fi=(30)
+2079 384
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=96 0 
+* 1968
+0 192
+fe=(55)
+245 6912
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=96 0 
+* 11904
+* 384
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=96 0 
+* 6912
+* 96
+fi=(22)
+-7 192
+0 96
+fi=(18)
+105 96
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=96 0 
+* 8256
+fi=(22)
+238 384
+fi=(18)
+105 192
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=96 0 
+* 12327
+fe=(55)
+252 768
+
+fl=(66) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/dynimage.rs
+fn=(1706) image::dynimage::DynamicImage::into_rgb8
+242 168
++1 48
++1 72
++3 192
+
+fl=(16) /build/rustc-1.58.1-src/library/core/src/iter/adapters/filter_map.rs
+fn=(680) <core::iter::adapters::filter_map::FilterMap<I,F> as core::iter::traits::iterator::Iterator>::next
+60 168
+fi=(17)
+1994 14
+cfi=(10)
+cfn=(682) <std::fs::ReadDir as core::iter::traits::iterator::Iterator>::next
+calls=14 0 
+* 4558
+* 42
+0 3
+fe=(16)
+62 8
+fi=(17)
+-62 13
+fe=(16)
+62 104
+-62 26
+fi=(17)
+1994 26
+fi=(15)
+647 26
+fi=(18)
+0 13
+fi=(19)
+2049 26
+0 13
+fi=(12) /home/u3836/git/image_comparison/src/main.rs
+39 117
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=13 -39 
+* 611
+* 39
++1 26
+cob=(3)
+cfi=(3)
+cfn=(698)
+calls=13 -40 
+* 26
+* 39
+-40 13
+40 78
+cfi=(10)
+cfn=(700) _ZN3std3sys4unix2fs9try_statx17h188ffc102dbf3f9cE.llvm.13607297203696288680
+calls=13 -40 
+* 3314
+* 39
++1 78
+cob=(3)
+cfi=(3)
+cfn=(688)
+calls=13 -41 
+* 169
+* 78
+cfi=(10)
+cfn=(748) std::path::Path::_join
+calls=13 -41 
+* 10378
+* 52
+fi=(20) /build/rustc-1.58.1-src/library/alloc/src/sync.rs
+1605 13
+fi=(25)
+2411 13
+fi=(20)
+1605 26
+fi=(12)
+40 26
+fi=(19)
+2049 26
+0 13
+fi=(12)
+40 39
+fi=(17)
+2409 26
++1 39
+0 13
+fe=(16)
+
+fl=(54) /build/rustc-1.58.1-src/library/std/src/io/copy.rs
+fn=(940) std::io::copy::copy
+43 384
+cfi=(10)
+cfn=(836) __rust_probestack
+calls=48 -43 
+* 960
+* 96
+fi=(44) /build/rustc-1.58.1-src/library/std/src/io/mod.rs
+2603 144
+0 240
+fi=(45) /build/rustc-1.58.1-src/library/std/src/io/impls.rs
+19 120
+cfi=(34) /build/rustc-1.58.1-src/library/std/src/io/buffered/bufreader.rs
+cfn=(888) <std::io::buffered::bufreader::BufReader<R> as std::io::Read>::read
+calls=24 258 
+* 1704
+fi=(15)
+1899 48
++1 48
+fi=(44)
+2609 72
+fe=(54)
+147 48
+fi=(43)
++92 48
+0 24
+fe=(54)
+154 24
+fi=(44)
+2603 72
+fe=(54)
+0 48
+148 48
+0 24
+55 192
+-55 24
+148 48
+0 24
+55 192
+
+fl=(23)
+fn=(906) alloc::vec::from_elem
+2359 432
+fi=(71)
+408 48
+fi=(50)
+1679 144
+fi=(71)
+408 48
+fe=(23)
+2360 192
+fi=(22)
+176 48
+0 192
+fi=(18)
+165 96
+-78 48
+fi=(22)
+-87 24
+188 48
+0 48
+357 144
+fe=(23)
+609 144
+fi=(53) /build/rustc-1.58.1-src/library/alloc/src/vec/spec_from_elem.rs
+15 48
+fi=(22)
+352 48
+-65 48
+fe=(23)
+0 144
+fi=(46)
+242 96
+fi=(29)
+1327 48
+fi=(27)
+621 48
+0 144
+621 24
+0 96
+fi=(22)
+188 96
+0 96
+fi=(27)
+621 24
+fi=(18)
+0 24
+fe=(23)
+2319 72
+fi=(18)
+87 48
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1363
+* 24
+fi=(22)
+188 48
+fi=(27)
+621 192
+0 120
+fi=(30)
+2079 72
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 312
+fi=(27)
+0 24
+fi=(30)
+2079 72
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 312
+0 48
+fi=(13)
+892 144
+fi=(46)
+242 48
+fi=(27)
+621 96
+0 120
+fe=(23)
+2319 48
+fi=(13)
+892 72
+fi=(49) /build/rustc-1.58.1-src/library/alloc/src/vec/set_len_on_drop.rs
+19 24
++7 24
+fe=(23)
+2361 384
+fi=(49)
+26 24
+fi=(22)
+238 48
+fe=(23)
+2359 653832
+fi=(71)
+408 145296
+fi=(50)
+1679 145296
+fi=(71)
+408 72648
+fe=(23)
+2360 217944
+fi=(22)
+176 72648
+0 290592
+fi=(18)
+165 145296
+-78 145248
+fi=(22)
+-87 24
+188 48
+0 72648
+357 217944
+fe=(23)
+609 217944
+fi=(53)
+15 72648
+-15 72648
+fi=(22)
+352 72648
+-65 72648
+fi=(27)
+0 72648
+fi=(46)
+242 145296
+fi=(29)
+1327 72648
+fi=(27)
+621 72648
+fe=(23)
+0 145248
+fi=(27)
+621 72624
+0 145152
+fi=(22)
+188 217728
+0 217728
+fi=(18)
+87 145152
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=72576 -87 
+* 16257024
+* 145152
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=72576 -87 
+* 16257024
+fi=(22)
+188 290304
+fi=(124) /build/rustc-1.58.1-src/library/alloc/src/slice.rs
+0 145152
+fi=(30)
+2079 580608
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=145152 0 
+* 1173844224
+fi=(13)
+892 435456
+fi=(46)
+242 145152
+fi=(29)
+1327 145152
+fi=(27)
+621 145152
+0 290304
+fe=(23)
+2319 145200
+0 72624
+fi=(13)
+892 217872
+fi=(49)
+19 72624
++7 72624
+fe=(23)
+2361 581184
+fi=(18)
+87 145248
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=72624 -87 
+* 3197182
+fi=(22)
+188 145248
+fi=(27)
+621 384
+0 96
+fi=(13)
+892 96
+fi=(46)
+242 48
+fi=(27)
+621 96
+fi=(13)
+892 96
+fi=(46)
+242 48
+fi=(27)
+621 144
+fe=(23)
+2319 96
+fi=(49)
+26 24
+fi=(22)
+238 48
+fe=(23)
+
+fl=(75) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/decoder.rs
+fn=(1572) jpeg_decoder::decoder::color_convert_line_ycbcr
+1280 508032
++1 145152
+0 145152
+fi=(125) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/arch/ssse3.rs
+197 362880
++1 217728
++1 145152
++1 145152
++1 145152
+fe=(75)
+0 145152
+fi=(125)
+206 145152
+fe=(75)
+0 72576
+fi=(125)
+206 145152
+fi=(50)
+1089 145152
+fi=(29)
+1327 72576
+fi=(27)
+621 1306368
+fi=(126) /build/rustc-1.58.1-src/library/core/src/../../stdarch/crates/core_arch/src/x86/ssse3.rs
+80 72576
+fi=(74) /build/rustc-1.58.1-src/library/core/src/../../stdarch/crates/core_arch/src/x86/sse2.rs
+496 72576
+135 72576
+fi=(126)
+-55 72576
+fi=(74)
+496 72576
+fi=(126)
+80 72576
+fi=(74)
+496 72576
+382 145152
+fi=(126)
+241 72576
+fi=(74)
+135 72576
+fi=(126)
+241 145152
+fi=(74)
+135 72576
+fi=(126)
+241 72576
+fi=(74)
+135 145152
+382 72576
+135 72576
+572 72576
+1344 72576
+572 72576
+1344 72576
+572 72576
+1344 72576
+fi=(126)
+80 145152
+fi=(74)
+775 72576
+fi=(126)
+80 72576
+fi=(74)
+775 72576
+fi=(126)
+80 145152
+fi=(74)
+775 72576
+fi=(30)
+2079 72576
+fi=(126)
+80 72576
+fi=(74)
+775 72576
+fi=(30)
+2079 72576
+fi=(50)
+463 72576
+fi=(29)
+1327 217728
+fi=(27)
+621 72576
+fi=(126)
+80 36433152
+fi=(74)
+496 36433152
+135 36433152
+fi=(126)
+-55 36433152
+fi=(74)
+496 36433152
+fi=(126)
+80 36433152
+fi=(74)
+496 36433152
+382 72866304
+fi=(126)
+241 36433152
+fi=(74)
+135 36433152
+fi=(126)
+241 72866304
+fi=(74)
+135 36433152
+fi=(126)
+241 36433152
+fi=(74)
+135 72866304
+382 36433152
+135 36433152
+572 36433152
+1344 36433152
+572 36433152
+1344 36433152
+572 36433152
+1344 36433152
+fi=(126)
+80 72866304
+fi=(74)
+775 36433152
+fi=(126)
+80 36433152
+fi=(74)
+775 36433152
+fi=(126)
+80 72866304
+fi=(74)
+775 36433152
+fi=(30)
+2079 36433152
+fi=(126)
+80 36433152
+fi=(74)
+775 36433152
+fi=(30)
+2079 36433152
+fi=(50)
+463 36433152
+fi=(29)
+1327 109299456
+fi=(27)
+621 36433152
+fi=(125)
+287 72576
+fe=(75)
+1299 217728
+0 145152
+fi=(127) /build/rustc-1.58.1-src/library/core/src/iter/adapters/skip.rs
+35 217728
++1 72576
+fi=(59) /build/rustc-1.58.1-src/library/core/src/iter/adapters/zip.rs
+297 145152
+fi=(29)
+1145 72576
+0 72576
+fi=(59)
+298 72576
++1 145152
+-35 145152
++56 72576
+27 1016064
+264 1524096
+fi=(32)
+1941 580608
+fe=(75)
+1306 1741824
+fi=(59)
+268 580608
+fe=(75)
+1356 580608
++1 580608
++1 580608
++2 1741824
++11 580608
+fi=(29)
+0 2903040
+fe=(75)
+1361 2903040
++10 580608
+fi=(29)
+0 1161216
+fe=(75)
+1362 1741824
++9 580608
+fi=(29)
+0 1161216
+fe=(75)
+1364 6967296
+-57 580608
++1 580608
+-2 580608
++3 1161216
+fi=(127)
+35 1741824
+fe=(75)
+1311 580608
+
+fl=(122)
+fn=(1536)
+132 6060
++4 3636
+fi=(117)
+645 606
+fi=(118)
+158 606
+fi=(121)
+-72 2424
+-1 606
+fi=(117)
+662 606
+fi=(96)
+354 606
+fi=(25)
+2364 606
++1 606
+fi=(96)
+391 606
+fi=(25)
+2364 606
+-1 606
+fi=(96)
+393 606
+fi=(128)
+1161 1212
+fi=(96)
+399 1212
+fi=(117)
+0 1212
+fi=(96)
+56 1212
+fi=(13)
+1128 3636
+fi=(96)
+418 606
+fi=(128)
+1120 606
+fi=(25)
+2349 606
+fi=(117)
+664 1818
+fi=(25)
+2365 606
+fi=(142) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/sleep/counters.rs
+43 606
++85 606
+fi=(50)
+1180 2
+fi=(25)
+2438 2
+fi=(142)
+130 2
+fi=(123) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/sleep/mod.rs
+318 7
+0 604
+318 1812
+fi=(96)
++38 30
+fi=(123)
+-25 30
+0 90
+331 30
+fe=(122)
+141 1818
+fi=(116)
+419 606
++2 1212
++1 2424
+-4 3030
+cfn=(1475)
+calls=582 -19 
+* 5571200640
+cfn=(1474)
+calls=24 -19 
+* 1225548993
+0 1212
+fi=(25)
+2363 606
+fi=(118)
+134 606
+fe=(122)
++18 606
+fi=(96)
+438 510
+fi=(25)
+2364 1020
+fi=(128)
+1161 1020
+fi=(96)
+445 1020
++4 924
+fi=(128)
+1161 462
+fi=(25)
+2350 462
+2685 462
+fi=(96)
+484 462
+fi=(25)
+2364 462
+fi=(96)
+489 1386
++6 924
+56 924
+fi=(46)
+242 462
+fi=(13)
+1056 924
+fi=(96)
+499 924
+fi=(128)
+1120 462
+fi=(25)
+2438 462
+fi=(96)
+517 462
+fi=(25)
+2350 1386
+fi=(121)
+34 462
+fe=(122)
+154 1848
++4 3696
+fi=(121)
+-61 462
+fi=(19)
+744 924
+fi=(121)
+0 1386
+fi=(116)
+428 924
++2 924
++1 2772
+-4 924
+cfn=(1475)
+calls=462 -28 
+* 2122865039
+fi=(13)
+188 924
+fi=(25)
+2363 48
+fi=(118)
+134 48
+fi=(117)
+699 48
+0 48
+700 96
+cfi=(80)
+cfn=(1397) rayon_core::registry::WorkerThread::wait_until_cold'2
+calls=48 +5 
+* 729151942
+fe=(122)
+172 144
+fi=(121)
++5 288
+fe=(122)
+-4 4848
+
+fn=(1537) rayon_core::join::join_context::{{closure}}'2
+132 719460
++4 431676
+fi=(117)
+645 71946
+fi=(118)
+158 71946
+fi=(121)
+-72 287784
+-1 71946
+fi=(117)
+662 71946
+fi=(96)
+354 71946
+fi=(25)
+2364 71946
++1 71946
+fi=(96)
+391 71946
+fi=(25)
+2364 71946
+-1 71946
+fi=(96)
+393 71946
+fi=(128)
+1161 143892
+fi=(96)
+399 143892
+fi=(117)
+0 143892
+fi=(96)
+56 143892
+fi=(13)
+1128 431676
+fi=(96)
+418 71946
+fi=(128)
+1120 71946
+fi=(25)
+2349 71946
+fi=(117)
+664 215838
+fi=(25)
+2365 71946
+fi=(142)
+43 71946
++85 71946
+fi=(123)
+0 71946
+318 215838
+fi=(96)
++38 107
+fi=(123)
+-25 107
+0 42
+331 14
+0 279
+cfi=(98)
+cfn=(1524) rayon_core::sleep::Sleep::wake_any_threads
+calls=93 341 
+0 71919
+fe=(122)
+141 215838
+fi=(116)
+419 71946
++2 143892
++1 287784
+-4 359730
+cfn=(1475)
+calls=71946 -19 
+* 39214789155
+0 143892
+fi=(25)
+2363 71946
+fi=(118)
+134 71946
+fe=(122)
++18 71946
+fi=(96)
+438 71228
+fi=(25)
+2364 142456
+fi=(128)
+1161 142456
+fi=(96)
+445 142456
++4 142282
+fi=(128)
+1161 71141
+fi=(25)
+2350 71141
+2685 71141
+fi=(96)
+484 71141
+fi=(25)
+2364 71141
+fi=(96)
+489 213423
++6 142282
+56 142282
+fi=(46)
+242 71141
+fi=(13)
+1056 142282
+fi=(96)
+499 142282
+0 204558
+520 136372
+fi=(128)
+1120 2955
+fi=(25)
+2438 2955
+fi=(96)
+517 2955
+fi=(25)
+2350 8865
+fi=(121)
+34 2955
+fe=(122)
+154 2955
+fi=(121)
+34 68186
+fe=(122)
+154 281609
++4 569128
+fi=(121)
+-61 71141
+fi=(19)
+744 142282
+fi=(121)
+0 213423
+fi=(116)
+428 142282
++2 142282
++1 426846
+-4 142282
+cfn=(1475)
+calls=71141 -28 
+* 36271621302
+fi=(13)
+188 142282
+fi=(25)
+2363 87
+fi=(118)
+134 87
+fi=(117)
+699 87
+0 87
+700 174
+cfi=(80)
+cfn=(1397)
+calls=87 +5 
+* 1391541870
+fe=(122)
+172 805
+fi=(121)
++5 1610
+fe=(122)
+-4 575568
+
+fl=(34)
+fn=(882) <std::io::buffered::bufreader::BufReader<R> as std::io::Read>::read_exact
+278 398902931
+174 113972266
+fi=(43)
++63 170958399
+0 170958399
+239 113972266
+0 56986133
+fe=(34)
+279 113972266
+0 20994
+fi=(47) /build/rustc-1.58.1-src/library/core/src/slice/mod.rs
+124 7022
+fi=(44)
+459 7022
++1 35110
+cfi=(34)
+cfn=(888)
+calls=7022 258 
+* 1083154
+* 35110
+fi=(43)
+332 21066
+fi=(46)
+-90 7022
+0 14044
+fi=(18)
+0 56979135
+fi=(58)
+235 56979135
+fi=(30)
+2079 170937405
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=56979135 0 
+* 854687265
+fe=(34)
+373 56979135
+fi=(29)
+1145 56979135
+0 56979135
+fe=(34)
+373 56979135
+0 56979135
+286 683749620
+0 6998
+286 83976
+
+fn=(888)
+258 77506
++4 56272
+364 14092
+0 13996
+366 41988
+cob=(5)
+cfi=(5)
+cfn=(890)
+calls=6998 0 
+* 404669
+* 13996
+0 6998
+366 6998
++1 27992
+fi=(43)
+239 14092
+0 7046
+fi=(58)
+235 7046
+fi=(43)
+-11 14092
+fi=(29)
+1145 7046
+0 7046
+fi=(45)
+240 14092
++1 34870
+fi=(30)
+2079 288
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=72 0 
+* 201925
+0 72
+fe=(34)
+373 72
+fi=(29)
+1145 72
+0 72
+fe=(34)
+373 72
+271 72
+0 144
+272 648
+373 6974
+fi=(29)
+1145 6974
+0 6974
+fe=(34)
+373 6974
+271 6974
+0 13948
+272 62766
+
+fl=(80)
+fn=(1396) rayon_core::registry::WorkerThread::wait_until_cold
+705 64
++8 16
+fi=(25)
+2398 8
+fi=(98)
+81 32
+fi=(25)
+2363 8
+fi=(97) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/latch.rs
+134 8
+fe=(80)
+714 8
+0 16
+720 8
+fi=(96)
+438 8
+fi=(25)
+2364 16
+fi=(128)
+1161 16
+fi=(96)
+445 16
+fe=(80)
+720 8141
+fi=(96)
+438 8141
+fi=(25)
+2364 16282
+fi=(128)
+1161 16282
+fi=(96)
+445 16282
+fe=(80)
+722 16298
++39 8149
+fi=(23)
+1134 8149
+2434 8149
+fe=(80)
+761 32596
++2 24447
+fi=(19)
+1145 16298
+0 645
+fe=(80)
+725 645
+fi=(25)
+2414 1290
+fe=(80)
+725 645
+fi=(130) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/sleep/counters.rs
+209 645
+fi=(29)
+0 645
+fi=(98)
+98 2580
+cfn=(1524)
+calls=645 341 
+* 99420
+fi=(120) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/job.rs
+-39 1290
+cfi=(121)
+cfn=(1528)
+calls=621 +52 
+* 8213605983
+cfi=(121)
+cfn=(1528)
+calls=24 +52 
+* 1440509119
+fe=(80)
+727 1935
+fi=(25)
+2398 645
+fe=(80)
+727 1935
+0 1290
+fi=(25)
+2363 645
+fi=(97)
+134 645
+fe=(80)
+714 645
+0 14148
+fi=(25)
+2363 7074
+fi=(97)
+134 7074
+fe=(80)
+714 7074
+0 422
+fi=(25)
+2363 422
+fi=(97)
+134 422
+fe=(80)
+714 422
+0 16298
+768 8149
+908 8149
++2 24447
++1 24447
++1 24447
+fi=(13)
+-20 8149
+fi=(50)
+1245 16298
+fe=(80)
+919 24447
+fi=(17)
+807 48894
+fi=(107)
+22 8149
++71 48894
+-49 16298
+-44 16298
+fi=(102) /build/rustc-1.58.1-src/library/core/src/ops/function.rs
+269 32596
+cfi=(107)
+cfn=(1398)
+calls=8149 44 
+* 738494
+* 107916
+cfi=(107)
+cfn=(1398)
+calls=26979 44 
+* 2395953
+fi=(17)
+0 35128
+1995 70256
+0 34721
+fi=(29)
+1327 34721
+fi=(27)
+621 34721
+fi=(115) /build/rustc-1.58.1-src/library/core/src/iter/adapters/chain.rs
+108 30968
+fi=(29)
+1327 7742
+fi=(27)
+621 7742
+fi=(29)
+1327 26767
+fi=(27)
+621 26767
+fi=(50)
+463 26981
+fi=(13)
+892 26981
+fi=(17)
+1995 80943
+cfi=(107)
+cfn=(1398)
+calls=26981 44 
+* 2413225
+0 53962
+1995 53962
+0 621
+fi=(19)
+550 1863
+0 7528
+550 7528
+fe=(80)
+790 30112
+0 7528
+723 7528
+0 7528
+fi=(25)
+2468 24
+fi=(96)
+1388 24
+fi=(25)
+2363 15056
+fi=(96)
+1360 30112
++3 15056
++7 7528
++2 15056
+fi=(25)
+2685 7528
+2364 7528
+fi=(96)
+1377 30112
++5 120
+0 24
+1399 48
+fi=(25)
+0 72
+2363 24
+fi=(96)
+1129 48
+1413 48
+-14 24
++18 24
+fi=(25)
+2515 144
+fi=(96)
+1417 48
+0 7504
+fe=(80)
+729 15008
+fi=(98)
+108 22512
++1 14148
+cob=(3)
+cfi=(3)
+cfn=(1466)
+calls=7074 0 
+* 35370
++1 14148
++1 645
+fi=(25)
+2365 215
+fi=(130)
+43 215
++85 215
+fi=(50)
+1180 19
+fi=(25)
+2438 19
+fi=(130)
+130 38
+fi=(98)
+-10 1075
+cfn=(1610) rayon_core::sleep::Sleep::sleep
+calls=215 +18 
+* 90618
+* 207
+0 196
+fi=(130)
+214 196
+fi=(98)
+112 196
++1 196
++1 392
+cob=(3)
+cfi=(3)
+cfn=(1466)
+calls=196 0 
+* 980
+fi=(130)
+214 19
+fi=(98)
+112 19
++1 19
++1 38
+cob=(3)
+cfi=(3)
+cfn=(1466)
+calls=19 0 
+* 95
+0 215
+fe=(80)
+
+fn=(1397)
+705 1080
++8 270
+fi=(25)
+2398 135
+fi=(98)
+81 540
+fi=(25)
+2363 135
+fi=(97)
+134 135
+fe=(80)
+714 135
++24 405
+fi=(25)
+2414 135
+fe=(80)
+738 135
+fi=(130)
+209 135
+fi=(29)
+0 270
+fi=(98)
+98 270
+cfn=(1524)
+calls=135 341 
+* 19957
+fe=(80)
+745 1080
+0 270
+720 135
+fi=(96)
+438 135
+fi=(25)
+2364 270
+fi=(128)
+1161 270
+fi=(96)
+445 270
+fe=(80)
+720 1555
+fi=(96)
+438 1555
+fi=(25)
+2364 3110
+fi=(128)
+1161 3110
+fi=(96)
+445 3110
+fe=(80)
+722 3380
++39 1690
+fi=(23)
+1134 1690
+2434 1690
+fe=(80)
+761 6760
++2 5070
+fi=(19)
+1145 3380
+0 328
+fe=(80)
+725 328
+fi=(25)
+2414 656
+fe=(80)
+725 328
+fi=(130)
+209 328
+fi=(29)
+0 328
+fi=(98)
+98 1312
+cfn=(1524)
+calls=328 341 
+* 4264
+fi=(120)
+-39 656
+cfi=(121)
+cfn=(1529)
+calls=328 +52 
+* 2119303403
+fe=(80)
+727 984
+fi=(25)
+2398 328
+fe=(80)
+727 984
+0 656
+fi=(25)
+2363 328
+fi=(97)
+134 328
+fe=(80)
+714 328
+0 2664
+fi=(25)
+2363 1332
+fi=(97)
+134 1332
+fe=(80)
+714 1332
+0 30
+fi=(25)
+2363 30
+fi=(97)
+134 30
+fe=(80)
+714 165
+0 3380
+768 1690
+908 1690
++2 5070
++1 5070
++1 5070
+fi=(13)
+-20 1690
+fi=(50)
+1245 3380
+fe=(80)
+919 5070
+fi=(17)
+807 10140
+fi=(107)
+22 1690
++71 10140
+-49 3380
+-44 3380
+fi=(102)
+269 6760
+cfi=(107)
+cfn=(1398)
+calls=1690 44 
+* 152614
+* 21076
+cfi=(107)
+cfn=(1398)
+calls=5269 44 
+* 492473
+fi=(17)
+0 6959
+1995 13918
+0 6709
+fi=(29)
+1327 6709
+fi=(27)
+621 6709
+fi=(115)
+108 5760
+fi=(29)
+1327 1440
+fi=(27)
+621 1440
+fi=(29)
+1327 4747
+fi=(27)
+621 4747
+fi=(50)
+463 4825
+fi=(13)
+892 4825
+fi=(17)
+1995 14475
+cfi=(107)
+cfn=(1398)
+calls=4825 44 
+* 408697
+0 9650
+1995 9650
+0 328
+fi=(19)
+550 984
+0 1362
+550 1362
+fe=(80)
+790 5448
+0 1362
+723 1362
+0 1362
+fi=(25)
+2363 2724
+fi=(96)
+1360 5448
++3 2724
++7 1362
++2 2724
+fi=(25)
+2685 1362
+2364 1362
+fi=(96)
+1377 5448
+0 1362
+fe=(80)
+729 2724
+fi=(98)
+108 4086
++1 2664
+cob=(3)
+cfi=(3)
+cfn=(1466)
+calls=1332 0 
+* 6660
++1 2664
++1 45
+fi=(25)
+2365 15
+fi=(130)
+43 15
++85 15
+fi=(50)
+1180 7
+fi=(25)
+2438 7
+fi=(130)
+130 14
+fi=(98)
+-10 75
+cfn=(1610)
+calls=15 +18 
+* 6475
+* 15
+0 8
+fi=(130)
+214 8
+fi=(98)
+112 8
++1 8
++1 16
+cob=(3)
+cfi=(3)
+cfn=(1466)
+calls=8 0 
+* 40
+fi=(130)
+214 7
+fi=(98)
+112 7
++1 7
++1 14
+cob=(3)
+cfi=(3)
+cfn=(1466)
+calls=7 0 
+* 35
+0 15
+fe=(80)
+
+fn=(1120) rayon_core::registry::global_registry
+167 192
++23 144
+fi=(25)
+2363 48
+fi=(81) /build/rustc-1.58.1-src/library/std/src/sync/once.rs
+371 48
+257 48
+0 1
+261 2
++1 6
+cfi=(10)
+cfn=(1124) std::sync::once::Once::call_inner
+calls=1 0 
+* 104355
+fi=(15)
+1030 96
++2 94
+fi=(19)
+629 47
+925 47
+0 141
+fi=(13)
+188 94
+fi=(18)
+0 94
+fi=(15)
+1031 1
+1254 4
+fe=(80)
+171 5
+fi=(15)
+1254 94
+fe=(80)
+171 235
+
+fl=(98)
+fn=(1524)
+341 6120
++1 2448
+0 249
+343 249
+fi=(29)
+1327 249
+fi=(27)
+621 249
+0 2029
+fi=(29)
+1327 1282
+fi=(27)
+621 1282
+fe=(98)
+344 4341
+cfn=(1626)
+calls=1447 +10 
+* 172305
+* 2894
++2 430
++6 7344
+
+fn=(1626)
+354 11648
+fi=(23)
+2434 1456
+fi=(43)
+184 2912
+0 1456
+fi=(23)
+1134 1456
+fi=(143) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-utils-0.8.8/src/cache_padded.rs
+169 1456
+fi=(105)
+-93 1456
+fi=(106)
+-13 1456
+cob=(5)
+cfi=(5)
+cfn=(638)
+calls=1456 -63 
+* 45400
+fi=(25)
+2364 1456
+fi=(103)
+297 4368
+0 2912
+fi=(25)
+2364 1456
+385 1456
+fi=(15)
+1293 1456
+fe=(98)
+358 4368
+0 444
+359 222
++1 444
+cob=(5)
+cfi=(5)
+cfn=(1638)
+calls=222 0 
+* 28416
+fi=(25)
+2414 222
+fi=(104)
+34 2912
+-34 1456
+fi=(25)
+2364 1456
+fi=(103)
+297 2912
+fi=(105)
+92 1456
+fi=(106)
+-24 1456
+cob=(5)
+cfi=(5)
+cfn=(640)
+calls=1456 -68 
+* 33467
+fe=(98)
+379 13104
+
+fn=(1610)
+138 1840
++6 230
+0 230
+fi=(25)
+2438 460
+fe=(98)
+146 230
+0 460
+fi=(23)
+2434 230
+fi=(43)
+184 460
+0 230
+fi=(23)
+1134 230
+fi=(143)
+169 230
+fi=(105)
+-93 230
+fi=(106)
+-13 230
+cob=(5)
+cfi=(5)
+cfn=(638)
+calls=230 -63 
+* 6670
+fi=(25)
+2364 230
+fi=(103)
+297 920
+0 460
+fi=(25)
+2364 230
+385 230
+fi=(15)
+1293 230
+fe=(98)
+0 690
+fi=(25)
+2438 690
+fe=(98)
+161 460
+fi=(25)
+2365 230
+fi=(130)
+214 460
+27 230
+fe=(98)
+176 230
+fi=(130)
++25 230
+fi=(25)
+2438 230
+fe=(98)
+191 230
+fi=(25)
+2685 460
+fi=(80)
+731 460
+fi=(25)
+2365 460
+fi=(96)
+1767 460
+fe=(98)
+210 230
+fi=(99) /build/rustc-1.58.1-src/library/std/src/sync/mutex.rs
+480 460
+fe=(98)
+224 920
+0 460
+fi=(119) /build/rustc-1.58.1-src/library/std/src/sys_common/condvar.rs
+43 1364
++1 460
+fi=(144) /build/rustc-1.58.1-src/library/std/src/sys/unix/condvar.rs
++38 230
+cob=(5)
+cfi=(5)
+cfn=(1516)
+calls=230 -82 
+* 60340
+fi=(25)
+2364 222
+385 222
+fi=(15)
+1293 222
+fe=(98)
+225 444
+384 222
++1 444
+fi=(25)
+2363 222
+fi=(97)
+134 222
+-22 222
+0 213
+fi=(25)
+2438 426
+fi=(104)
+34 444
+fi=(25)
+2364 222
+fi=(103)
+297 666
+fe=(98)
+0 1998
+cob=(5)
+cfi=(5)
+cfn=(640)
+calls=222 0 
+0 6438
+
+fl=(109) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/collector.rs
+fn=(1412) crossbeam_epoch::collector::Collector::register
+44 8
+fi=(25)
+2397 8
+fi=(20)
+1340 8
+0 8
+fi=(18)
+87 16
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=8 -87 
+* 1824
+318 16
+fi=(100) /build/rustc-1.58.1-src/library/alloc/src/boxed.rs
+0 8
+195 552
+fi=(145) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/atomic.rs
+-68 8
+fi=(25)
+2364 16
+-14 8
+2461 8
+fi=(15)
+851 8
+fe=(109)
+46 24
+
+fl=(12)
+fn=(658) image_comparison::main
+34 7
+fi=(14) /build/rustc-1.58.1-src/library/std/src/fs.rs
+1957 2
+2248 1
+0 1
+2248 2
+cfi=(10)
+cfn=(660) std::sys::unix::fs::DirBuilder::mkdir
+calls=1 0 
+* 446
+fi=(13)
+188 2
+fi=(14)
+2153 2
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 0 
+* 44
+* 12
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 0 
+* 209
+* 10
+cfi=(10)
+cfn=(634) std::ffi::c_str::CString::_new
+calls=1 0 
+* 55
+* 6
+cob=(3)
+cfi=(3)
+cfn=(672)
+calls=1 0 
+* 295
+* 5
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 0 
+* 209
+* 16
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+* 2
+fi=(15)
+766 1
+1899 1
+0 4
+fi=(21) /build/rustc-1.58.1-src/library/alloc/src/vec/spec_from_iter_nested.rs
+23 1
+cfi=(16)
+cfn=(680)
+calls=1 +37 
+* 3011
+* 2
+-23 1
+fi=(18)
+87 2
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 44
+fi=(22)
+188 2
+fi=(21)
+0 1
+fi=(13)
+892 4
+fi=(21)
+32 3
++5 5
+-37 3
+fi=(13)
+892 48
+fi=(23)
+2657 12
+1267 12
+2646 48
+cfi=(16)
+cfn=(680)
+calls=12 60 
+* 15873
+* 3
+cfi=(16)
+cfn=(680)
+calls=1 60 
+* 1447
+* 39
++2 24
+-2 3
+fi=(22)
+288 9
+cfn=(764)
+calls=3 -9 
+* 1388
+fi=(23)
+1170 6
+fi=(20)
+1605 1
+fi=(25)
+2411 1
+fi=(20)
+1605 1
++35 2
+cfn=(778) alloc::sync::Arc<T>::drop_slow
+calls=1 1076 
+* 330
+fi=(21)
+38 5
+fi=(23)
+1170 1
+2441 1
+fi=(50)
+125 2
+fi=(26)
+813 1
+0 2
+815 3
+cfn=(792)
+calls=1 -98 
+* 34039
+0 1
+fi=(32)
+1249 2
+0 1
+fe=(12)
+55 6
+-3 1
++3 4
+fi=(146) /build/rustc-1.58.1-src/library/core/src/fmt/mod.rs
+365 7
+fe=(12)
+55 3
+cfi=(10)
+cfn=(820) alloc::fmt::format
+calls=1 -55 
+* 411
+-3 11
++3 44
+fi=(146)
+365 77
+fe=(12)
+55 33
+cfi=(10)
+cfn=(820)
+calls=11 -55 
+* 4523
+fi=(17)
+-55 12
+fi=(36) /build/rustc-1.58.1-src/library/std/src/ffi/os_str.rs
+368 48
+fe=(12)
+55 48
+cfn=(834) image_comparison::compare
+calls=12 -44 
+* 58949825679
+-55 12
+fi=(22)
+238 24
+fi=(13)
+0 12
+fi=(22)
+238 24
+fi=(18)
+105 12
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=12 0 
+* 1368
+fe=(12)
+-49 24
+fi=(138)
++30 12
+-86 12
+fi=(32)
+1249 25
+fi=(139) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.56//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.56/src/error.rs
+0 1
+fi=(13)
+188 3
+0 1
+188 43
+fi=(22)
++50 26
+fi=(13)
+0 13
+fi=(22)
+238 26
+fi=(18)
+105 13
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=13 0 
+* 1326
+0 13
+fi=(13)
+188 1
+fi=(22)
++50 2
+0 2
+238 2
+0 1
+fi=(18)
+105 1
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fe=(12)
+-40 9
+
+fn=(834)
+11 120
+cfi=(10)
+cfn=(836)
+calls=12 -11 
+* 180
+* 36
+fi=(31)
+135 36
+fi=(147) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/dynimage.rs
+1088 24
+cfi=(33) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/io/free_functions.rs
+cfn=(838) image::io::free_functions::open_impl
+calls=12 20 
+* 8653956960
+fi=(15)
+1899 24
++1 48
+fe=(12)
+12 72
+cfi=(66)
+cfn=(1706)
+calls=12 242 
+* 240
+fi=(31)
+135 36
+fi=(147)
+1088 12
+cfi=(33)
+cfn=(838)
+calls=12 20 
+* 8639674820
+fi=(15)
+1899 24
++1 48
+fe=(12)
+13 72
+cfi=(66)
+cfn=(1706)
+calls=12 242 
+* 240
++2 48
++1 48
++5 24
+-21 12
+22 24
++2 24
++2 24
+fi=(29)
+1145 12
+0 12
+fi=(18)
+165 60
+0 12
+87 12
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=12 -87 
+* 11342
+fi=(22)
+188 24
+fe=(12)
+0 24
+fi=(59)
+264 12
+0 12
+264 252
+0 12
+fi=(50)
+1679 12
+fi=(19)
+1052 36
+845 36
+0 12
+845 24
+-78 12
+0 12
+fi=(132) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/buffer.rs
+626 12
+0 12
+626 12
+fi=(19)
+745 72
+fi=(31)
+135 36
+fi=(14)
+350 36
+0 24
+951 24
+cfi=(10)
+cfn=(840) std::sys::unix::fs::File::open
+calls=12 0 
+* 4416
+* 12
+fi=(15)
+1899 12
+0 24
+fi=(18)
+87 24
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=12 -87 
+* 2904
+fi=(22)
+188 24
+fi=(133) /build/rustc-1.58.1-src/library/std/src/io/buffered/bufwriter.rs
+0 12
+115 60
+fi=(18)
+-28 24
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=12 -87 
+* 528
+318 24
+0 24
+fi=(134) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/codecs/jpeg/encoder.rs
+365 120
+fi=(18)
+87 24
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=12 -87 
+* 528
+318 24
+fi=(134)
++85 96
++3 12
++1 468
+fi=(29)
+1327 156
+fi=(148) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/utils/mod.rs
+88 36
+fi=(134)
+406 12
+fi=(148)
+88 24
+fi=(134)
+406 84
++1 216
+fi=(29)
+1327 108
+fi=(148)
+88 24
+fi=(134)
+406 120
++1 60
+fi=(148)
+88 12
+fi=(134)
+406 12
++1 840
+fi=(148)
+88 168
+fi=(134)
+406 168
+fi=(29)
+1327 168
+fi=(134)
+406 336
+fi=(46)
+242 168
+0 168
+fi=(38)
+146 336
+fi=(29)
+1327 12
+fi=(134)
+406 24
+fi=(46)
+242 12
+0 12
+fi=(38)
+146 24
+fi=(134)
+407 432
+fi=(29)
+1327 156
+fi=(148)
+88 24
+fi=(134)
+406 12
+fi=(148)
+88 24
+fi=(134)
+406 96
++1 432
+fi=(29)
+1327 156
+fi=(148)
+88 24
+fi=(134)
+406 12
+fi=(148)
+88 24
+fi=(134)
+406 84
++11 48
+-3 228
+fi=(131) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/buffer.rs
+626 48
+fi=(134)
+277 12
+fi=(30)
+2079 12
+fi=(23)
+1267 12
+425 24
+1065 24
+0 12
+fi=(22)
+288 48
+cfn=(764)
+calls=12 -9 
+* 1272
+* 12
+fi=(23)
+1170 12
+1792 12
+fi=(30)
+2079 12
+fi=(23)
+1794 24
+fi=(22)
+287 12
+fi=(50)
+1222 24
+fi=(22)
+352 12
+-65 12
+fi=(30)
+2079 12
+fi=(23)
+1794 24
+fi=(50)
+1222 12
+fi=(22)
+352 12
+-65 12
+0 12
+288 36
+cfn=(764)
+calls=12 -9 
+* 2544
+fi=(23)
+1170 12
+1792 12
+fi=(30)
+2079 12
+fi=(23)
+1794 24
+fi=(22)
+287 12
+fi=(50)
+1222 24
+fi=(22)
+352 12
+-65 12
+fi=(23)
+1170 12
+fi=(30)
+2079 12
+fi=(23)
+1794 24
+fi=(50)
+1222 12
+fi=(22)
+352 12
+-65 12
+fi=(30)
+2079 12
+fi=(23)
+1794 24
+fi=(134)
+500 12
+0 12
+500 24
+cfn=(1746) image::codecs::jpeg::encoder::BitWriter<W>::write_segment
+calls=12 280 
+* 780
+* 36
+0 24
+fi=(149) /build/rustc-1.58.1-src/library/core/src/convert/num.rs
+227 12
+fi=(15)
+851 12
+0 12
+fi=(149)
+227 12
+fi=(15)
+851 12
+fi=(13)
+0 12
+fi=(22)
+469 24
+0 24
+469 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=12 0 
+* 1032
+fi=(13)
++83 12
+fi=(22)
++50 24
+fi=(13)
+0 12
+fi=(22)
+469 24
+0 24
+469 12
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=12 0 
+* 1656
+0 12
+fi=(33)
+187 24
+cfi=(13)
+cfn=(1800) core::ptr::drop_in_place<std::io::buffered::bufwriter::BufWriter<std::fs::File>>
+calls=12 +1 
+* 3990
+0 12
+fi=(15)
+1899 24
+fi=(18)
+165 12
+0 24
+fi=(22)
+238 12
+0 12
+fi=(18)
+105 12
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=12 0 
+* 804
+fi=(22)
+238 48
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=12 0 
+* 804
+fi=(22)
+238 48
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=12 0 
+* 804
+0 12
+fe=(12)
+32 108
+fi=(23)
+1065 12
+1728 36
+0 24
+fi=(59)
+264 72
+fi=(17)
+2171 96
+fi=(29)
+0 60
+fe=(12)
+27 12
+fi=(29)
+-27 12
+fe=(12)
+27 12
+fi=(29)
+-27 12
+fe=(12)
+27 12
+fi=(29)
+-27 12
+fe=(12)
+27 108
+fi=(13)
+892 48
+fi=(59)
+268 36
+fi=(17)
+2171 27433632
+fi=(29)
+0 17146020
+fe=(12)
+27 3429204
+fi=(29)
+-27 3429204
+fe=(12)
+27 3429204
+fi=(29)
+-27 3429204
+fe=(12)
+27 3429204
+fi=(29)
+-27 3429204
+fe=(12)
+27 30862836
+fi=(13)
+892 13716816
+fi=(59)
+268 10287612
+-4 24
+0 24
+fi=(23)
+1170 12
+fi=(13)
+892 12
+fi=(23)
+1734 24
+fi=(50)
+1222 24
+fi=(22)
+352 12
+-65 12
+fi=(134)
+0 24
+fi=(30)
+2079 12
+fi=(23)
+1794 24
+fi=(50)
+1222 12
+fi=(22)
+352 12
+-65 12
+fi=(134)
+0 24
+fi=(30)
+2079 12
+fi=(23)
+1794 24
+-66 24
+1170 12
+fi=(13)
+892 12
+fi=(23)
+1734 24
+fi=(134)
+702 36
++1 24
+fi=(22)
+287 12
+fi=(50)
+1222 12
+fi=(22)
+352 12
+-65 12
+fi=(30)
+2079 36
+fi=(23)
+1794 24
+fi=(134)
+702 36
++1 24
+fi=(22)
+287 12
+fi=(50)
+1222 12
+fi=(22)
+352 12
+-65 12
+fi=(30)
+2079 36
+fi=(23)
+1794 24
+fi=(134)
+702 36
++1 24
+fi=(22)
+287 12
+fi=(50)
+1222 12
+fi=(22)
+352 12
+-65 12
+fi=(30)
+2079 36
+fi=(23)
+1794 24
+fi=(134)
+519 48
+cfn=(1746)
+calls=12 280 
+* 780
+* 48
++2 48
+fi=(23)
+1134 12
+-69 12
+1728 24
+0 24
+1170 12
+fi=(13)
+892 12
+fi=(134)
+0 60
+fi=(13)
+892 768
+fi=(134)
+0 1536
+fi=(38)
+146 2304
+fi=(134)
+751 768
++1 768
+fi=(23)
+1728 1536
+fi=(22)
+288 144
+cfn=(764)
+calls=36 -9 
+* 14834
+fi=(23)
+1170 36
+1732 72
+fi=(134)
+526 48
+cfn=(1746)
+calls=12 280 
+* 888
+0 36
+526 24
+fi=(23)
+1065 12
+1728 24
+0 24
+1170 12
+fi=(13)
+892 12
+fi=(134)
+0 48
+fi=(13)
+892 768
+fi=(134)
+0 1536
+fi=(38)
+146 2304
+fi=(134)
+751 768
++1 768
+fi=(23)
+1728 1536
+fi=(134)
+526 48
+cfn=(1746)
+calls=12 280 
+* 888
+* 48
++3 84
+cfn=(1754) image::codecs::jpeg::encoder::build_huffman_segment
+calls=12 722 
+* 924
++7 60
+cfn=(1746)
+calls=12 280 
+* 768
+* 36
++2 84
+cfn=(1754)
+calls=12 722 
+* 9021
++7 60
+cfn=(1746)
+calls=12 280 
+* 984
+* 36
++3 84
+cfn=(1754)
+calls=12 722 
+* 924
++7 60
+cfn=(1746)
+calls=12 280 
+* 768
+* 36
++2 84
+cfn=(1754)
+calls=12 722 
+* 1128
++7 60
+cfn=(1746)
+calls=12 280 
+* 984
+* 36
+fi=(23)
+1065 12
+1728 36
+0 24
+1170 12
+fi=(13)
+892 12
+fi=(23)
+1734 24
+fi=(134)
+713 24
++1 24
+fi=(50)
+1222 24
+fi=(22)
+352 12
+-65 12
+fi=(30)
+2079 24
+fi=(23)
+1794 24
+fi=(134)
+713 24
++1 24
+fi=(50)
+1222 24
+fi=(22)
+352 12
+-65 12
+fi=(30)
+2079 24
+fi=(23)
+1794 24
+fi=(134)
+713 24
++1 24
+fi=(50)
+1222 24
+fi=(22)
+352 12
+-65 12
+fi=(30)
+2079 24
+fi=(23)
+1794 24
+fi=(50)
+1222 12
+fi=(22)
+352 12
+-65 12
+fi=(23)
+1170 12
+fi=(30)
+2079 48
+fi=(23)
+1794 24
+fi=(134)
+568 48
+cfn=(1746)
+calls=12 280 
+* 780
+* 36
++46 108
++1 96
++1 96
++2 24
++1 24
++1 60
+0 12
+fi=(135) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/num-iter-0.1.42/src/lib.rs
+254 12
+0 132
+fi=(50)
+1497 12
+fi=(135)
+256 36
+-2 12
+0 4524
+fi=(50)
+1497 4524
+fi=(135)
+256 13572
+-2 4524
+0 9072
+fi=(27)
+621 4536
+fi=(50)
+1497 4536
+fi=(135)
+256 27216
+0 2286144
+fi=(27)
+621 2281608
+fi=(50)
+1497 2281608
+fi=(135)
+256 13689648
+0 2281608
+fi=(27)
+621 54867456
+fi=(29)
+1327 18289152
+fi=(27)
+621 18289152
+0 18289152
+fi=(50)
+463 18289152
+0 951035904
+fi=(150) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/num-traits-0.2.14/src/cast.rs
+265 438939648
+fi=(134)
+781 146313216
+fi=(150)
+265 438939648
+0 146313216
+fi=(134)
+790 1170505728
++2 146313216
+0 146313216
+792 292626432
+-3 877879296
++3 438939648
+-4 731566080
++4 438939648
++27 146313216
++1 146313216
++1 146313216
+0 292626432
+fi=(29)
+1327 146313216
+fi=(27)
+621 146313216
+fi=(35) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/image.rs
+879 292626432
+fi=(134)
+-80 438939648
+fi=(131)
+-24 438939648
++1 292626432
+fi=(43)
+237 292626432
++2 292626432
+fi=(134)
+629 9144576
+cfi=(136) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/codecs/jpeg/transform.rs
+cfn=(1774) image::codecs::jpeg::transform::fdct
+calls=2286144 70 
+* 758999808
++1 6858432
+cfi=(136)
+cfn=(1774)
+calls=2286144 70 
+* 758999808
+* 2286144
++1 6858432
+cfi=(136)
+cfn=(1774)
+calls=2286144 70 
+* 758999808
+* 2286144
+fi=(27)
+-10 4572288
+0 2286144
+621 11430720
+0 11430720
+fi=(134)
+636 16003008
+fi=(149)
+55 2286144
+fi=(134)
+636 2286144
+fi=(151) /build/rustc-1.58.1-src/library/std/src/f32.rs
+87 9144576
+fi=(134)
+635 13716864
++2 16003008
+fi=(149)
+55 2286144
+fi=(134)
+637 2286144
+fi=(151)
+87 9144576
+fi=(134)
+637 11430720
++2 16003008
+fi=(151)
+87 9144576
+fi=(134)
+639 6858432
+-2 2286144
++2 6858432
+-3 1008189504
+fi=(149)
+55 144027072
+fi=(134)
+636 144027072
+fi=(151)
+87 576108288
+fi=(134)
+635 864162432
++2 1008189504
+fi=(149)
+55 144027072
+fi=(134)
+637 144027072
+fi=(151)
+87 576108288
+fi=(134)
+637 720135360
++2 1008189504
+fi=(151)
+87 576108288
+fi=(134)
+639 432081216
+-2 144027072
++2 432081216
+fi=(50)
+463 144027072
+0 144027072
+fi=(29)
+1327 144027072
+fi=(27)
+621 144027072
+fi=(50)
+463 2286144
+0 2286144
+fi=(29)
+1327 2286144
+fi=(27)
+621 2286144
+fi=(137) /build/rustc-1.58.1-src/library/alloc/src/borrow.rs
+341 6858432
+0 2286144
+341 9144576
+0 4572288
+341 9144576
+0 2286144
+341 9144576
+0 4572288
+fi=(134)
+648 11430720
+cfn=(1778) image::codecs::jpeg::encoder::BitWriter<W>::write_block
+calls=2286144 232 
+* 11411863548
+fi=(15)
+1899 4572288
++1 2286144
+0 2286144
+fi=(134)
+649 16003008
+cfn=(1778)
+calls=2286144 232 
+* 4566540085
+fi=(15)
+1899 4572288
++1 2286144
+0 2286144
+fi=(134)
+650 16003008
+cfn=(1778)
+calls=2286144 232 
+* 4879451377
+fi=(15)
+1899 4572288
++1 2286144
+0 2286144
+fi=(29)
+1327 2286144
+fi=(135)
+254 2286144
+0 4536
+fi=(29)
+1327 9084
+fi=(134)
+200 48
++1 60
+0 12
+203 24
+0 22
+211 22
++1 11
+0 11
+203 22
++1 22
++1 11
+fi=(23)
+786 11
+fi=(133)
+442 22
++93 22
+fi=(23)
+1170 11
+fi=(30)
+2079 11
+fi=(133)
+437 11
+fi=(23)
+1267 22
+fi=(134)
+207 22
+577 12
+277 12
+fi=(23)
+786 12
+fi=(133)
+442 24
++93 24
+fi=(23)
+1170 12
+fi=(30)
+2079 24
+fi=(133)
+437 12
+fi=(23)
+1267 12
+0 12
+fi=(22)
+238 24
+fi=(13)
+0 12
+fi=(22)
+238 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=12 0 
+* 1641
+0 24
+fi=(13)
+188 12
+fi=(22)
++50 24
+fe=(12)
+
+fl=(102)
+fn=(1350) core::ops::function::FnOnce::call_once{{vtable.shim}}
+227 56
+fi=(101) /build/rustc-1.58.1-src/library/std/src/thread/mod.rs
+473 32
++4 48
+fi=(20)
+0 8
+fi=(101)
+482 8
+cfi=(10)
+cfn=(1356) std::sys::unix::thread::guard::current
+calls=8 0 
+* 20112
+* 24
+cfi=(10)
+cfn=(646) std::sys_common::thread_info::set
+calls=8 0 
+* 4408
++1 8
++1 80
+cfi=(11) /build/rustc-1.58.1-src/library/std/src/sys_common/backtrace.rs
+cfn=(656) std::sys_common::backtrace::__rust_begin_short_backtrace
+calls=8 119 
+* 9661389102
+fe=(102)
+
+fl=(86) /build/rustc-1.58.1-src/library/core/src/str/iter.rs
+fn=(1180) <core::str::iter::Split<P> as core::iter::traits::iterator::Iterator>::next
+458 1666
+604 476
+0 227
+608 227
+0 227
+fi=(87) /build/rustc-1.58.1-src/library/core/src/str/pattern.rs
+413 227
+fi=(43)
+200 454
+fi=(87)
+413 227
+0 227
+413 454
+0 454
+413 227
+fi=(43)
+0 454
+fi=(88) /build/rustc-1.58.1-src/library/core/src/slice/memchr.rs
+44 908
+fi=(43)
+200 227
+fi=(87)
+416 227
+fi=(88)
+44 454
+-44 36
+fi=(38)
+146 72
+0 72
+fi=(88)
+45 36
+fi=(38)
+295 36
+fi=(88)
+45 178
+fi=(38)
+295 178
++6 193
+146 401
+fi=(88)
+-98 764
+-48 159
+48 2762
+-48 198
+48 498
+-48 64
+48 64
+-48 32
+48 192
+-48 32
+48 384
+-48 96
+48 576
+-48 96
+48 1152
+-48 23
+48 607
+-48 256
+48 256
+-48 3
+48 6
+-48 262
+48 393
+-48 262
+48 3223
+fi=(87)
+435 387
++1 387
+-1 243
++1 243
+fi=(43)
+200 210
+fi=(87)
+438 210
+fi=(43)
+200 210
+0 210
+fi=(40) /build/rustc-1.58.1-src/library/core/src/slice/cmp.rs
+92 420
+-92 210
+92 210
+cob=(3)
+cfi=(3)
+cfn=(804)
+calls=210 -92 
+* 1680
+-92 420
+92 210
+fi=(87)
+439 210
+fe=(86)
+612 210
+fi=(58)
+235 210
+fi=(152) /build/rustc-1.58.1-src/library/core/src/str/traits.rs
+-37 210
+fe=(86)
+613 420
+fi=(87)
+446 17
+fe=(86)
+590 68
+0 11
+460 2380
+591 17
+fi=(58)
+235 17
+fi=(152)
+-37 17
+0 17
+fe=(86)
+
+fl=(117)
+fn=(1490) rayon_core::registry::Registry::in_worker_cold
+451 144
+fi=(19)
+629 24
+fi=(78)
+-39 24
+0 69
+592 1
+cfn=(1404)
+calls=1 +13 
+* 1193
+398 2
+fe=(117)
++64 240
+fi=(121)
+85 72
+fe=(117)
+469 72
+fi=(25)
+2365 48
+fi=(80)
+398 48
++1 72
+cfi=(96)
+cfn=(1498) crossbeam_deque::deque::Injector<T>::push
+calls=24 1274 
+* 1056
+0 24
+402 24
+fi=(25)
+2685 48
+2365 24
+fi=(130)
+43 24
++85 24
+fi=(50)
+1180 24
+fi=(25)
+2438 24
+fi=(130)
+130 24
+fi=(98)
+318 73
+fi=(96)
+1767 23
+fi=(98)
+331 23
+fi=(130)
+209 46
+fi=(98)
+334 46
+0 46
+cfn=(1524)
+calls=23 341 
+0 5911
+fe=(117)
+470 24
+fi=(105)
+76 24
+fi=(106)
+-13 24
+cob=(5)
+cfi=(5)
+cfn=(638)
+calls=24 -63 
+* 696
+fi=(25)
+2364 24
+fi=(103)
+297 72
+0 24
+fi=(25)
+2364 24
+385 24
+fi=(15)
+1293 24
+fi=(97)
+239 48
+0 96
+fi=(119)
+43 142
++1 48
+fi=(144)
++38 24
+cob=(5)
+cfi=(5)
+cfn=(1516)
+calls=24 -82 
+* 6456
+fi=(25)
+2364 24
+385 24
+fi=(15)
+1293 24
+fi=(97)
+239 48
++3 24
+fi=(104)
+34 48
+-34 24
+fi=(25)
+2364 24
+fi=(103)
+297 48
+fi=(105)
+92 24
+fi=(106)
+-24 24
+cob=(5)
+cfi=(5)
+cfn=(640)
+calls=24 -68 
+* 696
+fe=(117)
+475 24
+fi=(121)
+177 48
+fe=(117)
+477 120
+
+fl=(81)
+fn=(1126) std::sync::once::Once::call_once::{{closure}}
+262 4
+fi=(13)
+701 1
+892 1
+fi=(19)
+744 2
+fi=(108) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/lazy_static-1.4.0/src/inline_lazy.rs
+31 1
+fi=(18)
++56 2
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 228
+318 2
+fi=(100)
+0 1
+195 1
+fi=(18)
+87 5
+cob=(3)
+cfi=(3)
+cfn=(1258)
+calls=1 -87 
+* 460
+* 1
+318 1
+0 1
+318 2
+fi=(20)
++28 6
+fi=(13)
+701 1
+892 1
+188 2
+fe=(81)
++74 14
+fi=(13)
+701 1
+892 2
+fi=(19)
+744 2
+fi=(82) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-core-1.9.1/src/lib.rs
+198 7
+fi=(83) /build/rustc-1.58.1-src/library/std/src/env.rs
++13 1
+0 1
+211 3
+cfi=(10)
+cfn=(1130) std::sys::unix::os::getenv
+calls=1 0 
+* 1385
+* 7
+cfi=(10)
+cfn=(1130)
+calls=1 0 
+* 1385
+* 3
+fi=(25)
+2363 1
+fe=(81)
+371 1
+257 1
++4 1
++1 6
+cfi=(10)
+cfn=(1125) std::sync::once::Once::call_inner'2
+calls=1 0 
+* 52183
+fi=(25)
+2363 1
+fi=(84) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/num_cpus-1.13.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/num_cpus-1.13.1/src/linux.rs
+118 1
+-85 1
+fi=(30)
+2254 6
+fi=(84)
+41 5
+cob=(3)
+cfi=(3)
+cfn=(1246)
+calls=1 -41 
+* 41
+* 2
+-41 17
+fi=(94) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.122/src/unix/linux_like/linux/mod.rs
+3301 1
++1 4
+-1 3
+fi=(84)
+44 1
+fi=(94)
+3302 5
+-1 1
+fi=(84)
+44 1
+fi=(94)
+3301 2
+fi=(84)
+44 1
+fi=(94)
+3302 2
+-1 1
+fi=(84)
+44 21
+fi=(94)
+3301 63
++1 252
+-1 189
+fi=(84)
+44 63
+fi=(94)
+3302 315
+-1 63
+fi=(84)
+44 63
+fi=(94)
+3301 126
+fi=(84)
+44 63
+fi=(94)
+3302 126
+-1 63
+fi=(84)
+44 1386
+fi=(50)
+463 126
+fi=(84)
+44 1
+fi=(50)
+463 2
+fi=(27)
+621 8
+fi=(80)
+218 1
+fi=(23)
+425 4
+fi=(153) /build/rustc-1.58.1-src/library/core/src/tuple.rs
+66 2
+fi=(95) /build/rustc-1.58.1-src/library/core/src/iter/traits/collect.rs
+405 2
+0 1
+fi=(22)
+288 4
+cfn=(764)
+calls=1 -9 
+* 506
+-1 1
+fi=(23)
+809 1
+fi=(50)
+1222 1
+fi=(22)
+352 1
+-65 1
++1 3
+cfn=(764)
+calls=1 -9 
+* 121
+fi=(95)
+405 1
+0 1
+fi=(27)
+621 1
+fi=(82)
+-77 1
+fi=(80)
+222 1
+fi=(46)
++20 4
+fi=(71)
+408 1
+fi=(50)
+1679 3
+fi=(71)
+408 1
+fi=(80)
+220 5
++13 1
++2 1
+fi=(154) /build/rustc-1.58.1-src/library/alloc/src/vec/source_iter_marker.rs
+31 5
+fi=(22)
+176 1
+0 2
+fi=(18)
+165 3
+-78 2
+fi=(22)
+-87 1
+357 3
+fi=(23)
+609 4
+fi=(21)
+56 5
+fi=(22)
+352 1
+-65 1
+fi=(57)
+0 2
+fi=(155) /build/rustc-1.58.1-src/library/core/src/iter/adapters/map.rs
+124 5
+fi=(60) /build/rustc-1.58.1-src/library/alloc/src/vec/into_iter.rs
++12 1
+fi=(17)
+2170 1
+fi=(46)
+242 3
+fi=(102)
+-92 2
+fi=(13)
+701 2
+fi=(156) /build/rustc-1.58.1-src/library/core/src/mem/maybe_uninit.rs
+-69 1
+0 2
+fi=(99)
+221 2
+cfi=(10)
+cfn=(1272) std::sys_common::mutex::MovableMutex::new
+calls=1 0 
+* 163
+fi=(13)
+701 14
+fi=(156)
+-69 7
+0 14
+fi=(99)
+221 14
+cfi=(10)
+cfn=(1272)
+calls=7 0 
+* 2203
+fi=(97)
++10 16
++1 8
+cfi=(10)
+cfn=(1284) std::sync::condvar::Condvar::new
+calls=8 0 
+* 1957
+-2 32
+fi=(99)
+-9 8
+cfi=(10)
+cfn=(1272)
+calls=8 0 
+* 2638
+fi=(97)
++10 16
++1 8
+cfi=(10)
+cfn=(1284)
+calls=8 0 
+* 2360
+-2 24
+fi=(80)
+578 16
+fi=(13)
+892 24
+fi=(17)
+0 8
+fi=(13)
+892 48
+fi=(49)
+19 8
+fi=(60)
+136 40
+fi=(49)
+26 1
+-26 1
+fi=(22)
+238 1
+0 1
+fi=(18)
+105 2
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+0 1
+fi=(71)
+408 2
+fi=(50)
+1679 3
+fi=(71)
+408 1
+fi=(98)
+66 1
+fi=(22)
+176 1
+0 2
+fi=(18)
+165 2
+-78 6
+cob=(3)
+cfi=(3)
+cfn=(1258)
+calls=1 -87 
+* 370
+* 1
+-87 2
+fi=(22)
+188 2
+357 1
+fi=(23)
+609 3
+fi=(22)
+352 1
+-65 1
+fi=(27)
+0 1
+fi=(95)
+405 1
+fi=(27)
+621 1
+fi=(46)
+242 3
+0 1
+fi=(99)
+221 6
+cfi=(10)
+cfn=(1272)
+calls=1 0 
+* 328
+* 14
+cfi=(10)
+cfn=(1272)
+calls=7 0 
+* 2296
+fi=(98)
+55 16
++2 8
+cfi=(10)
+cfn=(1284)
+calls=8 -57 
+* 2296
+-6 16
+fi=(13)
+892 24
+fi=(29)
+1327 8
+fi=(27)
+621 8
+fi=(29)
+1327 8
+fi=(27)
+621 8
+fi=(98)
+65 5
+fi=(18)
++22 3
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 202
+318 2
+fi=(100)
+0 1
+195 4
+cob=(3)
+cfi=(3)
+cfn=(620)
+calls=1 0 
+* 104
+fi=(13)
+701 1
+0 1
+892 1
+701 2
+892 2
+fi=(80)
+234 6
+fi=(18)
+87 6
+cob=(3)
+cfi=(3)
+cfn=(1258)
+calls=1 -87 
+* 432
+* 1
+318 1
+0 1
+318 2
+fi=(20)
++28 44
+fi=(80)
+234 2
++12 1
++2 3
+fi=(46)
+-6 3
+fi=(80)
++6 3
+fi=(60)
+136 2
+0 7
+136 16
+fi=(138)
+-88 8
+fi=(60)
++88 16
+fi=(13)
+702 8
+fi=(19)
+2049 16
+fi=(80)
+248 80
+fi=(19)
+651 24
+fi=(82)
+426 8
+0 16
+fi=(80)
+251 16
++1 8
+fi=(25)
+2397 8
+fi=(20)
+1340 8
+fi=(80)
+256 32
+fi=(19)
+629 8
+0 16
+845 8
+fi=(22)
+0 16
+fi=(101)
+389 104
+fi=(80)
+97 24
+-97 24
+fi=(19)
+785 8
+fi=(102)
+227 16
+cfi=(10)
+cfn=(1310) std::sys_common::thread::min_stack
+calls=8 0 
+* 1627
+0 8
+fi=(19)
+845 16
+fi=(15)
+0 8
+fi=(101)
+461 16
+cfi=(10)
+cfn=(636) std::thread::Thread::new
+calls=8 0 
+* 2609
+* 8
+fi=(25)
+2397 8
+fi=(20)
+1340 8
+fi=(101)
+464 8
+fi=(18)
+87 16
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=8 -87 
+* 1833
+318 16
+fi=(20)
++28 24
+fi=(101)
+466 8
+fi=(25)
+2397 8
+fi=(20)
+1340 8
+fi=(101)
+467 8
++2 16
+0 8
+469 24
++1 24
++2 24
+fi=(18)
+87 16
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=8 -87 
+* 1668
+318 16
+fi=(100)
+195 72
+fi=(101)
+508 48
+cfi=(10)
+cfn=(1314) std::sys::unix::thread::Thread::new
+calls=8 0 
+* 11365
+fi=(15)
+1899 24
++1 8
+fi=(101)
+515 8
++1 8
+fi=(13)
+188 8
+cob=(5)
+cfi=(5)
+cfn=(1468)
+calls=8 0 
+* 80
+fi=(25)
+2411 8
+fi=(20)
+1605 8
+fi=(25)
+2411 8
+fi=(20)
+1605 8
+fi=(18)
+87 3
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 655
+* 1
+fi=(22)
+188 2
+fi=(13)
+0 5
+fi=(58)
+391 1
+fi=(13)
+188 1
+fi=(60)
+0 1
+fi=(22)
+238 1
+fi=(18)
+105 3
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fi=(80)
+264 1
+fi=(25)
+2397 1
+fi=(20)
+1340 1
+1605 1
+fi=(25)
+2411 1
+fi=(20)
+1605 1
+0 1
+fi=(80)
+265 2
+cfi=(13)
+cfn=(1470) core::ptr::drop_in_place<rayon_core::ThreadPoolBuilder>
+calls=1 -77 
+* 20
+fi=(19)
+1289 2
++1 4
+fi=(13)
+188 2
+0 5
+fi=(23)
+1170 8
+fi=(13)
+892 32
+fi=(23)
+1734 16
+fi=(29)
+1327 8
+fi=(27)
+621 8
+fi=(80)
+0 24
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=8 0 
+0 2738
+0 8
+fi=(22)
+188 8
+fi=(80)
+0 8
+fi=(18)
+87 24
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=8 -87 
+* 687
+318 16
+fi=(96)
+0 8
+fi=(100)
+195 16
+fi=(18)
+87 40
+cob=(3)
+cfi=(3)
+cfn=(1258)
+calls=8 -87 
+* 4619
+* 8
+318 8
+0 8
+318 16
+fi=(80)
+0 40
+fi=(25)
+2397 8
+fi=(20)
+1340 8
+fi=(95)
+398 16
+fi=(23)
+2625 32
+1728 32
+1170 8
+fi=(46)
+242 16
+fi=(13)
+892 32
+fi=(23)
+1734 16
+0 16
+1728 24
+fi=(13)
+188 2
+fi=(80)
++7 3
+fe=(81)
++67 8
+
+fn=(1127) std::sync::once::Once::call_once::{{closure}}'2
+262 10
+fi=(19)
+744 1
+fi=(13)
+892 1
+fi=(19)
+744 1
+0 1
+fi=(14)
+328 2
+951 1
+0 2
+951 2
+cfi=(10)
+cfn=(840)
+calls=1 0 
+* 327
+* 3
+fi=(18)
+87 2
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 275
+fi=(22)
+188 2
+fi=(84)
++86 2
+fi=(17)
+852 3
+0 2
+1994 1
+cfi=(44)
+cfn=(1156) <std::io::Lines<B> as core::iter::traits::iterator::Iterator>::next
+calls=1 2794 
+* 389
+* 3
+fi=(13)
+188 1
+fi=(93) /build/rustc-1.58.1-src/library/std/src/os/fd/owned.rs
+-66 1
+cob=(5)
+cfi=(5)
+cfn=(1198)
+calls=1 0 
+* 8
+fi=(18)
+239 2
+fi=(13)
+-51 1
+fi=(18)
+-83 1
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 151
+fi=(84)
++41 2
+0 1
+fi=(14)
+328 3
+951 1
+0 2
+951 2
+cfi=(10)
+cfn=(840)
+calls=1 0 
+* 327
+* 1
+fi=(15)
+647 1
+fi=(18)
+0 2
+fi=(84)
+275 2
+fi=(15)
+647 2
+fi=(84)
+275 14
+fi=(15)
+647 14
+fi=(16)
+46 16
+-46 8
+fi=(89) /build/rustc-1.58.1-src/library/core/src/str/mod.rs
+1233 80
+fi=(17)
+278 16
+cfi=(86)
+cfn=(1180)
+calls=8 458 
+* 809
+fi=(19)
+925 8
+0 8
+fi=(17)
+326 16
+cfi=(86)
+cfn=(1180)
+calls=8 458 
+* 1088
+fi=(84)
+-41 16
+fi=(89)
+1233 80
+fi=(17)
+1994 16
+cfi=(86)
+cfn=(1180)
+calls=8 458 
+* 775
+0 8
+1994 16
+cfi=(86)
+cfn=(1180)
+calls=8 458 
+* 237
+* 32
+fi=(40)
+84 18
++8 5
+fi=(17)
+1995 1
+fi=(84)
+291 2
+cfi=(86)
+cfn=(1180)
+calls=1 458 
+* 184
+* 1
+0 1
+fi=(19)
+845 2
+0 1
+fi=(18)
+165 2
+-78 3
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 44
+* 1
+fi=(22)
+188 2
++50 14
+0 21
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=7 0 
+0 602
+0 2
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+0 86
+fi=(17)
+2409 23
+1994 21
+cfi=(44)
+cfn=(1156)
+calls=7 2794 
+* 2498
+* 21
+fi=(22)
+0 1
+fi=(30)
+2079 3
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=1 0 
+* 11
+fi=(22)
+238 2
+fi=(84)
+0 1
+fi=(18)
+87 2
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 353
+fi=(22)
+188 2
+0 1
+fi=(84)
+225 2
+fi=(17)
+852 3
+0 2
+1994 1
+cfi=(44)
+cfn=(1156)
+calls=1 2794 
+* 414
+* 3
+fi=(13)
+188 1
+0 1
+fi=(93)
+122 1
+cob=(5)
+cfi=(5)
+cfn=(1198)
+calls=1 0 
+* 8
+fi=(18)
+239 2
+fi=(13)
+-51 1
+fi=(18)
+-83 1
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 127
+fi=(84)
++42 2
+0 1
+fi=(28)
+2237 5
+cfi=(10)
+cfn=(1202) std::path::Path::_strip_prefix
+calls=1 0 
+* 801
+fi=(84)
+0 1
+177 2
+0 2
+fi=(28)
+1624 4
+1260 8
+fe=(81)
+262 9
+0 3
+fi=(84)
+226 2
+fi=(15)
+647 2
+fi=(84)
+226 38
+fi=(15)
+647 38
+fi=(16)
+46 40
+-46 20
+fi=(89)
+1233 200
+fi=(17)
+278 40
+cfi=(86)
+cfn=(1180)
+calls=20 458 
+* 2560
+fi=(19)
+925 40
+fi=(17)
+278 40
+cfi=(86)
+cfn=(1180)
+calls=20 458 
+* 1855
+fi=(19)
+925 40
+fi=(17)
+278 40
+cfi=(86)
+cfn=(1180)
+calls=20 458 
+* 2900
+fi=(19)
+925 40
+fi=(17)
+326 40
+cfi=(86)
+cfn=(1180)
+calls=20 458 
+* 1847
+* 40
+fi=(84)
+-91 40
++2 40
+cfi=(86)
+cfn=(1180)
+calls=20 458 
+* 3281
+* 20
+0 20
+237 40
+fi=(17)
+1994 40
+cfi=(86)
+cfn=(1180)
+calls=20 458 
+* 4047
+* 100
+cfi=(86)
+cfn=(1180)
+calls=40 458 
+* 5238
+* 120
+fi=(40)
+84 120
++8 20
+fi=(17)
+2379 20
+fi=(84)
+244 40
++6 40
+cfi=(86)
+cfn=(1180)
+calls=20 458 
+* 2783
+fi=(19)
+511 80
+0 6
+fi=(40)
+92 30
+fi=(84)
+250 7
+fi=(22)
+-12 38
+0 57
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=19 0 
+0 1634
+0 2
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+0 86
+fi=(17)
+2409 59
+1994 57
+cfi=(44)
+cfn=(1156)
+calls=19 2794 
+* 8335
+* 57
+278 10
+cfi=(86)
+cfn=(1180)
+calls=5 458 
+* 685
+fi=(19)
+925 10
+fi=(17)
+326 10
+cfi=(86)
+cfn=(1180)
+calls=5 458 
+* 551
+fi=(84)
+-71 10
+fi=(89)
+1233 50
+fi=(17)
+1994 10
+cfi=(86)
+cfn=(1180)
+calls=5 458 
+* 453
+0 5
+1994 20
+cfi=(86)
+cfn=(1180)
+calls=10 458 
+* 686
+* 30
+fi=(40)
+84 22
++8 5
+fi=(17)
+1995 1
+0 5
+fi=(18)
+165 2
+-78 3
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 40
+* 2
+fi=(22)
+188 2
+fi=(30)
+2079 3
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=1 0 
+* 15
+0 1
+fi=(18)
+165 2
+-78 2
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 -87 
+* 44
+* 2
+fi=(22)
+188 2
+0 2
+fi=(30)
+2079 1
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=1 0 
+* 11
+fi=(22)
+238 2
+0 3
+fi=(28)
+1260 2
+0 3
+1260 2
+0 1
+1260 3
+cfi=(10)
+cfn=(750) alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle
+calls=1 0 
+* 675
+* 9
+0 1
+1260 3
+cfi=(10)
+cfn=(750)
+calls=1 0 
+* 344
+* 3
+0 1
+1260 4
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=1 0 
+* 11
+* 2
+fi=(84)
+184 3
+fi=(22)
++54 2
+0 1
+fi=(18)
+105 1
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fi=(22)
+238 2
+fi=(18)
+105 2
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fi=(84)
++43 5
++55 4
+cfn=(1208) num_cpus::linux::Cgroup::param
+calls=1 +7 
+* 1652
+0 1
+188 2
+fi=(22)
++50 2
+fi=(18)
+105 2
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+0 2
+fi=(84)
+129 2
+fe=(81)
+
+fl=(133)
+fn=(1790) std::io::buffered::bufwriter::BufWriter<W>::write_all_cold
+392 200780
+fi=(23)
+786 20078
+fe=(133)
+442 40156
+-44 40156
++1 20078
+cfn=(1792) std::io::buffered::bufwriter::BufWriter<W>::flush_buf
+calls=10039 125 
+* 1164524
+* 30117
+fi=(23)
+786 10039
+fe=(133)
+404 40156
++28 20078
+0 20078
+fi=(46)
+242 20078
+fi=(30)
+2079 60234
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=20078 0 
+* 301170
+fe=(133)
+437 20078
+fi=(23)
+1267 60234
+fe=(133)
+425 240936
+
+fn=(1792)
+125 130663
++39 80408
++1 20102
++1 50255
+cob=(5)
+cfi=(5)
+cfn=(1794)
+calls=10051 0 
+* 603060
+* 20102
++1 10051
++2 20102
++7 20102
+0 10051
+fi=(13)
+188 70357
+fe=(133)
+-6 130663
+
+fl=(116)
+fn=(1474)
+399 9061
+-63 2091
+438 210
+0 84
+fi=(47)
+801 84
+124 42
+fi=(32)
+1571 42
++3 168
+0 655
+fe=(116)
+275 1310
+fi=(19)
+629 631
+fi=(78)
+-39 631
+fi=(79)
+442 631
+fi=(58)
+-20 631
+fi=(80)
+284 631
++3 631
+0 631
+fe=(116)
+280 48
+0 24
+282 24
+0 24
+fi=(32)
+1574 126
++2 84
+0 42
+fi=(157) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.5.1/src/iter/enumerate.rs
+109 84
+fi=(27)
+716 84
+fi=(29)
+1145 42
+0 42
+fi=(59)
+264 168
+0 336
+fi=(64) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/upsampler.rs
+49 42
+-49 168
+fi=(18)
+165 42
+0 168
+fi=(59)
+264 210
+0 42
+fi=(32)
+1617 84
+fi=(50)
+532 42
+fi=(29)
+1145 42
+0 126
+fi=(23)
+1134 84
+2434 84
+fi=(75)
+1200 42
+0 84
+1202 42
+0 42
+fi=(18)
+158 126
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=42 0 
+* 350416
+fi=(22)
++30 84
+fi=(17)
+0 252
+fi=(53)
+39 126
+fi=(64)
++10 168
+cfi=(23)
+cfn=(906)
+calls=42 2359 
+* 704657
+* 42
+fi=(23)
+1134 84
+0 126
+fi=(64)
+53 378
+fi=(38)
++93 336
+fi=(64)
+-92 252
+-54 126
+fi=(43)
+190 252
+fi=(64)
+0 504
+57 126
+-2 126
++1 252
+-2 504
+-54 126
+54 630
+cfn=(1568) <jpeg_decoder::upsampler::UpsamplerH2V1 as jpeg_decoder::upsampler::Upsample>::upsample_row
+calls=84 +83 
+* 3558324
+cfn=(1562) <jpeg_decoder::upsampler::UpsamplerH1V1 as jpeg_decoder::upsampler::Upsample>::upsample_row
+calls=42 +68 
+* 18984
+* 504
+-54 84
+62 168
+cfi=(75)
+cfn=(1572)
+calls=42 1280 
+* 909300
+fi=(13)
+188 714
+fi=(22)
++50 252
+fi=(13)
+0 126
+fi=(22)
+238 252
+fi=(18)
+105 126
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=126 0 
+* 19818
+0 126
+fi=(13)
+188 42
+fi=(22)
++50 84
+469 84
+0 84
+469 84
+0 42
+fi=(18)
+105 42
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=42 0 
+* 3738
+0 42
+fi=(80)
+0 1893
+fe=(116)
+278 631
+fi=(29)
+1208 631
+0 1262
+fe=(116)
+413 631
++1 3155
+fi=(76) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.5.1/src/slice/mod.rs
+920 1262
+fi=(29)
+1145 631
+0 631
+fi=(19)
+629 631
+fi=(78)
+-39 631
+fi=(29)
+0 24
+fe=(116)
+413 24
++1 120
+fi=(76)
+920 48
+fi=(29)
+1145 24
+0 24
+fi=(19)
+629 24
+fi=(78)
+-39 24
+0 1965
+fi=(79)
+442 655
+fi=(58)
+-20 655
+fi=(117)
+871 655
+0 631
+875 14513
+cfi=(122)
+cfn=(1536)
+calls=582 132 
+* 8208346931
+cfi=(122)
+cfn=(1537)
+calls=49 132 
+* 1439839687
+fe=(116)
+440 5576
+fi=(43)
+0 72
+fi=(117)
+877 24
+cfi=(80)
+cfn=(1120)
+calls=24 167 
+* 720
+* 24
+fi=(20)
+1354 48
+fi=(117)
+877 576
+cfn=(1490)
+calls=24 451 
+* 18471
+* 24
+fe=(116)
+
+fn=(1475)
+399 1877603
+-63 433293
+438 362670
+0 145068
+fi=(47)
+801 145068
+124 72534
+fi=(32)
+1571 72534
++3 290136
+0 71897
+fe=(116)
+275 143794
+fi=(19)
+629 266
+fi=(78)
+-39 266
+fi=(79)
+442 266
+fi=(58)
+-20 266
+fi=(80)
+284 266
++3 266
+0 266
+fe=(116)
+280 143262
+0 71631
+282 71631
+0 71631
+fi=(32)
+1574 217602
++2 145068
+0 72534
+fi=(157)
+109 145068
+fi=(27)
+716 145068
+fi=(29)
+1145 72534
+0 72534
+fi=(59)
+264 290136
+0 580272
+fi=(64)
+49 72534
+-49 290136
+fi=(18)
+165 72534
+0 290136
+fi=(59)
+264 362670
+0 72534
+fi=(32)
+1617 145068
+fi=(50)
+532 72534
+fi=(29)
+1145 72534
+0 217602
+fi=(23)
+1134 145068
+2434 145068
+fi=(75)
+1200 72534
+0 145068
+1202 72534
+0 72534
+fi=(18)
+158 217602
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=72534 0 
+* 605212684
+fi=(22)
++30 145068
+fi=(17)
+0 435204
+fi=(53)
+39 217602
+fi=(64)
++10 290136
+cfi=(23)
+cfn=(906)
+calls=72534 2359 
+* 1216613928
+* 72534
+fi=(23)
+1134 145068
+0 217602
+fi=(64)
+53 652806
+fi=(38)
++93 580272
+fi=(64)
+-92 435204
+-54 217602
+fi=(43)
+190 435204
+fi=(64)
+0 870408
+57 217602
+-2 217602
++1 435204
+-2 870408
+-54 217602
+54 1088010
+cfn=(1568)
+calls=145068 +83 
+* 6145225548
+cfn=(1562)
+calls=72534 +68 
+* 32785368
+* 870408
+-54 145068
+62 290136
+cfi=(75)
+cfn=(1572)
+calls=72534 1280 
+* 1570361100
+fi=(13)
+188 1233078
+fi=(22)
++50 435204
+fi=(13)
+0 217602
+fi=(22)
+238 435204
+fi=(18)
+105 217602
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=217602 0 
+* 34287186
+0 217602
+fi=(13)
+188 72534
+fi=(22)
++50 145068
+469 145068
+0 145068
+469 145068
+0 72534
+fi=(18)
+105 72534
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=72534 0 
+* 6455526
+0 72534
+fi=(80)
+0 798
+fe=(116)
+278 266
+fi=(29)
+1208 266
+0 532
+fe=(116)
+413 266
++1 1330
+fi=(76)
+920 532
+fi=(29)
+1145 266
+0 266
+fi=(19)
+629 266
+fi=(78)
+-39 266
+fi=(29)
+0 71631
+fe=(116)
+413 71631
++1 358155
+fi=(76)
+920 143262
+fi=(29)
+1145 71631
+0 71631
+fi=(19)
+629 71631
+fi=(78)
+-39 71631
+0 215691
+fi=(79)
+442 71897
+fi=(58)
+-20 71897
+fi=(117)
+871 71897
+0 71897
+875 1653631
+cfi=(122)
+cfn=(1537)
+calls=71897 132 
+* 75448931989
+fe=(116)
+440 1155448
+
+fl=(96)
+fn=(1498)
+1274 240
+fi=(25)
+2363 120
+fe=(96)
+1282 72
++3 48
++9 48
++4 24
+fi=(25)
+2468 48
+fe=(96)
+1301 24
+-7 24
++15 24
+fi=(13)
+892 120
+fi=(25)
+2514 24
+fi=(13)
+188 48
+fe=(96)
+1332 192
+
+fl=(64)
+fn=(1568)
+137 725760
++8 145152
+fi=(43)
+323 290304
+0 435456
+fi=(58)
+235 145152
+fi=(43)
+-11 145152
+fe=(64)
+-77 290304
+0 145152
+153 725760
++1 1596672
++2 145152
+fi=(29)
+1327 145152
+fi=(27)
+621 145152
+fe=(64)
+157 1016064
++1 584672256
+0 584672256
+158 1169344512
++1 2631025152
+fi=(29)
+1327 877008384
+fi=(27)
+621 292336128
+fe=(64)
+162 2177280
++1 435456
+0 145152
+164 870912
+
+fn=(1562)
+122 72576
++8 72576
+fi=(43)
+323 145152
+0 145152
+250 145152
+fe=(64)
+0 72576
+fi=(43)
+239 145152
+0 72576
+fi=(58)
+235 72576
+fi=(30)
+2079 217728
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=72576 0 
+* 31643136
+fe=(64)
+
+fn=(998) jpeg_decoder::upsampler::Upsampler::new
+20 432
+fi=(38)
+146 96
+fe=(64)
+0 144
+fi=(19)
+846 48
+fe=(64)
+0 48
+fi=(38)
+146 48
+0 192
+146 48
+fi=(19)
+0 48
+fi=(38)
+146 288
+0 96
+fi=(29)
+0 96
+fi=(61)
+194 96
+fi=(29)
+1208 96
+0 192
+fi=(38)
+146 192
+0 48
+fi=(19)
+846 48
+fi=(38)
+146 96
+0 96
+fi=(29)
+0 96
+fi=(61)
+194 96
+fi=(29)
+1208 96
+0 192
+fi=(38)
+146 192
+0 96
+fi=(71)
+408 48
+fi=(50)
+1679 144
+fi=(71)
+408 48
+fi=(22)
+176 48
+0 96
+fi=(18)
+165 144
+-78 96
+fi=(22)
+-87 96
+357 144
+fi=(23)
+609 144
+0 288
+fi=(46)
+242 144
+fi=(13)
+892 576
+fi=(23)
+1734 288
+fi=(38)
+146 144
+0 432
+146 432
+0 576
+fe=(64)
+26 144
++1 144
++53 432
++1 432
+-81 144
+85 384
+-85 192
+82 192
++6 192
+-88 480
+fi=(15)
+1900 864
+0 144
+fe=(64)
+33 144
++2 288
+-4 576
+fi=(23)
+1728 288
+fi=(19)
+846 48
+fi=(38)
+146 624
+fi=(29)
+0 48
+fi=(61)
+194 48
+fi=(29)
+1208 48
+0 48
+fi=(38)
+146 96
+fi=(29)
+0 48
+fi=(61)
+194 48
+fi=(29)
+1208 48
+0 48
+fi=(38)
+146 96
+0 48
+146 144
+fi=(18)
+-59 144
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=48 -87 
+* 2112
+* 48
+fi=(22)
+188 96
+fe=(64)
+39 144
++3 192
+-1 96
++4 432
+
+fl=(44)
+fn=(1156)
+2794 224
+fi=(23)
+425 84
+fi=(90) /build/rustc-1.58.1-src/library/alloc/src/string.rs
+-42 28
+0 28
+fe=(44)
+340 56
+fi=(34)
++24 168
+0 280
+364 114
++2 8
+cob=(5)
+cfi=(5)
+cfn=(890)
+calls=2 0 
+* 14
+* 4
+0 4
+366 2
++1 4
+fi=(43)
+239 56
+fi=(58)
+-4 28
+fi=(43)
+-11 56
+fi=(85) /build/rustc-1.58.1-src/library/std/src/sys_common/memchr.rs
+30 112
+cob=(3)
+cfi=(3)
+cfn=(562)
+calls=28 -30 
+* 911
+* 56
+fe=(44)
+1932 28
+0 56
+fi=(43)
+403 56
+0 28
+fi=(158) /build/rustc-1.58.1-src/library/core/src/ops/range.rs
+453 28
+fi=(43)
+239 56
+fi=(22)
++48 28
+fi=(23)
+809 28
+fi=(50)
+1222 28
+fi=(22)
+352 28
+-65 28
++1 112
+cfn=(764)
+calls=28 -9 
+* 3403
+fi=(23)
+1792 28
+0 28
+fi=(46)
+242 28
+0 28
+fi=(30)
+2079 56
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=28 0 
+* 512
+fi=(23)
+1794 28
+0 56
+fe=(44)
+0 28
+fi=(34)
+373 28
+fi=(29)
+1145 28
+0 56
+fi=(34)
+373 28
+fe=(44)
+1944 28
++1 56
+0 224
+342 28
+0 28
+342 28
+cfi=(10)
+cfn=(858) core::str::converts::from_utf8
+calls=28 0 
+* 3076
+* 28
+fi=(15)
+542 28
+fe=(44)
+342 28
+0 84
+fi=(13)
+188 28
+fe=(44)
+2796 168
+fi=(47)
+2071 56
+fe=(44)
+0 28
+fi=(40)
+92 28
+fe=(44)
+2799 28
+0 56
+fi=(23)
+1267 28
+fi=(47)
+2071 28
+fi=(40)
+92 28
+fe=(44)
+2801 28
++4 196
++4 224
+
+fl=(70) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/worker/rayon.rs
+fn=(1046) <jpeg_decoder::worker::rayon::Scoped as jpeg_decoder::worker::Worker>::start
+117 504
++1 288
+-72 216
+-46 576
+46 72
++1 72
+fi=(23)
+2190 216
++2 216
+0 216
+fi=(22)
+287 72
+fi=(50)
+1222 72
+fi=(22)
+352 144
+-65 72
++1 288
+cfn=(764)
+calls=72 -9 
+* 28313
+0 72
+fi=(23)
+2305 72
+1170 72
+fi=(46)
+242 72
+fi=(29)
+1327 72
+fi=(27)
+621 144
+fi=(13)
+892 216
+cob=(3)
+cfi=(3)
+cfn=(620)
+calls=72 0 
+* 585253944
+fi=(27)
+621 432
+fi=(13)
+892 72
+fi=(49)
+19 72
+fe=(70)
+-19 144
+48 288
++1 72
+fi=(13)
+188 216
+fe=(70)
+49 72
++70 72
++1 648
+
+fn=(1072) jpeg_decoder::worker::rayon::ImmediateWorker::append_row_locked
+72 353808
++10 27216
+-2 27216
++1 27216
++2 27216
++3 136080
+-86 27216
+86 54432
++2 81648
+fi=(29)
+1327 27216
+fi=(27)
+621 27216
+0 27216
+621 27216
+0 163296
+621 27216
+fe=(70)
+93 54432
+-93 27542592
+fi=(29)
+1327 27433728
+fi=(27)
+621 9144576
+fe=(70)
+90 82301184
+fi=(43)
+237 27433728
+0 27433728
+239 18289152
+fi=(15)
+1294 73156608
+fe=(70)
+96 18289152
+-96 9144576
+96 27433728
+cfi=(73) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/idct.rs
+cfn=(1080) jpeg_decoder::idct::dequantize_and_idct_block
+calls=9144576 205 
+* 2139830784
++8 36578304
+fi=(43)
+332 18289152
+fi=(47)
+124 9144576
+0 9144576
+fi=(32)
+1571 9144576
++3 64012032
++2 18289152
+0 18289152
+fi=(29)
+1145 9144576
+0 18289152
+fi=(56)
+35 9144576
+-35 36578304
+fi=(59)
+264 146313216
+fi=(29)
+0 219469824
+fi=(32)
+1617 146313216
+0 73156608
+fi=(50)
+532 73156608
+fi=(29)
+1145 73156608
+0 73156608
+fi=(43)
+250 146313216
+0 146313216
+239 146313216
+fe=(70)
+0 292626432
+fi=(30)
+2079 146313216
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=73156608 0 
+* 877879296
+fi=(56)
+35 228614400
+-35 54432
+fi=(13)
+188 27216
+fi=(22)
++50 54432
+469 54432
+0 54432
+469 27216
+fi=(18)
+105 81648
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=27216 0 
+* 4640597
+fi=(25)
+2411 27216
+fi=(20)
+1605 27216
+fe=(70)
+113 244944
+
+fn=(1066) <jpeg_decoder::worker::rayon::Scoped as jpeg_decoder::worker::Worker>::append_row
+122 190512
++2 81648
++2 54432
+fi=(19)
+629 54432
+744 27216
+fi=(25)
+2397 27216
+fi=(20)
+1340 27216
+fe=(70)
+126 27216
+fi=(19)
+629 190512
+fe=(70)
+57 27216
++71 81648
+fi=(43)
+332 81648
+fe=(70)
+0 108864
+61 54432
+-61 27216
+fi=(46)
+242 27216
+fe=(70)
+-52 81648
+-61 54432
++2 244944
+0 27216
+131 54432
+cfn=(1072)
+calls=27216 -59 
+* 5538986981
++1 27216
++1 190512
+
+fl=(20)
+fn=(778)
+1076 2
+fi=(13)
+188 2
+cob=(3)
+cfi=(3)
+cfn=(780)
+calls=1 0 
+* 141
+fi=(22)
++50 2
+fi=(13)
+0 1
+fi=(22)
+238 2
+fi=(18)
+105 1
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fi=(24) /build/rustc-1.58.1-src/library/alloc/src/rc.rs
+2078 1
+fe=(20)
+1955 1
+fi=(25)
+2411 1
+fe=(20)
+2110 1
+fi=(18)
+105 3
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fe=(20)
+
+fl=(84)
+fn=(1208)
+210 11
+fi=(31)
+-75 2
+0 1
+fi=(28)
+2411 1
+cfi=(10)
+cfn=(748)
+calls=1 0 
+* 507
+0 1
+fi=(14)
+328 2
+fi=(31)
+135 2
+0 2
+fi=(14)
+951 2
+cfi=(10)
+cfn=(840)
+calls=1 0 
+* 354
+* 5
+fi=(22)
+238 2
+fi=(18)
+105 2
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fi=(14)
+951 1
+fi=(15)
+647 1
+fi=(18)
+0 1
+fe=(84)
+211 1
+fi=(23)
+425 3
+fi=(90)
+-42 1
+fe=(84)
+214 5
+cfi=(10)
+cfn=(700)
+calls=1 0 
+* 134
+* 5
+0 2
+214 4
+cob=(5)
+cfi=(5)
+cfn=(1216)
+calls=1 0 
+* 5
+* 5
+0 3
+214 1
+cfi=(10)
+cfn=(1218) std::io::default_read_to_string
+calls=1 0 
+* 306
+fi=(15)
+651 2
+fi=(90)
+2324 2
+fi=(58)
+235 1
+fi=(38)
+-89 3
+0 4
+fi=(91) /build/rustc-1.58.1-src/library/core/src/str/validations.rs
+38 1
++1 2
+-39 2
+fi=(86)
+146 3
+fi=(92) /build/rustc-1.58.1-src/library/core/src/char/methods.rs
+810 5
++2 2
+fi=(87)
+0 1
+fi=(38)
+361 2
+0 2
+361 2
+0 2
+fi=(91)
+85 6
+-85 4
+fi=(92)
+810 8
++2 2
+fi=(87)
+0 1
+fi=(38)
+120 1
+fi=(87)
+0 2
+fi=(89)
+2248 1
+0 2
+2248 1
+fe=(84)
+0 1
+fi=(89)
+2248 5
+fi=(22)
+238 2
+fi=(13)
+0 1
+fi=(22)
+238 2
+fi=(18)
+105 1
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fi=(93)
++17 2
+cob=(5)
+cfi=(5)
+cfn=(1198)
+calls=1 0 
+* 8
+fe=(84)
++95 10
+0 5
+fi=(89)
+2248 7
+fe=(84)
+
+fl=(136)
+fn=(1774)
+70 6858432
++8 521240832
+fi=(149)
+-23 13716864
+fe=(136)
++23 6858432
+fi=(149)
+-23 13716864
+fe=(136)
++24 6858432
+fi=(149)
+-24 13716864
+fe=(136)
++25 6858432
+fi=(149)
+-25 13716864
+fe=(136)
++26 6858432
++2 6858432
++1 6858432
++1 6858432
++1 6858432
++2 6858432
++1 6858432
++1 6858432
++1 6858432
++3 27433728
++1 6858432
++2 27433728
++2 6858432
++2 20575296
+-2 20575296
++2 6858432
++1 27433728
++3 6858432
++1 6858432
++2 27433728
++4 20575296
++1 20575296
+-3 6858432
++4 6858432
++3 27433728
+-2 6858432
++4 20575296
++2 6858432
++2 27433728
++1 20575296
+-3 6858432
++5 13716864
+-1 20575296
++2 6858432
+-9 20575296
++2 6858432
++7 6858432
+-7 6858432
++9 6858432
++3 20575296
+-31 6858432
++29 6858432
++2 20575296
+-37 6858432
++7 6858432
++29 6858432
++1 27433728
++11 13716864
+-11 61725888
++11 13716864
+-11 75442752
++10 13716864
+-10 54867456
++10 6858432
+-10 61725888
++9 6858432
+-9 68584320
++9 6858432
+-9 41150592
++8 6858432
+-8 41150592
++8 20575296
++3 13716864
+-49 6858432
++46 6858432
++3 6858432
++3 13716864
++1 6858432
+-6 13716864
++1 13716864
+-1 6858432
++1 6858432
++6 6858432
++1 6858432
++2 6858432
++1 6858432
++1 6858432
++1 6858432
++2 34292160
++1 27433728
++2 13716864
++2 13716864
++2 34292160
++1 34292160
++3 6858432
++1 6858432
++2 13716864
++2 6858432
++2 6858432
++1 6858432
++4 13716864
+-3 6858432
++1 6858432
++4 6858432
++4 13716864
++1 6858432
++1 6858432
+-4 13716864
++5 13716864
++1 6858432
+-9 6858432
++2 6858432
++7 6858432
+-7 6858432
++9 20575296
++1 20575296
++1 20575296
++1 20575296
++2 20575296
+
+fl=(113) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/internal.rs
+fn=(1434) crossbeam_epoch::internal::Global::collect
+278 4581
++1 509
+cfn=(1436) crossbeam_epoch::internal::Global::try_advance
+calls=509 +28 
+* 73413
+* 1018
+fi=(25)
+2363 509
+fi=(145)
+127 1018
+fi=(25)
+2363 509
+fi=(159) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/sync/queue.rs
+155 1527
+fe=(113)
+296 4072
+
+fn=(1436)
+307 4581
+fi=(25)
+2364 509
+2685 509
+fe=(113)
+314 509
+fi=(25)
+2363 1018
+fi=(114) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/sync/list.rs
+239 13659
+0 8088
+fi=(25)
+2363 4044
+fi=(145)
+127 8088
+fi=(114)
+242 8088
+fi=(25)
+2364 4044
+0 4044
+fi=(160) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/epoch.rs
+44 4044
+fe=(113)
+327 4044
+0 1018
+327 1018
+fi=(50)
+1180 509
+fi=(25)
+2349 509
+0 509
+fe=(113)
+345 4581
+
+fl=(24)
+fn=(788) alloc::sync::Arc<T>::drop_slow
+2078 48
+fi=(20)
+1955 48
+fi=(25)
+2411 48
+fi=(20)
+2110 48
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=48 0 
+* 4128
+fe=(24)
+
+fl=(13)
+fn=(1012) core::ptr::drop_in_place<std::sync::once::Once::call_once<num_cpus::linux::init_cgroups>::{{closure}}>
+188 144
+
+fn=(1470)
+188 20
+
+fn=(1664) core::ptr::drop_in_place<alloc::vec::Vec<jpeg_decoder::upsampler::UpsamplerComponent>>
+188 192
+fi=(23)
+1170 24
+2818 24
+fe=(13)
+188 48
+0 48
+188 48
+0 48
+188 576
+cfn=(1012)
+calls=72 * 
+* 72
+0 72
+188 72
+fi=(18)
++51 144
+fe=(13)
+-51 48
+fi=(22)
++50 48
+469 48
+0 48
+469 48
+fi=(18)
+105 216
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+fe=(13)
+
+fn=(1684) core::ptr::drop_in_place<jpeg_decoder::decoder::Decoder<std::io::buffered::bufreader::BufReader<std::fs::File>>>
+188 168
+fi=(93)
+-66 24
+cob=(5)
+cfi=(5)
+cfn=(1198)
+calls=24 0 
+* 1248
+fi=(18)
+239 48
+fe=(13)
+-51 24
+fi=(18)
+-83 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 3365
+fe=(13)
++83 72
+fi=(22)
++50 48
+fe=(13)
+0 24
+fi=(22)
+469 48
+0 48
+469 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+fi=(23)
+1170 24
+2818 24
+fe=(13)
+188 624
+fi=(22)
++50 96
+fe=(13)
+0 48
+fi=(22)
+238 96
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=48 0 
+* 5344
+0 48
+fe=(13)
+188 48
+fi=(22)
++50 48
+469 48
+0 24
+469 48
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 3395
+fi=(23)
+1170 24
+2818 24
+fe=(13)
+188 624
+fi=(22)
++50 96
+fe=(13)
+0 48
+fi=(22)
+238 96
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=48 0 
+* 8111
+0 48
+fe=(13)
+188 48
+fi=(22)
++50 48
+469 48
+0 24
+469 48
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 8695
+fe=(13)
++83 72
+fi=(25)
+2411 24
+fi=(20)
+1605 24
++35 48
+cfi=(24)
+cfn=(788)
+calls=24 2078 
+* 2184
+fe=(13)
+188 72
+fi=(25)
+2411 24
+fi=(20)
+1605 24
++35 48
+cfi=(24)
+cfn=(788)
+calls=24 2078 
+* 2184
+fe=(13)
+188 144
+fi=(23)
+1170 24
+2818 24
+fe=(13)
+188 72
+fi=(22)
++50 48
+fe=(13)
+-50 72
+fi=(22)
++50 48
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 4047
+fi=(23)
+1170 24
+2818 24
+fe=(13)
+188 72
+fi=(22)
++50 48
+fe=(13)
+-50 144
+
+fn=(1800)
+188 48
+fi=(133)
+669 24
++2 24
+cfn=(1792)
+calls=12 125 
+* 1392
+fe=(13)
+188 36
+fi=(93)
+-66 12
+cob=(5)
+cfi=(5)
+cfn=(1198)
+calls=12 0 
+* 624
+fi=(22)
+238 24
+fe=(13)
+0 12
+fi=(22)
+238 24
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=12 0 
+* 1722
+fe=(13)
+
+fn=(1014) core::ptr::drop_in_place<jpeg_decoder::worker::rayon::Scoped>
+188 96
+fi=(22)
++50 384
+fe=(13)
+-50 144
+fi=(25)
+2411 24
+fi=(20)
+1605 24
+fe=(13)
+188 144
+fi=(25)
+2411 24
+fi=(20)
+1605 24
+fe=(13)
+188 144
+fi=(25)
+2411 24
+fi=(20)
+1605 24
+fe=(13)
+188 240
+
+fn=(1114) std::thread::local::fast::Key<T>::try_initialize
+892 18
+fi=(78)
+613 9
+fe=(13)
+
+fl=(67) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/codecs/jpeg/decoder.rs
+fn=(1032) <image::codecs::jpeg::decoder::JpegDecoder<R> as image::image::ImageDecoder>::read_image
+106 312
++1 144
+0 120
+fi=(35)
+653 24
+fi=(50)
+1679 24
+fe=(67)
+107 48
+fi=(29)
+1243 24
+fe=(67)
+107 24
+fi=(68) /build/rustc-1.58.1-src/library/core/src/array/mod.rs
+383 48
+fi=(161) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/worker/rayon.rs
+37 144
+fi=(23)
+425 24
+fi=(161)
+37 360
+-37 48
+fi=(41) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/decoder.rs
+234 96
+cfn=(878) jpeg_decoder::decoder::Decoder<R>::decode_internal
+calls=24 +4 
+* 17174963484
+0 24
+fi=(161)
+38 24
+cfi=(13)
+cfn=(1014)
+calls=24 188 
+* 720
+fi=(15)
+851 48
++1 48
+0 24
+fi=(41)
+135 48
+fe=(67)
+0 24
+fi=(41)
+137 120
+0 24
+fi=(47)
+3103 48
+fi=(30)
+2079 120
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 116593848
+fe=(67)
+116 24
+fi=(22)
+238 96
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 1608
+fe=(67)
+0 72
+cfi=(13)
+cfn=(1684)
+calls=24 188 
+0 44861
+117 192
+
+fl=(35)
+fn=(1026) image::image::decoder_to_vec
+573 192
++4 96
+0 96
+fi=(18)
+158 72
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=24 0 
+* 20719
+* 24
+fi=(22)
++30 48
+0 24
+fe=(35)
+653 24
+fi=(50)
+1679 24
+fi=(53)
+0 24
+fi=(18)
+165 24
+0 24
+fe=(35)
+585 96
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 1440
+0 24
+585 96
+cfi=(67)
+cfn=(1032)
+calls=24 106 
+* 17291606945
+fi=(15)
+1899 72
+fe=(35)
+586 96
++1 192
+
+fl=(134)
+fn=(1746)
+280 864
++1 216
+fi=(23)
+786 108
+fi=(133)
+442 216
++93 216
+fi=(23)
+1170 108
+fi=(30)
+2079 216
+fi=(133)
+437 108
+fi=(23)
+1267 108
+fe=(134)
+282 216
+fi=(23)
+786 108
+fi=(133)
+442 108
++93 216
+fe=(134)
+0 108
+fi=(23)
+1170 108
+fi=(30)
+2079 108
+fi=(133)
+437 108
+fi=(23)
+1267 108
+786 108
+fi=(133)
+442 108
++93 216
+0 108
+fi=(46)
+242 108
+fi=(30)
+2079 324
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=108 0 
+* 1896
+fi=(133)
+437 108
+fi=(23)
+1267 216
+fi=(133)
+545 432
+fe=(134)
+284 648
+
+fn=(1754)
+722 576
+fi=(23)
+1065 48
+fe=(134)
+731 96
+fi=(23)
+1728 144
+0 48
+1170 48
+fi=(13)
+892 48
+fi=(23)
+1734 96
+fi=(50)
+1222 48
+fi=(22)
+352 48
+-65 48
+fi=(30)
+2079 96
+fi=(17)
++92 96
+fi=(23)
+1794 48
+fi=(162) /build/rustc-1.58.1-src/library/core/src/iter/traits/accum.rs
+45 48
+fi=(17)
+2171 96
+fi=(23)
+1794 48
+fi=(162)
+45 336
+fe=(134)
+736 48
++2 144
+fi=(22)
+287 48
+fi=(50)
+1222 48
+fi=(22)
+352 48
+-65 48
+fi=(46)
+-45 48
+fi=(30)
+2079 192
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=48 0 
+* 984
+fi=(23)
+1794 96
+fe=(134)
+741 384
+fi=(22)
+288 60
+cfn=(764)
+calls=12 -9 
+* 7797
+fi=(23)
+1170 12
+1792 12
+0 12
+fe=(134)
+
+fn=(1780) image::codecs::jpeg::encoder::BitWriter<W>::write_bits
+195 2215957167
++1 492434926
+0 244063666
+200 488127332
+fi=(149)
+55 244063666
+fe=(134)
+201 1220318330
+0 244063666
+203 488127332
++13 2954609556
+fi=(23)
+1170 218548
+fi=(30)
+2079 218548
+fi=(133)
+437 218548
+fi=(23)
+1267 218548
+fe=(134)
+211 437096
++1 218548
+0 218548
+203 437096
++8 163658922
++1 81829461
+0 81829461
+203 163658922
++1 164096018
++1 82048009
+fi=(23)
+786 82048009
+fi=(133)
+442 164096018
++93 164096018
+fi=(23)
+1170 82027976
+fi=(30)
+2079 82027976
+fi=(133)
+437 82027976
+fi=(23)
+1267 82027976
+fe=(134)
+207 164096018
+fi=(23)
+786 218593
+fi=(133)
+442 437186
++93 437186
++8 180
+cfn=(1790)
+calls=45 392 
+* 5480
+fe=(134)
+208 90
+fi=(133)
+543 80132
+cfn=(1790)
+calls=20033 392 
+* 2303490
+fe=(134)
+205 40066
+
+fn=(1778)
+232 75442752
++8 13716864
++1 6858432
+fi=(128)
+2401 20575296
+0 6858432
+fe=(134)
+760 18421499
++1 14113905
++1 4704635
+-2 9409270
++1 34777686
++1 11592562
+-2 23185124
+223 13716864
++2 13716864
++4 27433728
+cfn=(1780)
+calls=6858432 -34 
+* 287577251
++15 13716864
+0 34292160
+245 20575296
+cfn=(1780)
+calls=6858432 -50 
+* 255038690
+* 13716864
+0 20575296
+fi=(38)
+146 6858432
+0 6858432
+fe=(134)
+269 20575296
+-46 6260631
++2 12521262
++4 25042524
+cfn=(1780)
+calls=6260631 -34 
+* 260425556
++41 12521262
+0 6858432
+273 20575296
+0 48009024
+252 319050883
+0 319050883
+fi=(38)
+146 1276203532
+fe=(134)
+0 113030333
+fi=(38)
+146 452121332
+fe=(134)
+250 864162432
++1 1296243648
++3 226230237
+-25 678284
+cfn=(1780)
+calls=169571 -34 
+* 10543982
+* 38924
+cfn=(1780)
+calls=9731 -34 
+* 588408
++26 358604
++1 179302
+-2 358604
+fi=(128)
+2401 339090999
+0 113030333
+fe=(134)
+760 339090999
++1 339090999
++1 113030333
+-2 226060666
++1 303342768
++1 101114256
+-2 202228512
+260 226060666
+-37 339090999
++2 226060666
++4 452121332
+cfn=(1780)
+calls=113030333 -34 
+* 4930561701
++33 339090999
+0 339090999
+263 113030333
+0 226060666
+263 226060666
+cfn=(1780)
+calls=113030333 -68 
+* 4492306696
+* 226060666
+0 345949431
+274 54867456
+
+fl=(11)
+fn=(656)
+119 1
+fi=(102)
+227 1
+cfi=(12)
+cfn=(658)
+calls=1 34 
+* 58949891803
+fe=(11)
+-98 2
+-10 72
+fi=(80)
+-19 88
+fi=(18)
+-13 24
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=8 -87 
+* 1824
+318 16
+0 16
+fi=(100)
+195 32
+cob=(3)
+cfi=(3)
+cfn=(620)
+calls=8 0 
+* 832
+0 48
+fi=(25)
+2397 16
+fi=(163) /build/rustc-1.58.1-src/library/core/src/hash/sip.rs
+296 16
+fi=(50)
+-85 8
+1180 8
+fi=(163)
+362 8
+fi=(50)
+1180 16
+fi=(163)
+298 8
+fi=(50)
+-87 8
+fi=(163)
+362 8
+fi=(50)
+211 8
+fi=(163)
+362 8
+-46 16
+fi=(50)
+1180 8
+211 8
+fi=(163)
+362 8
+fi=(50)
+211 8
+1180 8
+211 8
+fi=(163)
+362 8
+fi=(50)
+1180 8
+211 8
+fi=(163)
+362 8
+fi=(50)
+1180 8
+211 8
+fi=(163)
+362 8
+fi=(50)
+211 8
+fi=(163)
+318 8
++2 8
+fi=(50)
+1180 8
+211 8
+fi=(163)
+367 8
+fi=(50)
+211 8
+1180 8
+211 8
+fi=(163)
+367 8
+fi=(50)
+1180 8
+211 8
+fi=(163)
+367 8
+fi=(50)
+1180 8
+211 8
+fi=(163)
+367 8
+fi=(50)
+211 8
+1180 8
+211 8
+fi=(163)
+368 8
+fi=(50)
+211 8
+1180 8
+211 8
+fi=(163)
+368 8
+fi=(50)
+1180 8
+211 8
+fi=(163)
+368 8
+fi=(50)
+1180 8
+211 8
+fi=(163)
+368 8
+fi=(50)
+211 8
+1180 8
+211 8
+fi=(163)
+369 8
+fi=(50)
+1180 8
+211 8
+fi=(163)
+369 8
+fi=(50)
+211 8
+1180 8
+211 16
+fi=(163)
+323 8
++46 8
+fi=(80)
+894 16
+fi=(25)
+2397 8
+fi=(20)
+1340 8
+fi=(80)
+800 72
+fi=(19)
+629 8
+fi=(78)
+-39 8
++2 16
+cfi=(13)
+cfn=(1114)
+calls=8 892 
+* 24
+fi=(58)
+422 8
+fi=(80)
+637 8
+0 8
+fi=(13)
+892 8
+fi=(23)
+2434 8
+fi=(43)
+184 16
+fi=(23)
+1134 8
+fi=(80)
+810 16
+fi=(105)
+76 8
+fi=(106)
+-13 16
+cob=(5)
+cfi=(5)
+cfn=(638)
+calls=8 -63 
+* 232
+fi=(25)
+2364 8
+fi=(103)
+297 32
+0 16
+fi=(25)
+2364 8
+385 8
+fi=(15)
+1293 8
+fi=(97)
+258 8
++1 16
+cob=(5)
+cfi=(5)
+cfn=(1388)
+calls=8 0 
+* 160
+fi=(104)
+34 16
+fi=(25)
+2364 8
+fi=(103)
+297 24
+fi=(105)
+92 8
+fi=(106)
+-24 8
+cob=(5)
+cfi=(5)
+cfn=(640)
+calls=8 -68 
+* 176
+-68 8
+fi=(80)
+818 24
+fi=(23)
+2434 8
+fi=(43)
+184 16
+fi=(23)
+1134 8
+fi=(25)
+2363 8
+fi=(97)
+134 8
+fi=(80)
+699 8
+0 24
+700 8
+cfn=(1396)
+calls=8 +5 
+* 9661384454
+fe=(11)
+
+fl=(48) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/marker.rs
+fn=(902) jpeg_decoder::marker::Marker::from_u8
+66 1536
++69 192
+
+fl=(33)
+fn=(838)
+20 264
+fi=(14)
+328 48
+0 48
+951 24
+cfi=(10)
+cfn=(840)
+calls=24 0 
+* 9369
+* 24
+fi=(15)
+1899 24
+fe=(33)
+0 24
+fi=(18)
+87 48
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 11785
+fi=(22)
+188 48
+fi=(34)
+0 24
+fe=(33)
+23 120
+fi=(35)
+133 312
+cfi=(10)
+cfn=(854) <std::path::Components as core::iter::traits::double_ended::DoubleEndedIterator>::next_back
+calls=24 0 
+* 7008
+* 216
+0 24
+133 960
+fi=(19)
+1052 24
+fi=(35)
+0 72
+fi=(36)
+584 72
+cfi=(10)
+cfn=(858)
+calls=24 0 
+* 1752
+* 48
+fi=(35)
+90 24
+-90 24
+90 48
+-90 24
+90 48
+-90 72
+fi=(18)
+87 24
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 960
+fi=(22)
+188 48
+fi=(37) /build/rustc-1.58.1-src/library/alloc/src/str.rs
+0 48
+fi=(30)
+2079 48
+0 24
+2079 24
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 384
+0 48
+fi=(38)
+146 48
+fe=(33)
+24 192
+fi=(38)
+-24 48
+fi=(39) /build/rustc-1.58.1-src/library/core/src/num/mod.rs
+412 24
++70 72
+337 48
++75 24
+fi=(46)
+242 24
+0 24
+fi=(38)
+146 48
+fi=(39)
+412 48
++70 144
+337 96
++75 48
+fi=(46)
+242 48
+0 48
+fi=(38)
+146 96
+fi=(40)
+-62 72
+-84 96
+92 120
+fi=(35)
++2 24
+fi=(30)
+-94 120
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+0 2064
+fe=(33)
+110 336
+cfn=(872) image::io::free_functions::load_decoder
+calls=24 -65 
+* 17293593658
+* 24
+
+fn=(872)
+45 240
+cfi=(10)
+cfn=(836)
+calls=24 -45 
+* 1320
+* 72
++7 48
+-52 120
+60 216
+fi=(18)
++27 48
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 12665
+318 48
+fi=(41)
+0 24
+110 96
+fi=(18)
+-23 48
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 5409
+318 48
+fi=(41)
+111 72
+fi=(23)
+425 48
+fi=(41)
+111 24
+fi=(23)
+425 96
+fi=(41)
+107 408
+fi=(68)
+383 24
+fi=(161)
+37 72
+fi=(23)
+425 24
+fi=(161)
+37 312
+-37 72
+fi=(41)
+204 72
+cfn=(878)
+calls=24 +34 
+* 1935872
+0 24
+fi=(161)
+38 24
+cfi=(13)
+cfn=(1014)
+calls=24 188 
+* 576
+fi=(15)
+766 96
+fi=(22)
+238 48
+fi=(41)
+135 48
+fe=(33)
+0 24
+fi=(41)
+137 96
++12 24
++1 24
++2 24
+-4 72
+fi=(67)
+33 576
+fi=(15)
+-33 96
+1900 384
+fe=(33)
+60 648
++41 48
+fi=(67)
++47 24
+0 96
+fi=(41)
+0 24
+fi=(35)
+653 48
+0 24
+fi=(19)
+651 72
+fi=(65) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/image-0.24.1/./src/io/mod.rs
+112 24
+fe=(33)
+0 24
+fi=(65)
+113 96
++6 24
+0 24
+90 48
++8 48
+fi=(66)
++77 648
+0 144
+1007 744
+cfi=(35)
+cfn=(1026)
+calls=24 573 
+* 17291630352
+fi=(15)
+1899 24
+0 72
+1899 24
+fi=(100)
+0 24
+fi=(50)
+1679 72
+fi=(19)
+1052 24
+845 24
+fi=(131)
+626 24
+0 48
+fi=(15)
+0 48
+fi=(19)
+0 24
+fi=(66)
+1069 168
+0 72
+fe=(33)
+85 216
+
+fl=(41)
+fn=(878)
+238 480
+cfi=(10)
+cfn=(836)
+calls=48 0 
+* 720
+* 240
+0 48
+243 96
+0 24
+243 24
+0 24
+246 24
+fi=(42) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/lib.rs
+57 48
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 4315
+* 48
+fe=(41)
+247 48
++1 24
+fi=(42)
+57 48
++1 48
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+* 48
+fe=(41)
+248 48
+cfi=(48)
+cfn=(902)
+calls=24 66 
+* 216
+fi=(19)
+511 24
+fe=(41)
+246 24
++14 24
+fi=(19)
+629 24
+fi=(23)
+425 96
+fi=(19)
+629 24
+872 24
+fi=(23)
+425 96
+fi=(19)
+629 24
+872 24
+0 48
+fe=(41)
+262 24
+0 48
+258 24
+cfi=(23)
+cfn=(906)
+calls=24 2359 
+* 3120
+0 48
+258 24
+cfi=(23)
+cfn=(906)
+calls=24 2359 
+* 1344
+fi=(23)
+425 192
+fe=(41)
+266 48
+fi=(19)
+629 48
+872 48
+0 48
+fe=(41)
+268 24
+0 96
+264 24
+cfi=(23)
+cfn=(906)
+calls=24 2359 
+* 4939
+0 96
+264 24
+cfi=(23)
+cfn=(906)
+calls=24 2359 
+* 1440
+0 1152
+272 96
++1 120
++1 576
+cfn=(918) jpeg_decoder::decoder::Decoder<R>::read_marker
+calls=144 609 
+* 23904
+fi=(15)
+1899 288
++1 288
+fe=(41)
+274 432
++3 336
+0 840
+284 24
+fi=(19)
+550 24
+fe=(41)
+284 24
+0 72
+fi=(42)
+63 24
++1 120
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1392
+* 48
+fi=(50)
+257 24
+fi=(149)
+55 24
+fi=(51) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/parser.rs
++82 24
++2 48
++4 24
++18 48
+0 24
+167 48
+0 168
+fe=(41)
+468 48
+0 144
+fi=(42)
+63 48
++1 240
+cfi=(34)
+cfn=(882)
+calls=48 278 
+* 2784
+* 144
+fi=(50)
+257 48
+fi=(149)
+55 48
+fi=(51)
++82 48
++2 96
++4 48
+606 144
++2 96
+0 240
+fe=(41)
+421 24
+0 24
+fi=(42)
+63 24
++1 120
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1392
+* 48
+fi=(50)
+257 24
+fi=(149)
+55 24
+fi=(51)
++82 24
++2 48
+0 96
+481 48
+fi=(42)
+57 48
++1 240
+cfi=(34)
+cfn=(882)
+calls=48 278 
+* 2736
+* 144
++1 48
+fi=(51)
+483 96
++1 96
+-1 48
++1 48
+fi=(42)
+59 48
+fi=(51)
+494 48
++3 96
++3 240
+0 48
+504 192
+fi=(38)
+146 96
+0 48
+146 48
+0 96
+fi=(42)
+57 48
++1 240
+cfi=(34)
+cfn=(882)
+calls=48 278 
+* 2736
+-1 3024
++1 15120
+cfi=(34)
+cfn=(882)
+calls=3024 278 
+* 172368
+* 6144
++1 3072
+fi=(51)
+507 3072
+fi=(38)
+146 9216
+0 48
+fi=(51)
+514 288
+fi=(38)
+242 192
+fi=(51)
+518 576
+0 48
+519 48
+-38 96
++41 144
+fe=(41)
+334 48
+0 24
+fi=(19)
+550 24
+fe=(41)
+334 24
+fi=(23)
+2434 24
+fi=(71)
+408 48
+0 24
+fi=(50)
+1679 72
+fi=(71)
+408 24
+fi=(22)
+176 24
+fi=(51)
+0 288
+fi=(18)
+165 72
+0 48
+165 24
+fi=(51)
+0 24
+fi=(18)
+87 48
+fe=(41)
+437 24
+fi=(19)
+629 24
+0 48
+fi=(42)
+63 24
++1 120
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1392
+* 48
+fi=(50)
+257 24
+fi=(149)
+55 24
+fi=(51)
++82 24
++2 48
+fi=(18)
+-52 72
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 9142
+318 48
+fi=(51)
+528 96
+0 24
+fi=(23)
+685 72
+fi=(18)
+87 48
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 9753
+318 48
+fi=(51)
+0 48
+529 96
+fi=(23)
+685 72
+fi=(51)
+532 120
++42 48
+fe=(41)
+440 24
+fi=(13)
+702 72
+fi=(141)
+840 120
+fi=(46)
+242 24
+0 24
+242 48
+fi=(58)
+-7 24
+fi=(13)
+702 24
+fi=(19)
+2049 96
+fi=(51)
+566 576
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=48 0 
+* 9120
+* 48
+0 48
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=48 0 
+* 5368
+fi=(51)
+0 48
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=48 0 
+* 7129
+fi=(51)
+532 288
+fi=(42)
+57 96
++1 384
+cfi=(34)
+cfn=(882)
+calls=96 278 
+* 5472
+* 192
+fi=(51)
+535 96
+-1 288
++1 288
++2 288
+0 96
+540 96
++3 192
++4 192
++1 384
+cfi=(34)
+cfn=(882)
+calls=96 278 
+* 5088
+* 192
+fi=(17)
+2171 192
+fi=(164) /build/rustc-1.58.1-src/library/core/src/ops/arith.rs
+101 96
+fi=(17)
+2171 192
+fi=(164)
+101 672
+fi=(51)
+552 192
++3 192
++3 288
+fi=(18)
+158 384
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=96 0 
+* 26841
+fi=(22)
++30 192
+0 288
+fi=(51)
+563 192
+cfi=(34)
+cfn=(882)
+calls=96 278 
+* 6000
+* 192
++2 288
++2 288
+cfi=(55)
+cfn=(958)
+calls=48 191 
+* 775476
+fi=(15)
+1899 48
+0 288
+1899 48
+0 48
+1900 192
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=48 0 
+* 9072
+fi=(43)
+190 144
+fi=(13)
+-2 96
+fi=(51)
+567 576
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=48 0 
+* 9120
+* 48
+-1 288
+cfi=(55)
+cfn=(958)
+calls=48 191 
+* 159830
+fi=(15)
+1899 48
+0 288
+1899 48
+0 48
+1900 192
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=48 0 
+* 9072
+fi=(43)
+190 48
+0 48
+190 48
+fi=(13)
+-2 96
+fi=(51)
+-17 48
+0 72
+522 1200
+fe=(41)
+-98 48
+0 48
+424 312
++1 168
++3 552
+fi=(50)
++35 24
+fe=(41)
+-35 24
+fi=(29)
+1327 24
+fi=(27)
+621 24
+fe=(41)
+428 3864
+fi=(50)
++35 168
+fe=(41)
+-35 168
+fi=(29)
+1327 168
+fi=(27)
+621 168
+fi=(18)
+87 72
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1056
+318 48
+fi=(20)
+0 24
+346 240
+fe=(41)
++85 24
+fi=(13)
+188 96
+fe=(41)
+431 72
+-7 48
+0 24
+424 288
++1 168
++3 552
+fi=(50)
++35 24
+fe=(41)
+-35 24
+fi=(29)
+1327 24
+fi=(27)
+621 24
+fe=(41)
+428 3864
+fi=(50)
++35 168
+fe=(41)
+-35 168
+fi=(29)
+1327 168
+fi=(27)
+621 168
+fi=(18)
+87 72
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1391
+318 48
+fi=(20)
+0 24
+346 240
+fe=(41)
++85 24
+fi=(13)
+188 72
+fe=(41)
+431 72
+-7 48
+0 48
+424 72
+0 216
+fi=(51)
+167 24
++11 48
+fi=(18)
+-91 72
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1214
+-87 24
+fi=(22)
+188 48
+357 48
+0 96
+fi=(38)
+146 144
+fi=(56)
+0 72
+fi=(51)
+81 72
++2 72
++4 144
+fi=(156)
+494 72
+fi=(61)
+194 72
+fi=(156)
+494 216
+fi=(56)
+35 216
+fe=(41)
+339 24
+0 24
+fi=(42)
+63 24
++1 120
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1392
+* 72
+fi=(50)
+257 24
+fi=(149)
+55 24
+fi=(51)
++82 24
++2 48
+331 48
+fi=(42)
+57 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+* 72
++1 24
+fi=(51)
+335 24
++2 72
++4 72
+0 24
+341 24
+fi=(50)
+1679 24
+fi=(18)
+87 48
+-87 24
+87 24
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1056
+fi=(22)
+188 48
+0 24
+fi=(23)
+609 72
+fi=(18)
+87 48
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1056
+fi=(22)
+188 48
+fi=(23)
+609 72
+fi=(18)
+87 72
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1056
+fi=(22)
+188 48
+fi=(23)
+0 24
+609 96
+fi=(42)
+58 192
+-58 168
+57 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+-1 48
++1 192
+cfi=(34)
+cfn=(882)
+calls=48 278 
+* 2736
+fi=(51)
+-58 72
+fi=(42)
+58 216
++1 72
+fi=(51)
+350 72
+0 72
+fi=(38)
+146 72
+0 504
+fi=(51)
+352 72
+fi=(38)
+-57 72
+fi=(51)
++57 72
+fi=(38)
+-57 72
++6 72
+146 216
+fi=(58)
++89 288
+fi=(38)
+-89 288
++96 72
+fi=(29)
+1243 144
+fi=(38)
+242 72
+-96 240
+0 96
+fi=(46)
+242 24
+fi=(38)
+-96 216
+fi=(17)
+0 24
+fi=(38)
+146 48
+fi=(29)
+1208 48
+0 72
+fi=(38)
+146 48
+fi=(19)
+767 72
+0 144
+fi=(51)
+363 144
+0 72
+fi=(42)
+57 72
++1 288
+cfi=(34)
+cfn=(882)
+calls=72 278 
+* 4104
+* 216
++1 72
+fi=(51)
+368 144
++1 144
+-1 72
++1 72
+fi=(42)
+59 72
+fi=(51)
+371 72
+fi=(69) /build/rustc-1.58.1-src/library/core/src/clone.rs
+184 72
+fi=(51)
+371 216
++3 216
+fi=(69)
+184 72
+fi=(51)
+374 216
+0 72
+fi=(23)
+1728 144
+fi=(29)
+0 72
+fi=(13)
+892 72
+fi=(23)
+1734 288
+-6 144
+0 72
+1728 72
+1170 72
+0 72
+fi=(13)
+892 72
+fi=(23)
+1734 144
+-6 216
+1170 72
+0 72
+fi=(13)
+892 72
+fi=(23)
+1734 144
+0 144
+fi=(29)
+1327 72
+fi=(27)
+621 72
+fi=(51)
+383 24
+fi=(38)
+146 144
+fi=(17)
+2171 24
+fi=(43)
+184 48
+fi=(17)
+2171 48
+fi=(43)
+184 96
+fi=(51)
+384 288
+fi=(164)
+101 72
+fi=(38)
++45 216
+fi=(51)
+387 96
+0 24
+fi=(42)
+57 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+* 72
++1 24
+fi=(51)
+392 24
+fi=(42)
+57 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+* 72
++1 24
+fi=(51)
+394 24
+fi=(42)
+57 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+* 72
++1 24
+fi=(51)
+397 72
++1 72
+0 24
+405 120
+0 72
+fi=(42)
+57 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+* 48
++1 24
+fi=(51)
+183 24
++2 48
+fi=(42)
+63 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1392
+* 48
++1 24
+-2 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1392
+* 48
+fi=(51)
+205 48
+0 24
+209 48
+0 24
+fi=(42)
+57 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+* 72
++1 48
+fi=(51)
+215 24
++3 96
+0 24
+222 144
+fi=(50)
+1679 48
+fi=(18)
+87 72
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1056
+fi=(22)
+188 48
+fe=(41)
+0 48
+fi=(23)
+609 72
+fi=(27)
++12 24
+0 48
+621 24
+0 72
+fi=(42)
+57 24
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1368
+-1 48
++1 192
+cfi=(34)
+cfn=(882)
+calls=48 278 
+* 2736
+* 288
+fi=(51)
+-58 72
+fi=(42)
+59 72
+fi=(51)
+229 72
+fi=(38)
++12 288
+-95 288
+fi=(61)
++48 72
+fi=(38)
++48 72
+fi=(51)
+-10 144
+fi=(38)
++10 72
+0 72
+fi=(42)
+57 72
++1 288
+cfi=(34)
+cfn=(882)
+calls=72 278 
+* 4104
+* 144
++1 72
+fi=(51)
+237 216
++1 216
++2 216
++3 216
+fi=(42)
+57 72
++1 288
+cfi=(34)
+cfn=(882)
+calls=72 278 
+* 4104
+* 144
+-58 72
+59 72
+fi=(51)
+247 72
+fi=(42)
+59 72
+fi=(51)
+249 72
+fi=(23)
+1728 144
+fi=(13)
+892 864
+fi=(23)
+1734 144
+0 72
+fi=(29)
+1327 144
+0 72
+fi=(27)
+621 72
+fi=(38)
+146 48
+fi=(51)
+0 72
+fi=(19)
+846 24
+fi=(38)
+146 72
+fi=(19)
+0 48
+fi=(60)
+136 48
+fi=(58)
++99 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+fi=(51)
+642 48
++1 48
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1296
+* 72
+0 24
+fi=(40)
+92 120
+fi=(51)
+649 24
+0 72
+626 48
++1 48
++1 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 1344
+* 72
+fi=(52) /build/rustc-1.58.1-src/library/core/src/array/equality.rs
+132 120
+fi=(51)
+633 24
+fi=(53)
+0 24
+fi=(18)
+165 24
+-7 72
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=24 0 
+* 244217
+* 24
+fi=(22)
++30 48
+fi=(51)
+683 48
+148 96
++1 144
+cfi=(54)
+cfn=(940)
+calls=48 43 
+* 4632
+fi=(15)
+1899 96
+fi=(51)
+150 48
+0 48
+684 96
+fe=(41)
+468 48
+fi=(51)
+684 240
+0 192
+fe=(41)
+489 24
+fi=(13)
+188 72
+fe=(41)
+489 96
+0 24
+fi=(59)
+150 48
+fi=(19)
+1123 96
+0 96
+fi=(59)
+150 24
+fi=(19)
+1124 336
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4224
+fi=(13)
+188 48
+0 144
+fi=(18)
+0 24
+fi=(13)
+892 408
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4248
+fi=(58)
+235 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+0 72
+fi=(60)
+136 72
+fi=(13)
+0 24
+fi=(58)
+235 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+fi=(51)
+635 96
+cfi=(34)
+cfn=(882)
+calls=24 278 
+* 207368
+* 72
++2 192
+0 48
+fi=(59)
+150 48
+fi=(19)
+1123 96
+0 24
+fi=(61)
+194 24
+fi=(38)
+-48 144
+0 144
+fi=(59)
+150 24
+fi=(19)
+1124 336
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4224
+fi=(13)
+188 48
+fi=(18)
+0 144
+fi=(13)
+892 408
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4248
+fi=(58)
+235 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+0 48
+fi=(60)
+136 48
+fi=(29)
+0 48
+fi=(61)
+194 48
+fi=(29)
+1208 48
+0 96
+fi=(38)
+146 96
+fi=(19)
+846 24
+fi=(38)
+146 48
+0 48
+fi=(61)
+194 24
+fi=(29)
+1208 24
+0 48
+fi=(38)
+146 48
+0 24
+fi=(61)
+194 24
+fi=(29)
+1208 24
+0 48
+fi=(38)
+146 48
+0 24
+fi=(62) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4//home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/parser.rs
+281 48
+0 144
+286 72
+-5 48
+0 192
+286 72
+0 24
+286 24
+0 48
+299 120
+-18 48
++18 240
+-18 96
++5 288
++13 72
++1 288
+-19 144
++5 288
++14 72
++2 216
++1 216
+fi=(38)
+146 216
+fi=(63) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/marker.rs
+2 48
+fi=(51)
+271 24
++4 24
+0 24
+fi=(15)
+1900 96
+fe=(41)
+291 72
++3 72
++5 48
+0 24
+309 48
+0 120
+316 48
+cfi=(64)
+cfn=(998)
+calls=24 20 
+* 8424
+0 72
+fi=(15)
+1899 24
+0 120
+1899 24
+fi=(13)
+188 48
+0 72
+188 648
+cfn=(1012)
+calls=72 * 
+* 72
+0 72
+188 72
+fi=(18)
++51 144
+0 240
+fi=(22)
+238 48
+0 48
+238 48
+0 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+0 24
+fe=(41)
+322 24
+fi=(13)
+188 72
+0 24
+188 24
+fe=(41)
+0 24
+322 552
++2 48
+0 24
+fi=(58)
+235 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+fi=(51)
+449 48
++3 96
++3 48
+0 48
+461 24
++1 72
++1 120
++3 24
+-6 192
+fe=(41)
+339 288
+0 24
+fi=(51)
+25 24
+fe=(41)
+341 24
+fi=(51)
+25 48
+fe=(41)
+355 24
+fi=(22)
+0 48
+fi=(59)
+150 72
+0 24
+fi=(19)
+1123 48
+0 24
+fi=(59)
+150 24
+fi=(19)
+1125 336
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4224
+0 96
+fi=(18)
+0 24
+fi=(13)
+892 480
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4248
+702 120
+fi=(19)
+2049 48
+0 120
+fi=(60)
+136 48
+fe=(41)
+382 24
+-2 24
++2 48
+643 72
+0 24
+fi=(18)
+165 72
+fe=(41)
+0 72
+fi=(18)
+87 48
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1214
+fi=(22)
+188 48
+fi=(23)
+0 24
+609 72
+fi=(43)
+184 168
+fi=(17)
+2171 24
+fi=(43)
+184 48
+fi=(17)
+2171 48
+fi=(43)
+184 96
+fi=(51)
+78 72
++3 72
++2 72
++4 144
+fi=(13)
+892 288
+fi=(38)
+146 288
+0 48
+fe=(41)
+384 24
+fi=(29)
+0 72
+fi=(59)
+264 48
+fe=(41)
+0 24
+fi=(59)
+264 48
+0 48
+fe=(41)
+392 144
+fi=(59)
+264 144
+fe=(41)
+383 72
++3 144
+0 144
+386 288
++3 144
+fi=(29)
+1327 144
+fi=(27)
+621 432
+fe=(41)
+393 144
+0 72
+fi=(27)
+621 144
+fe=(41)
+390 3456
+0 1152
+390 3456
+0 1152
+390 3456
+0 1152
+fi=(50)
+463 1152
+fe=(41)
+-73 2304
+0 2304
+fi=(29)
+1327 1152
+fi=(27)
+621 1224
+fi=(23)
+0 24
+fi=(49)
+26 24
+fi=(32)
++73 72
+fi=(38)
++47 192
++96 72
+fe=(41)
+654 144
+fi=(61)
+194 72
+fi=(19)
+550 72
+fi=(38)
+242 72
+fe=(41)
+659 48
++9 48
++10 48
++1 48
+0 72
+fi=(38)
+241 24
+0 24
+146 192
++96 72
+fi=(43)
+-58 144
+fe=(41)
+682 72
+fi=(38)
+242 72
+fi=(19)
+550 72
+fi=(38)
+242 72
+-96 48
+fe=(41)
+691 48
+fi=(51)
+83 24
+fe=(41)
+695 72
+0 24
+fi=(19)
+1648 72
+fe=(41)
+0 168
+fi=(25)
+2397 24
+fi=(20)
+1340 24
+fe=(41)
+701 264
+0 24
+701 48
+cfi=(70)
+cfn=(1046)
+calls=24 117 
+* 292637324
+fi=(15)
+1899 96
+0 48
+fi=(38)
+146 48
+fe=(41)
+691 48
+fi=(51)
+83 24
+fe=(41)
+695 72
+0 24
+fi=(19)
+1648 72
+fe=(41)
+0 168
+fi=(25)
+2397 24
+fi=(20)
+1340 24
+fe=(41)
+701 264
+0 24
+701 48
+cfi=(70)
+cfn=(1046)
+calls=24 117 
+* 146325690
+fi=(15)
+1899 96
+fe=(41)
+0 72
+fi=(38)
+146 48
+fe=(41)
+691 48
+fi=(51)
+83 24
+fe=(41)
+695 72
+0 24
+fi=(19)
+1648 72
+fe=(41)
+0 168
+fi=(25)
+2397 24
+fi=(20)
+1340 24
+fe=(41)
+701 264
+0 24
+701 48
+cfi=(70)
+cfn=(1046)
+calls=24 117 
+* 146325075
+fi=(15)
+1899 96
+fe=(41)
+0 72
+fi=(38)
+146 48
+fe=(41)
+669 48
+0 72
+fi=(38)
+241 24
+0 24
+146 192
++96 72
+fi=(43)
+-58 144
+fe=(41)
+672 72
+fi=(38)
+242 72
+fi=(19)
+550 72
+fi=(38)
+242 72
+fi=(71)
+408 24
+0 24
+fi=(50)
+1679 96
+fe=(41)
+707 96
+fi=(71)
+408 24
+fe=(41)
+708 48
++1 48
++1 24
+0 24
+711 24
+fi=(22)
+176 24
+0 48
+fi=(18)
+165 48
+-78 120
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1363
+* 24
+fi=(22)
+188 48
+357 96
+fi=(23)
+609 72
+fi=(22)
+352 24
+-65 24
+fi=(23)
+0 48
+fi=(46)
+242 48
+fi=(29)
+1327 24
+fi=(27)
+621 24
+0 24
+fi=(22)
+188 24
+fi=(27)
+621 120
+0 72
+621 48
+0 24
+fi=(13)
+892 48
+fi=(46)
+242 24
+fi=(27)
+621 48
+fi=(13)
+892 48
+fi=(46)
+242 24
+fi=(27)
+621 48
+fi=(38)
+146 24
+fi=(23)
+2319 24
+fi=(13)
+892 48
+fi=(49)
+19 24
+fi=(13)
+892 48
+0 48
+fi=(49)
+26 24
+fi=(51)
+-1 24
+fe=(41)
+715 24
+-9 24
++21 24
+fi=(23)
+2434 24
+0 72
+fi=(18)
+165 24
+fe=(41)
+0 72
+fi=(18)
+87 72
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 960
+-87 24
+fi=(22)
+188 48
+0 48
+fi=(38)
+146 288
+fi=(17)
+2171 24
+fi=(61)
+194 24
+fi=(13)
+892 24
+fi=(46)
+242 24
+fi=(38)
+-96 48
+fi=(17)
+2171 48
+fi=(61)
+194 48
+fi=(13)
+892 48
+fi=(46)
+242 48
+fi=(38)
+-96 120
+fi=(23)
+1134 24
+2434 24
+fi=(32)
+99 48
+-99 24
+fe=(41)
+716 72
+fi=(17)
+1994 144
+fi=(38)
+146 48
+fi=(17)
+1994 432
+fi=(38)
+146 144
+fe=(41)
+0 72
+716 144
+fi=(17)
+0 72
+fi=(138)
+86 72
+fi=(17)
+1995 72
+fe=(41)
+716 72
+fi=(17)
+1995 72
+fe=(41)
+717 72
++1 72
+-1 72
+0 144
+fi=(18)
+165 72
+0 144
+158 288
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=72 0 
+* 3112548
+0 72
+fi=(22)
+188 144
+0 72
+fi=(43)
+190 144
+fi=(13)
+-2 72
+fi=(22)
++50 144
+fi=(18)
+0 72
+fe=(41)
+720 360
+0 24
+fi=(58)
+235 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+fi=(29)
+0 24
+fi=(59)
+150 72
+0 24
+fi=(19)
+1123 48
+0 24
+fi=(59)
+150 24
+fi=(19)
+1125 336
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4224
+0 144
+fi=(38)
+146 48
+fi=(18)
+-59 48
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=24 -87 
+* 1574
+-87 24
+fi=(22)
+188 48
+0 24
+fi=(38)
+146 120
+fi=(17)
+2171 24
+fi=(61)
+194 24
+fi=(13)
+892 24
+fi=(46)
+242 24
+fi=(38)
+-96 48
+fi=(17)
+2171 48
+fi=(61)
+194 48
+fi=(13)
+892 48
+fi=(46)
+242 48
+fi=(38)
+-96 168
+fe=(41)
+0 24
+706 24
+0 24
+743 24
+fi=(29)
+1327 24
+fi=(27)
+621 24
+fe=(41)
+753 24
+0 144
+753 24
+0 24
+753 48
+0 18096
+753 9048
+0 9048
+753 18096
+0 9072
+fi=(27)
+621 9072
+0 9072
+fe=(41)
+758 9072
+0 36288
+762 18144
+0 4554144
+762 4554144
+fi=(23)
+2434 2286144
+fi=(38)
+146 4572288
+0 20575296
+fi=(43)
+184 4572288
+fi=(38)
+0 4572288
+fi=(43)
+184 9144576
+0 13716864
+fe=(41)
+801 6858432
+0 6858432
+fi=(29)
+1327 6858432
+fi=(27)
+621 6858432
+0 48009024
+fi=(29)
+1327 6858432
+fi=(27)
+621 6858432
+0 6858432
+fe=(41)
+802 6858432
+0 6858432
+fi=(29)
+1327 6858432
+fi=(27)
+621 6858432
+0 34292160
+fe=(41)
+0 27433728
+fi=(29)
+1327 18289152
+fi=(27)
+621 9144576
+fi=(51)
+25 9144576
+fe=(41)
+803 9144576
+fi=(46)
+0 9144576
+fe=(41)
+810 36578304
+706 9144576
+814 9144576
+0 18289152
+fi=(23)
+2441 9144576
+fi=(43)
+190 18289152
+0 137168640
+fi=(23)
+1170 9144576
+fe=(41)
+825 27433728
+fi=(43)
+250 18289152
+fi=(46)
+-8 18289152
+0 9144576
+fe=(41)
+830 9144576
+0 9144576
+830 9144576
++5 9144576
+fi=(43)
+184 18289152
+fe=(41)
+835 18289152
+fi=(23)
+2434 9144576
+fi=(43)
+184 18289152
+fe=(41)
+836 9144576
+fi=(43)
+184 18289152
+fe=(41)
+836 18289152
+fi=(23)
+2434 9144576
+fi=(43)
+184 18289152
+fi=(23)
+1134 9144576
+fi=(43)
+184 18289152
+fi=(19)
+629 45722880
+fe=(41)
+840 9144576
+0 27433728
+838 9144576
++99 18289152
+0 36578304
+fi=(19)
+629 9144576
+744 9144576
+fe=(41)
+0 9144576
+940 36578304
+cfi=(72) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/jpeg-decoder-0.2.4/src/huffman.rs
+cfn=(1056) jpeg_decoder::huffman::HuffmanDecoder::decode
+calls=9144576 31 
+* 520539186
+fi=(15)
+1899 18289152
++1 18289152
+fe=(41)
+941 9144576
++2 11545178
+fi=(72)
+82 17317767
++1 460
+cfn=(1058) jpeg_decoder::huffman::HuffmanDecoder::read_bits
+calls=115 +40 
+* 59668
+fi=(15)
+1899 345
+fi=(72)
+120 115
+-34 115
++26 575
++7 230
++1 230
+fi=(55)
++48 1035
+0 115
+fi=(72)
+86 5772474
++26 28862370
++7 11544948
++1 11544948
+fi=(55)
++48 51952266
+0 5772474
+fi=(15)
+0 6743974
+fi=(128)
+1120 3371987
+fe=(41)
+955 6743974
++1 16859935
+0 3371987
+961 6743974
+fi=(15)
+0 5772589
+fi=(128)
+1120 5772589
+fe=(41)
+955 11545178
++1 28862945
+0 5772589
+961 38978906
++6 9144576
+fi=(19)
+629 9144576
+744 9144576
+0 51484545
+fe=(41)
+1002 11523330
++2 5761665
+-37 134795508
+fi=(72)
+61 153084644
++1 153084644
++1 26514165
+cfn=(1058)
+calls=5302833 +60 
+* 2993440486
+fi=(15)
+1899 15908499
+fi=(72)
+66 76542322
++46 153084644
+-46 153084644
++2 76542322
+-2 56800834
++3 170402502
++50 113601668
++1 56800834
+fe=(41)
+969 56800834
++2 113601668
++4 397605838
+0 56800834
+975 113601668
++1 56800834
+0 113601668
+978 118448928
+cfi=(72)
+cfn=(1056)
+calls=19741488 31 
+* 1955494722
+fi=(15)
+1899 39482976
++1 19741488
+fe=(41)
+979 39482976
++1 39482976
++2 39482976
++14 5761665
++2 11523330
+fi=(72)
+82 23046660
++1 51600
+cfn=(1058)
+calls=12900 +40 
+* 7361087
+fi=(15)
+1899 38700
+fi=(72)
+120 12900
+-34 12900
++26 51600
++7 25800
++1 25800
+fi=(55)
++48 103200
+fe=(41)
+1002 38700
+fi=(72)
+86 5748765
++26 22995060
++7 11497530
++1 11497530
+fi=(55)
++48 45990120
+fe=(41)
+1002 40292955
+-19 27959646
++1 4835255
+0 9670510
+986 36578272
++2 18289136
+0 61725880
+fi=(38)
+146 13716864
+0 2286144
+fi=(29)
+1327 2286144
+fi=(27)
+621 2286144
+0 2277072
+fi=(50)
+463 2277072
+fe=(41)
+758 2277072
+0 2277072
+758 4554144
+0 45360
+fi=(23)
+2434 9072
+fi=(38)
+146 18144
+0 27216
+fe=(41)
+706 9072
+860 18144
+0 36288
+fi=(38)
+146 54432
+fi=(138)
+-98 27216
+fi=(38)
++98 54432
+fe=(41)
+860 108864
+0 27216
+870 27216
++1 27216
+-1 108864
+fi=(51)
+25 27216
+fe=(41)
+874 27216
+fi=(43)
+190 54432
+fi=(22)
+0 27216
+fi=(18)
+165 27216
+fi=(22)
+0 27216
+fi=(18)
+158 108864
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=27216 0 
+* 1182820513
+fi=(22)
++30 54432
+fi=(13)
+702 54432
+fi=(141)
+840 136080
+fe=(41)
++57 217728
+cfi=(70)
+cfn=(1066)
+calls=27216 122 
+* 5540756021
+fi=(15)
+1899 108864
+0 9072
+fi=(29)
+1327 9072
+fi=(27)
+621 9072
+fi=(72)
+104 120
+cfn=(1058)
+calls=24 +19 
+* 832
+fi=(15)
+766 96
+fi=(13)
+-65 24
+892 24
+fe=(41)
++11 96
+0 96
+fi=(38)
+242 120
+fe=(41)
+907 24
+fi=(38)
+242 24
+fi=(23)
+425 120
+fe=(41)
+909 96
+cfi=(23)
+cfn=(906)
+calls=24 2359 
+* 3509
++2 24
+0 120
+fi=(38)
+146 48
+fe=(41)
+0 48
+907 24
++5 24
+0 72
+fi=(13)
+702 24
+0 24
+fe=(41)
+913 24
+0 24
+fi=(141)
+840 48
+0 24
+840 48
+fi=(43)
+190 48
+fi=(13)
+-2 24
+0 24
+fi=(22)
+238 48
+fi=(18)
+0 72
+fe=(41)
+913 72
+fi=(38)
+146 48
+0 24
+fe=(41)
+912 24
+0 72
+fi=(13)
+702 24
+0 24
+fe=(41)
+913 24
+0 24
+fi=(141)
+840 120
+fi=(43)
+190 48
+fi=(13)
+-2 24
+0 24
+fi=(22)
+238 48
+fi=(18)
+0 72
+fe=(41)
+913 72
+fi=(38)
+146 48
+0 24
+fe=(41)
+912 24
+0 72
+fi=(13)
+702 24
+0 24
+fe=(41)
+913 24
+0 24
+fi=(141)
+840 120
+fi=(43)
+190 48
+fi=(13)
+-2 24
+0 24
+fi=(22)
+238 48
+fi=(18)
+0 72
+fe=(41)
+913 72
+fi=(38)
+146 48
+fe=(41)
+917 48
+fi=(22)
+238 48
+0 48
+469 24
+0 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+0 48
+fi=(22)
+469 24
+0 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+fi=(23)
+1170 24
+fi=(13)
+188 48
+0 24
+188 384
+fi=(22)
++50 144
+fi=(13)
+0 72
+fi=(22)
+469 144
+0 144
+469 72
+fi=(18)
+105 72
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=72 0 
+* 13787
+0 72
+fi=(13)
+188 24
+fi=(22)
++50 48
+0 48
+238 48
+fi=(18)
+105 48
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+fi=(13)
++83 24
+fi=(22)
++50 48
+fi=(13)
+0 24
+fi=(22)
+469 48
+0 48
+469 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+fe=(41)
+401 48
+0 24
+fi=(46)
+242 72
+fe=(41)
+402 168
+fi=(60)
+136 48
+0 144
+fi=(17)
+1994 360
+fi=(13)
+702 72
+fi=(17)
+1994 144
+0 144
+fi=(23)
+1903 72
+fi=(17)
+2379 72
+fi=(18)
+0 216
+fe=(41)
+407 360
+fi=(43)
+190 144
+fi=(22)
++48 144
+fi=(18)
+0 72
+fe=(41)
+408 288
+0 72
+fi=(60)
+136 144
+0 48
+fi=(13)
+0 96
+188 48
+fi=(22)
++50 48
+0 72
+238 48
+0 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+0 96
+fi=(13)
+892 432
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4248
+0 72
+188 72
+0 48
+188 24
+fi=(18)
+0 72
+fi=(22)
+238 48
+0 24
+238 48
+0 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 3352
+fe=(41)
+0 24
+441 24
+fi=(23)
+1170 24
+2818 24
+fi=(13)
+188 48
+fe=(41)
+0 48
+fi=(13)
+188 24
+fi=(22)
++50 48
+fe=(41)
+441 96
+fi=(13)
+702 72
+fi=(141)
+840 96
+fi=(46)
+242 72
+fi=(58)
+-7 24
+fi=(13)
+702 24
+fi=(19)
+2049 96
+0 48
+fi=(60)
+136 48
+fi=(58)
++99 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+fi=(13)
+188 72
+0 24
+188 24
+fi=(18)
+0 72
+fi=(22)
+238 24
+0 24
+238 24
+0 24
+238 48
+0 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 4042
+fe=(41)
+0 24
+448 24
+fi=(23)
+1170 24
+2818 24
+fi=(13)
+188 48
+fe=(41)
+0 72
+fi=(13)
+188 24
+fi=(22)
++50 48
+fe=(41)
+448 168
++85 24
+0 24
+272 48
+533 96
+0 96
+272 288
+0 48
+fi=(59)
+150 48
+fi=(19)
+1123 48
+0 24
+1123 24
+0 96
+fi=(59)
+150 24
+fi=(19)
+1124 336
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4224
+fi=(13)
+188 48
+0 168
+892 408
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4248
+fi=(58)
+235 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+0 48
+fi=(60)
+136 96
+fi=(58)
++99 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+0 24
+fi=(59)
+150 48
+fi=(19)
+1123 72
+0 120
+fi=(59)
+150 24
+fi=(19)
+1124 336
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4224
+fi=(13)
+188 48
+0 96
+fi=(18)
+0 72
+fi=(13)
+892 408
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4248
+fi=(58)
+235 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+0 48
+fi=(60)
+136 96
+fi=(58)
++99 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+0 72
+fi=(59)
+150 72
+0 24
+fi=(19)
+1123 48
+0 24
+fi=(59)
+150 24
+fi=(19)
+1125 336
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4224
+0 144
+fi=(18)
+0 48
+fi=(13)
+892 456
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4248
+702 120
+fi=(19)
+2049 48
+0 96
+fi=(60)
+136 48
+0 24
+fi=(58)
+235 24
+fi=(13)
+702 24
+fi=(19)
+2049 48
+0 24
+fi=(59)
+150 72
+0 24
+fi=(19)
+1123 48
+0 24
+fi=(59)
+150 24
+fi=(19)
+1125 336
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4224
+0 120
+fi=(18)
+0 48
+fi=(13)
+892 456
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=24 0 
+* 4248
+0 72
+fi=(18)
+0 24
+fi=(13)
+188 24
+fi=(22)
++50 48
+fi=(13)
+0 24
+fi=(22)
+469 48
+0 48
+469 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+fi=(13)
++83 24
+fi=(22)
++50 48
+fi=(13)
+0 24
+fi=(22)
+469 48
+0 48
+469 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+fe=(41)
+0 24
+fi=(13)
+188 24
+fi=(22)
++50 48
+fi=(13)
+0 24
+fi=(22)
+469 48
+0 48
+469 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+fe=(41)
+0 24
+fi=(22)
+238 96
+0 24
+fi=(18)
+105 24
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+* 2064
+0 72
+fe=(41)
+536 24
+fi=(19)
++14 24
+fe=(41)
+-14 24
++9 24
++1 24
+fi=(50)
+1679 48
+fi=(19)
+1052 24
+fe=(41)
+547 24
+fi=(50)
+1679 24
+fi=(19)
+872 24
+fe=(41)
+548 24
+-4 24
++10 24
+fi=(51)
+25 48
+fe=(41)
+554 24
+fi=(23)
+1170 24
+2818 24
+fi=(13)
+188 72
+fi=(22)
++50 48
+fi=(23)
+1170 24
+2818 24
+fi=(13)
+188 72
+fi=(22)
++50 48
+fe=(41)
+0 72
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+0 2064
+607 432
+fi=(51)
+25 24
+fe=(41)
+596 24
+fi=(23)
+2434 48
+fe=(41)
+602 48
++1 48
+fi=(23)
+1134 24
+fe=(41)
+601 96
+fi=(23)
+1903 24
+fi=(75)
+1145 24
+fe=(41)
+0 24
+fi=(23)
+1134 24
+fi=(38)
+241 72
+-95 192
++96 72
+fi=(23)
+1903 72
+fi=(46)
+242 144
+fi=(18)
+0 24
+fi=(75)
+1149 48
++24 144
++67 48
+fi=(23)
+425 72
+fe=(41)
+325 96
+fi=(23)
+0 24
+fi=(75)
+1244 72
+-57 48
++1 144
+cfi=(64)
+cfn=(998)
+calls=24 20 
+* 8424
+fi=(15)
+1899 24
+0 48
+1899 24
+fi=(75)
+1188 48
++1 48
++1 48
+fi=(22)
+0 24
+fi=(18)
+165 24
+-7 96
+cob=(3)
+cfi=(3)
+cfn=(628)
+calls=24 0 
+* 12213
+* 24
+fi=(22)
++30 48
+fi=(76)
+-16 48
+fi=(75)
+1196 192
+fi=(22)
+0 24
+fi=(77) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.5.1/src/math.rs
+8 24
++3 216
+fi=(19)
+629 24
+fi=(78)
+-39 24
++2 2
+cfi=(13)
+cfn=(1114)
+calls=1 892 
+* 3
+fi=(79)
+442 24
+fi=(58)
+-20 24
+fi=(80)
+284 24
++1 48
+cfn=(1120)
+calls=24 167 
+* 105076
+0 48
+fi=(116)
+326 48
++71 288
+cfn=(1474)
+calls=24 +2 
+* 21183
+0 24
+fi=(75)
+1206 96
+0 24
+fi=(13)
+188 24
+cfn=(1664)
+calls=24 * 
+* 3888
+fi=(23)
+1170 24
+2818 24
+fi=(13)
+188 336
+fi=(22)
++50 144
+fi=(13)
+0 72
+fi=(22)
+238 144
+fi=(18)
+105 72
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=72 0 
+* 11867
+0 72
+fi=(13)
+188 48
+fi=(22)
++50 48
+469 48
+0 168
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=24 0 
+0 2064
+fi=(75)
+1149 24
++26 24
+fi=(23)
+-5 24
+2818 24
+fi=(13)
+188 456
+fi=(22)
++50 144
+fi=(13)
+-50 24
+fi=(22)
++50 48
+0 48
+238 48
+0 24
+fe=(41)
+
+fn=(918)
+609 1008
+fi=(42)
+57 144
++1 576
+cfi=(34)
+cfn=(882)
+calls=144 278 
+* 8208
+* 288
+fe=(41)
+615 432
+0 720
+cfi=(34)
+cfn=(882)
+calls=144 278 
+0 8208
+0 432
+626 576
++5 288
+cfi=(48)
+cfn=(902)
+calls=144 66 
+* 1296
+fi=(19)
+744 288
+fe=(41)
+631 576
+0 144
+634 720
+
+fl=(72)
+fn=(1056)
+31 202202448
++1 57772128
+-32 3122217
+33 6244434
+cfn=(1058)
+calls=3122217 +90 
+* 1538433305
+fi=(15)
+1899 9366651
+fe=(72)
+36 28886064
++76 57772128
+-76 57772128
++2 28886064
+-2 23148537
++83 46297074
++1 23148537
+-80 69445611
++6 11475054
+-46 5737527
+48 11475054
+-2 10620404
+-46 5310202
+48 10620404
+-2 5137948
+-46 2568974
+48 5137948
+-2 189270
+-46 94635
+48 189270
+-2 134322
+-46 67161
+48 134322
+-2 134322
+-46 67161
+48 134322
+-2 134278
+-46 67139
+48 134278
+-48 198495
+48 132330
++1 5737527
++70 11475054
++1 5737527
+-69 11475054
++1 5737527
+fi=(43)
+184 11475054
+fe=(72)
+52 28687635
+fi=(15)
+-52 28886064
+fe=(72)
+58 144430320
+
+fn=(1058)
+123 67504712
++1 25314267
+0 42190420
+124 8438084
+0 24
+124 24
+fi=(42)
+-66 33752256
+fe=(72)
++97 112663348
++1 112663348
+-32 225326696
+fi=(42)
+-67 56331698
++1 225326792
+cfi=(34)
+cfn=(882)
+calls=56331698 278 
+* 3211751590
+* 112663396
++1 112663396
+fe=(72)
++72 56331698
+fi=(42)
+-74 649923
++1 2599692
+cfi=(34)
+cfn=(882)
+calls=649923 278 
+* 37054452
+* 1299846
++1 649923
+fe=(72)
++76 1299870
++7 96
++6 48
+cfi=(48)
+cfn=(902)
+calls=24 -82 
+* 216
+fi=(19)
+744 48
+fe=(72)
+148 48
+-24 48
+0 88
+124 308
++32 44
+0 44
+159 44
++1 396
+0 8438045
+159 8438045
++1 75942405
+
+fl=(10)
+fn=(450)
+0 21
+cob=(3)
+cfi=(3)
+cfn=(452)
+calls=1 0 
+0 8
+0 11
+cob=(3)
+cfi=(3)
+cfn=(454)
+calls=1 0 
+0 112
+0 13
+cob=(5)
+cfi=(5)
+cfn=(462)
+calls=1 0 
+0 53
+0 9
+cob=(5)
+cfi=(5)
+cfn=(462)
+calls=1 0 
+0 52
+0 5
+cob=(5)
+cfi=(5)
+cfn=(462)
+calls=1 0 
+0 53
+0 9
+cob=(5)
+cfi=(5)
+cfn=(462)
+calls=1 0 
+0 52
+0 2
+cfn=(464) std::sys::unix::stack_overflow::imp::make_handler
+calls=1 0 
+0 209
+0 3
+cob=(3)
+cfi=(3)
+cfn=(468)
+calls=1 0 
+0 36
+0 10
+cob=(3)
+cfi=(3)
+cfn=(476)
+calls=1 0 
+0 2
+0 3
+cob=(3)
+cfi=(3)
+cfn=(478)
+calls=1 0 
+0 133594
+0 10
+cfn=(634)
+calls=1 0 
+0 55
+0 6
+cfn=(636)
+calls=1 0 
+0 306
+0 6
+cfn=(646)
+calls=1 0 
+0 517
+0 2
+cfi=(11)
+cfn=(656)
+calls=1 119 
+0 58949891807
+0 14
+cfn=(1124)
+calls=1 0 
+0 186
+0 15
+cob=(5)
+cfi=(5)
+cfn=(630)
+calls=1 0 
+0 7
+0 6
+cob=(3)
+cfi=(3)
+cfn=(632)
+calls=1 0 
+0 186
+0 20
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=1 0 
+0 203
+0 2
+
+fn=(646)
+0 189
+cob=(3)
+cfi=(3)
+cfn=(648)
+calls=9 0 
+0 4529
+0 207
+
+fn=(660)
+0 16
+cfn=(644) __rust_alloc
+calls=1 0 
+0 212
+0 14
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=1 0 
+0 14
+0 5
+cfn=(634)
+calls=1 0 
+0 55
+0 7
+cob=(3)
+cfi=(3)
+cfn=(662)
+calls=1 0 
+0 9
+0 3
+cob=(5)
+cfi=(5)
+cfn=(664)
+calls=1 0 
+0 3
+0 9
+cfn=(666) __rust_dealloc
+calls=1 0 
+0 87
+0 12
+
+fn=(702) _ZN3std3sys4unix4weak13Weak$LT$F$GT$10initialize17h17a8b45b3f49240dE.llvm.6339443555521102046
+0 20
+cob=(3)
+cfi=(3)
+cfn=(562)
+calls=2 0 
+0 38
+0 18
+cob=(6)
+cfi=(6)
+cfn=(704)
+calls=2 0 
+0 2646
+0 10
+
+fn=(802) <std::path::Components as core::iter::traits::iterator::Iterator>::next
+0 14639
+
+fn=(830) core::fmt::Formatter::pad_integral::write_prefix
+0 180
+
+fn=(840)
+0 702
+cfn=(644)
+calls=39 0 
+0 2599
+0 546
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=39 0 
+0 451
+0 195
+cfn=(634)
+calls=39 0 
+0 2162
+0 1524
+cob=(5)
+cfi=(5)
+cfn=(842)
+calls=39 0 
+0 2516
+0 705
+cfn=(666)
+calls=39 0 
+0 3393
+
+fn=(1356)
+0 96
+cob=(3)
+cfi=(3)
+cfn=(476)
+calls=8 0 
+0 16
+0 24
+cob=(3)
+cfi=(3)
+cfn=(478)
+calls=8 0 
+0 18056
+0 48
+cob=(5)
+cfi=(5)
+cfn=(1366)
+calls=8 0 
+0 32
+0 88
+cob=(5)
+cfi=(5)
+cfn=(630)
+calls=8 0 
+0 56
+0 104
+cob=(3)
+cfi=(3)
+cfn=(632)
+calls=8 0 
+0 1536
+0 56
+
+fn=(464)
+0 117
+cob=(3)
+cfi=(3)
+cfn=(466)
+calls=9 0 
+0 45
+0 36
+cob=(3)
+cfi=(3)
+cfn=(468)
+calls=9 0 
+0 324
+0 63
+cob=(3)
+cfi=(3)
+cfn=(472)
+calls=9 0 
+0 315
+0 45
+cob=(3)
+cfi=(3)
+cfn=(468)
+calls=9 0 
+0 324
+0 36
+cob=(3)
+cfi=(3)
+cfn=(474)
+calls=9 0 
+0 45
+0 36
+cob=(3)
+cfi=(3)
+cfn=(468)
+calls=9 0 
+0 324
+0 63
+cob=(3)
+cfi=(3)
+cfn=(466)
+calls=9 0 
+0 45
+0 63
+
+fn=(636)
+0 99
+cob=(5)
+cfi=(5)
+cfn=(638)
+calls=9 0 
+0 261
+0 90
+cob=(5)
+cfi=(5)
+cfn=(640)
+calls=9 0 
+0 198
+0 27
+cfn=(644)
+calls=9 0 
+0 2123
+0 117
+
+fn=(754) __rust_realloc
+0 580
+cob=(3)
+cfi=(3)
+cfn=(566)
+calls=29 0 
+0 7432
+
+fn=(836)
+0 3180
+
+fn=(1220) std::io::default_read_to_end
+0 29
+cfn=(750)
+calls=1 0 
+0 106
+0 35
+cob=(5)
+cfi=(5)
+cfn=(890)
+calls=2 0 
+0 14
+0 29
+
+fn=(1272)
+0 175
+cfn=(644)
+calls=25 0 
+0 5229
+0 275
+cob=(5)
+cfi=(5)
+cfn=(1274)
+calls=25 0 
+0 75
+0 275
+cob=(5)
+cfi=(5)
+cfn=(1276)
+calls=25 0 
+0 300
+0 225
+cob=(5)
+cfi=(5)
+cfn=(1278)
+calls=25 0 
+0 1000
+0 225
+cob=(5)
+cfi=(5)
+cfn=(1280)
+calls=25 0 
+0 50
+0 150
+
+fn=(1838)
+0 8
+cfn=(1840) alloc::sync::Arc<T>::drop_slow
+calls=1 0 
+0 251
+
+fn=(1844)
+0 8
+cob=(2)
+cfi=(2)
+cfn=(1850)
+calls=1 0 
+0 93
+0 1
+cfn=(1858) 0x000000000001bda0
+calls=1 0 
+0 5
+0 3
+
+fn=(438) 0x000000000001be50
+0 11
+
+fn=(634)
+0 495
+cob=(3)
+cfi=(3)
+cfn=(562)
+calls=45 0 
+0 872
+0 1125
+
+fn=(748)
+0 238
+cfn=(644)
+calls=14 0 
+0 907
+0 98
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=14 0 
+0 177
+0 266
+cfn=(750)
+calls=14 0 
+0 2993
+0 179
+cfn=(750)
+calls=13 0 
+0 5624
+0 91
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=13 0 
+0 156
+0 5
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=1 0 
+0 11
+0 140
+
+fn=(820)
+0 588
+cfn=(644)
+calls=12 0 
+0 636
+0 180
+cfn=(822) core::fmt::write
+calls=12 0 
+0 3446
+0 84
+
+fn=(822)
+0 456
+cfn=(824) _ZN50_$LT$$RF$mut$u20$W$u20$as$u20$core..fmt..Write$GT$9write_str17hef9ec48c8b61f86cE.llvm.13800485350982051758
+calls=12 0 
+0 492
+0 60
+cfn=(826) core::fmt::num::imp::<impl core::fmt::Display for u64>::fmt
+calls=12 0 
+0 1586
+0 228
+cfn=(824)
+calls=12 0 
+0 492
+0 132
+
+fn=(1204) std::path::Components::as_path
+0 116
+cfn=(856) std::path::Components::parse_next_component_back
+calls=1 0 
+0 189
+0 17
+
+fn=(1310)
+0 90
+cfn=(1130)
+calls=1 0 
+0 1467
+0 70
+
+fn=(1818) _ZN3std4sync4once4Once9call_once28_$u7b$$u7b$closure$u7d$$u7d$17hc2a01d26a0cda054E.llvm.8550179174748774741
+0 8
+cfn=(1820) std::io::stdio::cleanup
+calls=1 0 
+0 11
+0 9
+cob=(3)
+cfi=(3)
+cfn=(466)
+calls=1 0 
+0 5
+0 3
+cob=(3)
+cfi=(3)
+cfn=(468)
+calls=1 0 
+0 36
+0 3
+cob=(3)
+cfi=(3)
+cfn=(468)
+calls=1 0 
+0 36
+0 3
+cob=(3)
+cfi=(3)
+cfn=(1364)
+calls=1 0 
+0 5
+0 4
+
+fn=(700)
+0 558
+cob=(3)
+cfi=(3)
+cfn=(746)
+calls=14 0 
+0 280
+0 39
+cob=(3)
+cfi=(3)
+cfn=(746)
+calls=1 0 
+0 25
+0 915
+cfn=(702)
+calls=1 0 
+0 1522
+0 4
+cob=(5)
+cfi=(5)
+cfn=(664)
+calls=1 0 
+0 3
+0 102
+
+fn=(1348)
+0 56
+cfn=(464)
+calls=8 0 
+0 1672
+0 40
+cfi=(102)
+cfn=(1350)
+calls=8 227 
+0 9661413886
+
+fn=(430)
+0 14
+cob=(2)
+cfi=(2)
+cfn=(432)
+calls=1 0 
+0 6
+0 8
+cfn=(436) std::sys::unix::args::imp::ARGV_INIT_ARRAY::init_wrapper
+calls=1 0 
+0 1
+0 4
+cfn=(438)
+calls=1 0 
+0 11
+0 14
+
+fn=(644)
+0 1233
+cob=(3)
+cfi=(3)
+cfn=(488)
+calls=137 0 
+0 17720
+
+fn=(682)
+0 476
+cob=(3)
+cfi=(3)
+cfn=(684)
+calls=14 0 
+0 1024
+0 85
+cob=(3)
+cfi=(3)
+cfn=(684)
+calls=2 0 
+0 129
+0 66
+cob=(3)
+cfi=(3)
+cfn=(688)
+calls=15 0 
+0 195
+0 151
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=13 0 
+0 767
+0 52
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=13 0 
+0 611
+0 117
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=13 0 
+0 767
+0 118
+
+fn=(800)
+0 13986
+cfn=(802)
+calls=49 0 
+0 7154
+0 833
+cfn=(802)
+calls=49 0 
+0 7154
+0 784
+cob=(3)
+cfi=(3)
+cfn=(804)
+calls=49 0 
+0 1127
+0 735
+
+fn=(856)
+0 4509
+
+fn=(1124)
+0 96
+cfn=(1818)
+calls=1 0 
+0 123
+cfi=(81)
+cfn=(1126)
+calls=1 262 
+0 727
+cfi=(81)
+cfn=(1126)
+calls=1 262 
+0 104292
+0 12
+cfn=(1244) <std::sync::once::WaiterQueue as core::ops::drop::Drop>::drop
+calls=3 0 
+0 57
+0 24
+
+fn=(1125)
+0 32
+cfi=(81)
+cfn=(1127)
+calls=1 262 
+0 52120
+0 4
+cfn=(1244)
+calls=1 0 
+0 19
+0 8
+
+fn=(1840)
+0 10
+cfn=(666)
+calls=1 0 
+0 117
+0 7
+cfn=(666)
+calls=1 0 
+0 117
+
+fn=(854)
+0 2016
+cfn=(856)
+calls=24 0 
+0 4320
+0 672
+
+fn=(858)
+0 4887
+
+fn=(1820)
+0 11
+
+fn=(750)
+0 625
+cfn=(752) _ZN5alloc7raw_vec11finish_grow17h8a35b7430c720621E.llvm.16637658619751410541
+calls=29 0 
+0 8824
+0 4
+cfn=(752)
+calls=1 0 
+0 79
+0 210
+
+fn=(752)
+0 503
+cfn=(754)
+calls=29 0 
+0 8012
+0 63
+cfn=(644)
+calls=1 0 
+0 53
+0 272
+
+fn=(824)
+0 648
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=36 0 
+0 518
+0 324
+
+fn=(826)
+0 210
+cfn=(828) core::fmt::Formatter::pad_integral
+calls=2 0 
+0 212
+0 90
+cfn=(828)
+calls=10 0 
+0 1050
+0 24
+
+fn=(828)
+0 384
+cfn=(830)
+calls=12 0 
+0 180
+0 192
+cfn=(824)
+calls=12 0 
+0 506
+
+fn=(1218)
+0 12
+cfn=(1220)
+calls=1 0 
+0 213
+0 8
+cfn=(858)
+calls=1 0 
+0 59
+0 14
+
+fn=(1284)
+0 125
+cfn=(644)
+calls=25 0 
+0 5198
+0 250
+cob=(3)
+cfi=(3)
+cfn=(1286)
+calls=25 0 
+0 75
+0 150
+cob=(5)
+cfi=(5)
+cfn=(1288)
+calls=25 0 
+0 250
+0 150
+cob=(3)
+cfi=(3)
+cfn=(1290)
+calls=25 0 
+0 350
+0 125
+cob=(3)
+cfi=(3)
+cfn=(1292)
+calls=25 0 
+0 50
+0 200
+
+fn=(666)
+0 45
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=45 0 
+0 3930
+
+fn=(1202)
+0 85
+cfn=(802)
+calls=2 0 
+0 205
+0 6
+cfn=(802)
+calls=2 0 
+0 126
+0 48
+cfn=(1204)
+calls=1 0 
+0 322
+0 9
+
+fn=(1244)
+0 76
+
+fn=(1314)
+0 128
+cfn=(644)
+calls=8 0 
+0 1756
+0 96
+cob=(3)
+cfi=(3)
+cfn=(480)
+calls=8 0 
+0 144
+0 102
+cob=(5)
+cfi=(5)
+cfn=(1316)
+calls=8 0 
+0 40
+0 48
+cob=(5)
+cfi=(5)
+cfn=(1318)
+calls=8 0 
+0 48
+0 64
+cob=(5)
+cfi=(5)
+cfn=(1320)
+calls=8 0 
+0 7524
+0 24
+cob=(3)
+cfi=(3)
+cfn=(632)
+calls=8 0 
+0 40
+0 138
+cfn=(702)
+calls=1 0 
+0 1210
+0 3
+
+fn=(436)
+0 1
+
+fn=(1130)
+0 42
+cfn=(644)
+calls=3 0 
+0 240
+0 24
+cob=(3)
+cfi=(3)
+cfn=(574)
+calls=3 0 
+0 34
+0 12
+cfn=(634)
+calls=3 0 
+0 165
+0 24
+cob=(5)
+cfi=(5)
+cfn=(1132)
+calls=3 0 
+0 69
+0 21
+cob=(3)
+cfi=(3)
+cfn=(1134)
+calls=3 0 
+0 3177
+0 21
+cob=(5)
+cfi=(5)
+cfn=(1142)
+calls=3 0 
+0 108
+0 15
+cfn=(666)
+calls=3 0 
+0 261
+0 24
+
+fn=(1858)
+0 5
+
+fl=(73)
+fn=(1080)
+205 73156608
++7 27433728
+0 45722880
+fi=(30)
+2079 36578304
+fi=(74)
+284 9144576
+496 9144576
+284 9144576
+496 9144576
+284 9144576
+496 9144576
+284 9144576
+496 9144576
+fi=(30)
+2079 9144576
+fi=(74)
+284 9144576
+496 9144576
+fi=(30)
+2079 9144576
+fi=(74)
+284 9144576
+496 9144576
+fi=(30)
+2079 9144576
+fi=(74)
+284 9144576
+496 9144576
+fi=(30)
+2079 9144576
+fi=(74)
+284 9144576
+496 9144576
+135 9144576
+fi=(126)
+241 9144576
+fi=(74)
+382 9144576
+fi=(126)
+241 9144576
+fi=(74)
+382 9144576
+fi=(126)
+241 9144576
+fi=(74)
+135 18289152
+382 9144576
+135 9144576
+382 9144576
+135 9144576
+382 9144576
+135 27433728
+fi=(126)
+241 9144576
+fi=(74)
+135 18289152
+fi=(126)
+241 9144576
+fi=(74)
+135 36578304
+fi=(126)
+241 9144576
+fi=(74)
+135 9144576
+fi=(126)
+241 9144576
+fi=(74)
+135 18289152
+fi=(126)
+241 9144576
+fi=(74)
+382 27433728
+fi=(126)
+241 9144576
+fi=(74)
+382 9144576
+fi=(126)
+241 9144576
+fi=(74)
+382 9144576
+fi=(126)
+241 18289152
+fi=(74)
+135 64012032
+fi=(126)
+241 18289152
+fi=(74)
+135 18289152
+382 9144576
+135 9144576
+382 9144576
+135 9144576
+382 9144576
+135 9144576
+382 9144576
+1544 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++61 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++60 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
+135 9144576
+fi=(126)
+241 18289152
+fi=(74)
+382 18289152
+fi=(126)
+241 9144576
+fi=(74)
+135 18289152
+382 9144576
+135 9144576
+382 9144576
+135 9144576
+382 9144576
+135 27433728
+fi=(126)
+241 9144576
+fi=(74)
+135 9144576
+fi=(126)
+241 9144576
+fi=(74)
+135 45722880
+fi=(126)
+241 9144576
+fi=(74)
+135 9144576
+fi=(126)
+241 9144576
+fi=(74)
+135 9144576
+fi=(126)
+241 9144576
+fi=(74)
+135 9144576
+fi=(126)
+241 9144576
+fi=(74)
+382 27433728
+fi=(126)
+241 9144576
+fi=(74)
+382 9144576
+fi=(126)
+241 9144576
+fi=(74)
+382 9144576
+fi=(126)
+241 9144576
+fi=(74)
+135 82301184
+382 9144576
+135 9144576
+382 9144576
+135 9144576
+382 9144576
+135 9144576
+382 9144576
+1544 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++61 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++60 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
++49 9144576
+-49 9144576
+135 18289152
+572 9144576
+135 9144576
+572 9144576
+fi=(30)
+2079 18289152
+fi=(74)
+135 9144576
+572 9144576
+135 9144576
+572 9144576
+fi=(30)
+2079 18289152
+fi=(74)
+135 9144576
+572 9144576
+135 9144576
+572 9144576
+fi=(30)
+2079 18289152
+fi=(74)
+135 18289152
+572 18289152
+fi=(30)
+2079 18289152
+0 9144576
+fe=(73)
+239 73156608
+
+fl=(78)
+fn=(1828)
+639 3
+fi=(13)
++63 2
+fi=(141)
+840 1
+fi=(13)
++52 1
+188 4
+cob=(5)
+cfi=(5)
+cfn=(1832)
+calls=1 0 
+* 10
+fi=(18)
+-83 3
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 86
+fi=(13)
++83 2
+cob=(3)
+cfi=(3)
+cfn=(1836)
+calls=1 0 
+* 26
+fi=(18)
+-83 6
+cob=(3)
+cfi=(3)
+cfn=(596)
+calls=1 0 
+* 116
+fe=(78)
+
+fn=(1404)
+605 4
++14 3
++7 7
+cob=(3)
+cfi=(3)
+cfn=(648)
+calls=1 0 
+* 497
+fi=(13)
+892 1
+fi=(99)
+221 1
+cfi=(10)
+cfn=(1272)
+calls=1 0 
+* 351
+fi=(118)
++10 2
++1 1
+cfi=(10)
+cfn=(1284)
+calls=1 0 
+* 310
+-2 2
+fi=(13)
+702 2
+fi=(141)
+840 3
+fi=(13)
+188 2
+fi=(18)
+0 2
+fe=(78)
+613 5
+-8 8
+fi=(79)
+442 8
+fe=(78)
+619 16
++7 56
+cob=(3)
+cfi=(3)
+cfn=(648)
+calls=8 0 
+* 4056
+fi=(13)
+892 8
+0 16
+fi=(25)
+2363 8
+fi=(81)
+371 8
+257 8
+fi=(108)
+37 8
+fi=(111)
+-19 16
+cfi=(109)
+cfn=(1412)
+calls=8 +26 
+* 2520
+fi=(13)
+701 16
+188 8
+892 16
+188 8
+fe=(78)
+0 8
+613 16
+0 1
+fi=(81)
+261 2
++1 6
+cfi=(10)
+cfn=(1124)
+calls=1 0 
+* 790
+* 1
+fe=(78)
+
+fl=(111)
+fn=(1424)
+23 129432
+fi=(19)
+629 64716
+fi=(78)
+-39 64716
+0 194148
+fi=(110)
+81 64716
+fi=(112)
+459 64716
++2 64716
+fi=(50)
+1497 129432
+fi=(19)
+744 64716
+fi=(13)
+892 64716
+fi=(112)
+464 129432
++1 64716
+fi=(25)
+2364 64716
+fi=(165) /home/u3836/.cargo/registry/src/github.com-1ecc6299db9ec823/crossbeam-epoch-0.9.8/src/epoch.rs
+51 64716
+fi=(25)
+2435 129432
+fi=(112)
+503 64716
+fi=(50)
+1180 64716
+fi=(13)
+892 64716
+fi=(112)
+508 129432
++1 509
+fi=(20)
+1354 1018
+fi=(112)
+509 509
+cfi=(113)
+cfn=(1434)
+calls=509 278 
+* 87156
++5 64716
+fe=(111)
+25 258864
+
+totals: 68611965974
